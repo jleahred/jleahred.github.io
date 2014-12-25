@@ -23,9 +23,11 @@ Let me show you some links related with me (blog, cv, programs...)
 
 ### blogs
 
-* Thoughts about techs, organization,planification,teams, developments (spanish) [(link)](http://departamentodesarrollo.blogspot.com.es/)
+* Thoughts about techs, organization, planification, teams, developments (spanish) [(link)](http://departamentodesarrollo.blogspot.com.es/)
 * My old blog with several kind of ideas (spanish) [(link)](http://joseluisestebanaparicio.blogspot.com/)
 
+    
+    
 ### web apps
 
 * My first **Dart** application [(link)](apps/hello_world/index.html)
