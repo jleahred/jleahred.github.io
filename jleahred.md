@@ -61,15 +61,15 @@ _If you require an updated version, please contact me by email_
 
 Previosly, I had a _google site_ [(link)](https://sites.google.com/site/joseluisestebanaparicio/home). It was a kind 
 of _wyiswyg_ editor to prepare a **html**. Well, this is not very funny.
-Even more important, it's not flexible and practical (specially for someone with programing knolegment).
+Even more important, it's not flexible neither practical (specially for someone with programing knolegment).
 
 Therefore, I prepared this little page to replace the boring one.
 
-When you load this page in your browser, a minimum **html** file is rendered. It contains a **Dart** program compiled 
-in **javascript**. This miniprogram, will require a text file **markdown** formated. It will also compile the
-**markdown** generating **html** content and inserting it on **DOM**. 
+When you load this page in your browser, a minimum **html** file is rendered. It calls a **Dart** program compiled 
+in **javascript**. This miniprogram, will request for a text file **markdown** formated to the server. It will also 
+compile (the js code running on client) the **markdown** generating **html** content and will insert it on **DOM**. 
 
-When I need to add or modif content on this page, I can do it in a simple **markdown** file. Avoiding the horrible 
+When I need to add or modif content on this page, I can do it in a simple **markdown** file. Avoiding the unpleasant 
 direct **html** codes.
 
 Yes, in order to prepare it, I had to deal with a bit of **html** and a small **css**.
