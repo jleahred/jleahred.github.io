@@ -1,0 +1,98 @@
+<!DOCTYPE html><!--
+  Copyright (c) 2014, <your name>. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+--><html><head>
+</head>
+
+<body>
+
+  <div>
+    <button id="randomize_button">randomize</button>
+    <button id="setup_button">setup</button>
+    <button id="readme_button">readme</button>
+    <br>
+
+    <div id="readme_div" style="display:none">
+    </div>
+
+    <div id="setup_div" style="display:none">
+      <br> Topology:
+      <select style="margin-left: 0px;" id="topology_select">
+        <option value="plain">Plain</option>
+        <option value="cilinder">Cilinder</option>
+        <option value="toroidal">Toroidal</option>
+      </select><br>
+
+      <table>
+        <tbody><tr>
+          <td>
+            colums:<input type="number" name="range_columns" id="range_columns" min="2" max="8" value="4"><br>
+            rows:<input type="number" name="range_rows" id="range_rows" min="2" max="8" value="4">
+          </td>
+          <td>
+            <div style="margin-left: 40px">
+              <input type="radio" name="r_image_type" id="radio_picture">Picture
+              <select style="margin-left: 40px;" id="image_list">
+              </select><br>
+              <input type="radio" name="r_image_type" id="radio_numbers">Numbers<br>
+              <input type="radio" name="r_image_type" id="radio_colors">Colors<br>
+              <input type="radio" name="r_image_type" id="radio_2colors">2 Colors
+            </div>
+          </td>
+        </tr><tr>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          </td>
+        </tr>
+      </tbody></table>
+    </div>
+
+    <br>
+    <div id="canvas_div">
+    </div>
+    <br>
+    <textarea rows="10" cols="120" id="log">    </textarea>
+  </div>
+
+
+
+  <script type="application/dart" src="main.dart"></script>
+  <script data-pub-inline="packages/browser/dart.js">// Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+(function() {
+// Bootstrap support for Dart scripts on the page as this script.
+if (navigator.userAgent.indexOf('(Dart)') === -1) {
+  // TODO:
+  // - Support in-browser compilation.
+  // - Handle inline Dart scripts.
+
+  // Fall back to compiled JS. Run through all the scripts and
+  // replace them if they have a type that indicate that they source
+  // in Dart code (type="application/dart").
+  var scripts = document.getElementsByTagName("script");
+  var length = scripts.length;
+  for (var i = 0; i < length; ++i) {
+    if (scripts[i].type == "application/dart") {
+      // Remap foo.dart to foo.dart.js.
+      if (scripts[i].src && scripts[i].src != '') {
+        var script = document.createElement('script');
+        script.src = scripts[i].src.replace(/\.dart(?=\?|$)/, '.dart.js');
+        var parent = scripts[i].parentNode;
+        // TODO(vsm): Find a solution for issue 8455 that works with more
+        // than one script.
+        document.currentScript = script;
+        parent.replaceChild(script, scripts[i]);
+      }
+    }
+  }
+}
+})();
+</script>
+
+
+</body></html>
