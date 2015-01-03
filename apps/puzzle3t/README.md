@@ -21,7 +21,7 @@ It has been developed with **Dart**
 ## Instructions
 
 * Press [readme] to see/hide this file
-* Press [setup] to access/hide configuration params
+* Press [setup] to access/hide configuration parameters
 * Press [randomize] to mess the puzzle
 * You can choose...
 
@@ -30,7 +30,14 @@ It has been developed with **Dart**
     * Color columns
     * Just two colors
 
-  
+### Difficulty
+
+To train and learn how to solve, you can start with 2 Colors, and continue with colors.
+
+Obviously, reducing the number of pieces will also reduce the complexity. 
+
+
+
 ## Topologies
 
 * **Plain** topology is the classic sliding puzzle game
@@ -43,23 +50,29 @@ You can also move vertically pieces to the hole.
 
 ### Plain
 
-* Click on pieze to move
+* Click on piece to move
 
 ### Cylindrical
 
-* In order to move a row, press mouse button and move the piece horizontally to new possition
+* In order to move a row, press mouse button and move the piece horizontally to new position
 * In order to move vertically a piece to the hole, just click on this piece
 
 ## Toroidal
 
-* Easy, just move the piece to the new possition with left button pressed
+* Easy, just move the piece to the new position with left button pressed
 
 
+## Credits
+
+Developed by José Luis Esteban, Carolina Esteban Salgado and Marcos Esteban Salgado
 
 
 
 ## Todo
 
+* Inprove randomize
+* Full screen mode
+* Working on tablets
 * Small preview
 * Add Sam Loyd puzzle
 * Using images from web (url)
