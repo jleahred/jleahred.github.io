@@ -74,6 +74,5 @@ Developed by José Luis Esteban, Carolina Esteban Salgado and Marcos Esteban Sal
 * Full screen mode
 * Working on tablets
 * Small preview
-* Add Sam Loyd puzzle
 * Using images from web (url)
 

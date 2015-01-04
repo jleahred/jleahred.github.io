@@ -4623,14 +4623,17 @@ b.$4(t,s,Q.qp(t,s,a),a)}}},
 Xf:[function(a,b,c,d){var z,y,x,w,v,u
 z=Q.ec(d)
 y=Q.Hg(d)
-x=Q.zo()
-x.fillStyle="white"
-w=c.x
-v=c.y
-x.fillRect(w,v,c.R,c.fg)
-x.fillStyle="blue"
-u=C.jn.bu(a*d.Si+b+1)
-x.fillText(u,w+z/3,v+y/3)},"$4","K8",8,0,12],
+x=C.jn.bu(a*d.Si+b+1)
+w=d.Ti
+if(w&&b===1&&a===3)x="15"
+if(w&&b===2&&a===3)x="14"
+w=Q.zo()
+w.fillStyle="white"
+v=c.x
+u=c.y
+w.fillRect(v,u,c.R,c.fg)
+w.fillStyle="blue"
+w.fillText(x,v+z/3,u+y/3)},"$4","K8",8,0,12],
 JC:[function(a,b,c,d){var z,y,x,w
 z=["pink","red","orange","yellow","green","blue","gray","cyan"]
 y=d.Ic===C.VM?2:d.Si
@@ -4741,25 +4744,7 @@ y.appendChild(document.createTextNode(z))}}],["","",,F,{
 "^":"",
 QL:[function(){S.tS("Running program")
 F.Bw()
-S.tS("init updateHTMLFromSetup")
-var z=$.Eu
-if(z==null){z=new G.pJ(C.mw,4,4,C.XC,G.fH(),null,null,P.bK(null,null,!1,G.pJ))
-S.tS("Creating config")
-$.Eu=z}J.Mu(z.dJ.MB,J.zj(z.MB))
-z=$.Eu
-J.Zy(z.dJ.Si,z.Si)
-z=$.Eu
-J.Zy(z.dJ.WT,z.WT)
-z=$.Eu
-switch(z.Ic){case C.XC:J.Ae(z.dJ.Ud,!0)
-break
-case C.qc:J.Ae(z.dJ.iG,!0)
-break
-case C.tw:J.Ae(z.dJ.rJ,!0)
-break
-case C.VM:J.Ae(z.dJ.jv,!0)
-break}G.mS()
-S.tS("end updateHTMLFromSetup")},"$0","Da",0,0,0],
+G.lM()},"$0","Da",0,0,0],
 Bw:function(){S.tS("Requested readme file to server")
 var z=document.createElement("p",null)
 J.OG(document.querySelector("#readme_div")).h(0,z)
@@ -5455,12 +5440,32 @@ return!0}}}],["","",,G,{
 d1:function(a,b){if(J.it(a.style)!=="")J.eX(a.style,"")
 else J.eX(a.style,"none")
 J.eX(b.style,"none")},
+lM:function(){S.tS("init updateHTMLFromSetup")
+var z=$.Eu
+if(z==null){z=new G.pJ(C.mw,4,4,C.XC,!1,!1,G.fH(),null,null,P.bK(null,null,!1,G.pJ))
+S.tS("Creating config")
+$.Eu=z}J.Mu(z.dJ.MB,J.zj(z.MB))
+z=$.Eu
+J.Zy(z.dJ.Si,z.Si)
+z=$.Eu
+J.Zy(z.dJ.WT,z.WT)
+z=$.Eu
+switch(z.Ic){case C.XC:J.Ae(z.dJ.Ud,!0)
+break
+case C.qc:J.Ae(z.dJ.iG,!0)
+break
+case C.tw:J.Ae(z.dJ.rJ,!0)
+break
+case C.VM:J.Ae(z.dJ.jv,!0)
+break}G.mS()
+S.tS("end updateHTMLFromSetup")},
 mS:function(){var z,y,x
 S.tS("init updateFromHTMLSetup")
 z=$.Eu
-if(z==null){z=new G.pJ(C.mw,4,4,C.XC,G.fH(),null,null,P.bK(null,null,!1,G.pJ))
+if(z==null){z=new G.pJ(C.mw,4,4,C.XC,!1,!1,G.fH(),null,null,P.bK(null,null,!1,G.pJ))
 S.tS("Creating config")
-$.Eu=z}if(J.S6(z.dJ.Ud)===!0)$.Eu.Ic=C.XC
+$.Eu=z}if(!z.CC)J.Ae(z.dJ.Ti,!1)
+if(J.S6($.Eu.dJ.Ud)===!0)$.Eu.Ic=C.XC
 else if(J.S6($.Eu.dJ.iG)===!0)$.Eu.Ic=C.qc
 else if(J.S6($.Eu.dJ.rJ)===!0)$.Eu.Ic=C.tw
 else if(J.S6($.Eu.dJ.jv)===!0)$.Eu.Ic=C.VM
@@ -5525,9 +5530,9 @@ iI:{
 bu:function(a){return C.Du.t(0,this.vH)},
 static:{"^":"JB,UG,fF,ay,af"}},
 pJ:{
-"^":"a;MB,WT,Si,Ic,dJ,Ln,Mj,cW"},
+"^":"a;MB,WT,Si,Ic,Ti,CC,dJ,Ln,Mj,cW"},
 ta:{
-"^":"a;MB,Si,WT,Ud,iG,rJ,jv,wK",
+"^":"a;MB,Si,WT,Ud,iG,rJ,jv,wK,Ti",
 hl:function(){var z,y,x,w,v
 z=J.Vg(document.querySelector("#randomize_button"))
 H.K6(new W.Ov(0,z.J6,z.fA,W.aF(new G.jr()),z.el),[H.Kp(z,0)]).DN()
@@ -5549,12 +5554,14 @@ z=J.uX(this.rJ)
 H.K6(new W.Ov(0,z.J6,z.fA,W.aF(new G.ib()),z.el),[H.Kp(z,0)]).DN()
 z=J.uX(this.jv)
 H.K6(new W.Ov(0,z.J6,z.fA,W.aF(new G.jr3()),z.el),[H.Kp(z,0)]).DN()
+z=J.uX(this.Ti)
+H.K6(new W.Ov(0,z.J6,z.fA,W.aF(new G.MUq()),z.el),[H.Kp(z,0)]).DN()
 for(z=new H.a7($.uo(),9,0,null),y=this.wK,x=J.RE(y);z.G();){w=z.Ff
 v=W.oK("","",null,!1)
 v.textContent=w
 x.gwd(y).h(0,v)}z=x.gi9(y)
-H.K6(new W.Ov(0,z.J6,z.fA,W.aF(new G.MUq()),z.el),[H.Kp(z,0)]).DN()},
-static:{fH:function(){var z=new G.ta(document.querySelector("#topology_select"),document.querySelector("#range_columns"),document.querySelector("#range_rows"),document.querySelector("#radio_picture"),document.querySelector("#radio_numbers"),document.querySelector("#radio_colors"),document.querySelector("#radio_2colors"),document.querySelector("#image_list"))
+H.K6(new W.Ov(0,z.J6,z.fA,W.aF(new G.Jgu()),z.el),[H.Kp(z,0)]).DN()},
+static:{fH:function(){var z=new G.ta(document.querySelector("#topology_select"),document.querySelector("#range_columns"),document.querySelector("#range_rows"),document.querySelector("#radio_picture"),document.querySelector("#radio_numbers"),document.querySelector("#radio_colors"),document.querySelector("#radio_2colors"),document.querySelector("#image_list"),document.querySelector("#sam_loyd"))
 z.hl()
 return z}}},
 jr:{
@@ -5592,6 +5599,19 @@ jr3:{
 "^":"Tp:15;",
 $1:function(a){return G.mS()}},
 MUq:{
+"^":"Tp:15;",
+$1:function(a){var z
+if(J.S6($.Eu.dJ.Ti)===!0){z=$.Eu
+z.CC=!0
+z.MB=C.mw
+z.Si=4
+z.WT=4
+z.Ic=C.qc
+z.Ti=!0
+G.lM()
+G.mS()
+$.Eu.CC=!1}return}},
+Jgu:{
 "^":"Tp:15;",
 $1:function(a){return G.mS()}}}],["","",,A,{
 "^":"",
