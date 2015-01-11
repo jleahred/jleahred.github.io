@@ -12,7 +12,7 @@ I've been working in algorithms and backend software with several technologies.
 
 You can see more details in my C.V. bellow
 
-I love learning and technologies. You can see it in my blog (also bellow)
+I love learning and technologies. Check my blog, link in next section (spanish)
 
 Let me show you some links related with me (blog, cv, programs...)
 
@@ -26,11 +26,12 @@ Let me show you some links related with me (blog, cv, programs...)
 * Thoughts about techs, organization, planification, teams, developments (spanish) [(link)](http://departamentodesarrollo.blogspot.com.es/)
 * My old blog with several kind of ideas (spanish) [(link)](http://joseluisestebanaparicio.blogspot.com/)
 
+[Some source articles on github](https://github.com/jleahred/blogs)
     
     
 ### web apps
 
-* A slidding puzzle with tree diferente topologies  [(link)](apps/puzzle3t/index.html) [(src)](https://github.com/jleahred/puzzle3t)
+* A slidding puzzle with tree diferent topologies  [(link)](apps/puzzle3t/index.html) [(src)](https://github.com/jleahred/puzzle3t)
 * My first **Dart** application [(link)](apps/hello_world/index.html) [(src)](https://github.com/jleahred/dart_hello_world)
 
 
