@@ -34,6 +34,10 @@ Let me show you some links related with me (blog, cv, programs...)
 * A slidding puzzle with tree diferent topologies  [(link)](apps/puzzle3t/index.html) [(src)](https://github.com/jleahred/puzzle3t)
 * My first **Dart** application [(link)](apps/hello_world/index.html) [(src)](https://github.com/jleahred/dart_hello_world)
 
+### talks
+
+* Erlounge Madrid 2014-10... Elixir [(link)](talks/elixir-2014-10.html) [(src)](https://github.com/jleahred/talks/tree/master/elixir_2014-10)
+
 
 ### C.V. (not updated):
 
