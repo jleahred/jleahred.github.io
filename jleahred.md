@@ -64,7 +64,7 @@ _If you require an updated version, please contact me by email_
  
 
  
-## How this page was done...
+## How this page was made...
 
 Previosly, I had a _google site_ [(link)](https://sites.google.com/site/joseluisestebanaparicio/home). It was a kind 
 of _wyiswyg_ editor to prepare a **html**. Well, this is not very funny.
