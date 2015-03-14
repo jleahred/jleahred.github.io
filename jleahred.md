@@ -31,6 +31,7 @@ Let me show you some links related with me (blog, cv, programs...)
     
 ### web apps
 
+* A timeline html polymer component developed with dart (link pending) [(src)](https://github.com/jleahred/timeline)
 * A slidding puzzle with tree diferent topologies  [(link)](apps/puzzle3t/index.html) [(src)](https://github.com/jleahred/puzzle3t)
 * My first **Dart** application [(link)](apps/hello_world/index.html) [(src)](https://github.com/jleahred/dart_hello_world)
 
