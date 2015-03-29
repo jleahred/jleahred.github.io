@@ -1,0 +1,262 @@
+- ### {{now}}
+- ### ![](images/ic_wb_sunny_24px.svg) Here
+- You are looking my timeline, thanks for your interest
+
+- ### now
+2011
+- ### ![](images/ic_account_balance_24px.svg) Grupo CIMD
+- I started with:
+
+Financial markets and FIX connections real-time and distributed platform designer
+(back and front), developer and responsible.
+
+Developer and maintaner of safe, real-time, multiplatform C++ library used in
+backend and frontend applications
+
+Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki
+
+And... *continues*
+
+
+
+- ### 2015
+- ### ![](images/book-stack-32.png) Dart, Polymer and Web SPA development
+- I investigated Dart and Single Page Application development
+and creating Polymer components
+
+This page is my first Polymer component [src](https://github.com/jleahred/timeline)
+
+
+- ### 2014-10
+- ### ![](images/talk-32.png) Elixir talk
+- I spoke about Elixir programming language in Madrid Erlunge to some Erlang enthusiast.
+
+It was a great experience. [link](http://jleahred.github.io/talks/elixir-2014-10.html)
+
+- ### 2014
+2010
+- ### ![](images/book-stack-32.png) Elixir, Rust, Go, Nimrod, CouchDB, Redis, Riak
+- Elixir got my heart with his methaprogramming features combined with Erlang concurrency,
+fault tolerance and concepts
+
+For a C++ programmer is mandatory to know Rust and Go (even D, Nimrod and Vala).
+They are new programming languages trying to add value to our veteran C++.
+In fact, they are very interesting languages and options (concurrency with message
+passing is not a fashion is the right way)
+
+NoSQL databases, with auto-sharding, non ACID, performance...
+
+
+
+- ### 2011
+- ### ![learning](images/book-stack-32.png) safe C++ portable and soft real time library
+- A C++ library, portable (win linux), soft real-time, low dependencies, safe oriented with...
+
+Support: static signal slot, safe smart pointers, config files (ini and nested cfgs), tuples,
+date time monotonic with microadjustemnts, LL(n) parser, external DSL for finite state machines,
+stl wrapper to avoid crashes with invalid iterators, factory repositories templates, double safe
+comparison, real time control and monitoring...
+
+Communication: Qpid wrapper, external DSL for qpid types message parsing (recursive auto descriptive)
+and YAML persistence
+
+Monitoring: real time monitoring, qt client monitor
+
+It was used and I continue the development working in Grupo CIMD
+
+> _Is it possible to live without a toolbox like this??_
+
+
+- ### 2011
+2002
+
+- ### ![job](images/ic_account_balance_24px.svg) Ahorro Corporación, Team leader
+- Team leader and project Manager
+
+Developed soft real-time system connected to financial electronic markets
+
+Analyst, architect, designer and tech guru
+
+System connected to Eurex, LIFFE, MEFF, SENAF, MTS, SIBE, CME, FIX protocol as acceptor and receptor
+
+OMS and automatic orders development
+
+Distribuited scalable, highly paralel system. Working on a message middleware (tibco/rv)
+
+IT and bussiness coordinator
+
+Techs: Borland Builder C++, Visual C++, Interbase, Firebird, Sybase, Boo, .net, git (previously svn but I'm trying to forget it),
+Tibco/Rendezvous (not cheap)
+
+
+- ### 2005
+2002
+
+- ### ![job](images/book-stack-32.png) Scala, Nemerle, Boo, Python...
+- I started following Scala before version 1.0. Fantastic language
+
+I also loved Nermerle. Impressive metaprogramming features.
+
+I did some report tools with Boo on .net. Very interesting.
+
+I started to do small things with Python
+
+
+
+- ### 2002
+2001
+
+- ### ![job](images/ic_account_balance_24px.svg) Ahorro Corporación, Analyst and programmer
+- Creation of a terminal and engines for automatic orders connected to some electronic markets
+
+
+- ### 2002
+2000
+- ### ![learning](images/book-stack-32.png) Haskell, Erlang, LISP and declarative programming
+- I studied Haskell. It was amazing.
+The feeling was similar to first time I learned programming
+
+Erlang was a fantastic discovery. Again a different way to think. **The world is concurrent** and less
+OOP with inheritance. Fault tolerant systems with **let it crash**
+
+
+- ### 2001
+1995
+- ### ![learning](images/book-stack-32.png) System computers science UNED
+- Studing at (non presencial) university while working at Gesmosa-GBI
+
+I got the highest mark with honors in "develop, administration and configuration of computer systems". It was about
+software development methodologies and metrics. No word at this time about *agile*. When I have to apply all this staff (been team
+leader and product manager), I was thinking about all these lectures... and I decided to do something different (with
+a great result). Some years later, I discover it was *agile philosophy*
+
+I was cheated about concurrency. Some time later I learned that semaphores, critical sections and similar
+with shared memory was not a good solution. The good solution is share nothing and pass messages (like erlang, a
+actors, CSP...)
+
+On databases was no so bad. The book said... we can normalize to 5th normal form, but it was not practical to go
+beyond 3NF or the special case BCNF (Boyce Codd)
+
+But now, I also appreciate the non relational databases (specially document and key-value ones) for some kind of
+models or even to deal with CAP theorem
+
+ADA and it rendezvous was an amazing discovery. I liked it quite more than Java.
+
+
+- ### ­2001
+2000
+- ### ![learning](images/book-stack-32.png) Databases servers
+- I studied Interbase, later firebird, MySql, postgresql, sybase and ms-sqlserver. I also tried with Oracle but it was not an option.
+
+I read features, and comparison with all databases. I loved MVCC in wich Firebird grand father (Groton database) was pioneer.
+
+Firebird was very simple to install in Linux and windows, it could work as server or embedded, very powerful, great concurrency control...
+
+
+
+- ### ­2001
+1994
+
+- ### ![job](images/ic_account_balance_24px.svg) Programmer and IT assistant at Gesmosa­GBI
+- Developing some financial calculations libraries and applications
+
+Database applications, general IT support in Gesmosa and link between business and IT
+
+I did my first and last visual basic program.
+
+I also programmed financial calculations in Delphi to be used from Excel.
+
+And I continued with Borland Builder C++ doing realtime calculations, support applications, financial libraries...
+
+
+
+- ### 1994
+1992
+- ### ![learning](images/book-stack-32.png) Initiated physics
+- I met Richard Feynman, and I loved his lectures (amazing)
+
+- ### 1993
+1988
+- ### ![learning](images/book-stack-32.png) I bought my first computer
+- It was a second hand 286 computer
+
+With it I calculated 2^44497-1, it was the biggest prime number at that time (13.395 digits)
+
+I also learned DOS, DbaseIII+, Clipper summer 87, Turbo basic and... C, even a bit of C++
+
+An extremely amazing moment was programing in C my own rational numbers library. I discovered my self an extremely efficient
+way to calculate greatest common divisor. I suspected that someone did it before, I estimated it woud be arround 2000 years ago.
+I was absolutely right
+
+
+- ### ­1992
+- ![](images/cannon-24.png) Militar service
+- Mandatory and far, far away from home
+
+I played a couple of chess matches winning both
+
+
+- ### ­1992
+1988
+
+- ![job](images/ic_account_balance_24px.svg) Canary island's bank
+- Working in administrative tasks
+
+
+- ### ­1982
+1985
+- ![job](images/book-stack-32.png) Started programming
+- First my Uncle and his computer.
+He showed me the first program. It was basic and it calculated multiplication table.
+To me was complex to understand the destructive assignment.
+
+Some days, some weeks on summer, I used his computer (Commodore 64) and I started to program.
+First basic, later 6502/6510 assembler
+
+I had a friend with a spectrum and I used to go to his house to do *Extreme programming* ;-P with he
+
+
+
+- ### ­1971
+- ![job](images/ic_wb_sunny_24px.svg) Great year
+- A Clockwork Orange on cinemas
+
+Intel introduces the microprocessor
+
+Cho Hao Li synthesizes the growth hormone
+
+Mariner IX, orbiting Mars
+
+Nixon ends the US trade embargo against China.
+
+**I was born**
+
+
+- -4mill
+- Humans started to move
+- We have been in this planet for less than 6 million of years. Dinosaurs were on earth for more than 200 million years, and life just for
+thousands of years. Is it **our** planet?
+
+
+- -65mill
+- Dinosaurs extinction
+- After 200 millions of years, they disappear from earth probably due to a combination of factors (meteor and volcanic eruptions)
+
+
+- -3.900mill
+- Life starts on earth
+- _
+
+
+- -4.500mill
+- Earth was born
+- _
+
+
+- -4.600mill
+- Sun was born
+- _
+
+- -13.800mill
+- Big bang, universe was born
+- _
