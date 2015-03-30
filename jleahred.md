@@ -10,13 +10,13 @@ I've been working on software development for several years.
 
 As you can see, I'm not a web designer, in fact, I'm not a graphical designer of any kind.
 
-I've been working in algorithms and backend software with several technologies.
+I've been working in algorithms and backend software with many technologies.
 
-You can see more details in my C.V. bellow
+You can see more details in my C.V. below
 
 I love learning and technologies. Check my blog, link in next section (spanish)
 
-Let me show you some links related with me (blog, cv, programs...)
+Let me show you some links related to me (blog, cv, programs...)
 
 
 
@@ -53,10 +53,10 @@ _If you require an updated version, please contact me by email_
 ## Some of my programs (open source):
 
 * Practical editor for **asciidoc** **Qt/C++** [(src)](http://code.google.com/p/qadoc/)
-* General editor componet **Qt/C++** [(src)](http://code.google.com/p/mqeditor/)
+* General editor component **Qt/C++** [(src)](http://code.google.com/p/mqeditor/)
 * To practice elemental maths routines **Qt/C++** (for kids) [(src)](http://code.google.com/p/kids-math-practice/)
 * To prepare auto test **Qt/C++** (questions answers) [(src)](http://code.google.com/p/mq-auto-test/)
-* To test spanish ortograph **Qt/C++** [(src)](http://code.google.com/p/ortograph/)
+* To test spanish orthograph **Qt/C++** [(src)](http://code.google.com/p/ortograph/)
 * Practicing a bit with **Qt/QML** tech [(src)](http://code.google.com/p/qml-learning/)
 
 
@@ -69,12 +69,12 @@ _If you require an updated version, please contact me by email_
  
 ## How this page was made...
 
-Previosly, I had a _google site_ [(link)](https://sites.google.com/site/joseluisestebanaparicio/home). It was a kind 
+Previously, I had a _google site_ [(link)](https://sites.google.com/site/joseluisestebanaparicio/home). It was a kind 
 of _wyiswyg_ editor to prepare a **html**. Well, this is not very funny.
-Even more important, it's not flexible neither practical (specially for someone with programming knolegment). Behind _wyiswyg_
+Even more important, it's not flexible neither practical (specially for someone with programming knowledgment). Behind _wyiswyg_
 there are a lot of pain and problems (even for not programming guys).
 
-Therefore, I prepared this little page to replace the boring one (obiosly, 100% free of _wysiwyg_).
+Therefore, I prepared this little page to replace the boring one (obviously, 100% free of _wysiwyg_).
 
 When you load this page in your browser, a minimum **html** file is rendered. It calls a **Dart** program compiled 
 in **javascript**. 

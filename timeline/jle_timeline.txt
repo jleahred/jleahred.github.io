@@ -158,7 +158,7 @@ Firebird was very simple to install in Linux and windows, it could work as serve
 1994
 
 - ### ![job](images/ic_account_balance_24px.svg) Programmer and IT assistant at Gesmosa­GBI
-- Developing some financial calculations libraries and applications
+- Developing some financial calculation libraries and applications
 
 Database applications, general IT support in Gesmosa and link between business and IT
 
@@ -190,7 +190,7 @@ I was absolutely right
 
 
 - ### ­1992
-- ![](images/cannon-24.png) Militar service
+- ![](images/cannon-24.png) Military service
 - Mandatory and far, far away from home
 
 I played a couple of chess matches winning both
@@ -213,7 +213,7 @@ To me was complex to understand the destructive assignment.
 Some days, some weeks on summer, I used his computer (Commodore 64) and I started to program.
 First basic, later 6502/6510 assembler
 
-I had a friend with a spectrum and I used to go to his house to do *Extreme programming* ;-P with he
+I had a friend with a spectrum and I used to go to his house to do *Extreme programming* ;-P with him
 
 
 
