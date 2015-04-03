@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>jle_cpp_tk: /support/weak_ptr.cpp</title>
+<title>jle_cpp_tk: src/support/string.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -69,6 +69,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+    </ul>
+  </div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -81,7 +86,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('_2support_2weak_ptr_8cpp-example.html','');});
+$(document).ready(function(){initNavTree('string_8h_source.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -100,40 +105,36 @@ $(document).ready(function(){initNavTree('_2support_2weak_ptr_8cpp-example.html'
 
 <div class="header">
   <div class="headertitle">
-<div class="title">/support/weak_ptr.cpp</div>  </div>
+<div class="title">string.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &quot;support/shared_ptr.hpp&quot;</span></div>
-<div class="line"> </div>
-<div class="line"><a name="_a0"></a><a class="code" href="singletonjle_1_1weak__ptr.html">jle::weak_ptr&lt;int&gt;</a> gw;</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> f()</div>
-<div class="line">{</div>
-<div class="line">    <a name="_a1"></a><a class="code" href="classjle_1_1shared__ptr.html">jle::shared_ptr&lt;int&gt;</a> spt = gw.<a name="a2"></a>lock();  <span class="comment">// Has to be copied into a shared_ptr before usage</span></div>
-<div class="line">    <span class="keywordflow">if</span> (spt.<a name="a3"></a>expired()==<span class="keyword">false</span>) { </div>
-<div class="line">        std::cout &lt;&lt; *spt &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line">    }</div>
-<div class="line">    <span class="keywordflow">else</span> {</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;gw is expired\n&quot;</span>;</div>
-<div class="line">    }</div>
-<div class="line">}</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main()</div>
-<div class="line">{</div>
-<div class="line">    {</div>
-<div class="line">        <span class="keyword">auto</span> sp = jle::make_shared&lt;int&gt;(42);</div>
-<div class="line">        gw = sp;</div>
-<div class="line">        f();</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    f();</div>
-<div class="line">} </div>
-</div><!-- fragment --> </div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef JLE_STRING_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define JLE_STRING_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define JLE_SS(__EXPR__) (static_cast&lt;std::ostringstream*&gt;(&amp;(std::ostringstream().flush() &lt;&lt; __EXPR__))-&gt;str())</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacejle.html">jle</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif // JLE_STRING_H</span></div>
+<div class="ttc" id="namespacejle_html"><div class="ttname"><a href="namespacejle.html">jle</a></div><div class="ttdef"><b>Definition:</b> misc.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_021c64f412f6b3b6708367bb6d6ca209.html">support</a></li><li class="navelem"><b>string.h</b></li>
     <li class="footer">Generated on Sat Apr 4 2015 00:46:25 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>

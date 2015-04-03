@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>jle_toolkit_c++: jle::shared_ptr&lt; _Tp, _Lp &gt; Class Template Reference</title>
+<title>jle_cpp_tk: jle::shared_ptr&lt; _Tp, _Lp &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,8 +30,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
-   <div id="projectname">jle_toolkit_c++
-   &#160;<span id="projectnumber">0.0</span>
+   <div id="projectname">jle_cpp_tk
+   &#160;<span id="projectnumber">0.0  2015-04-03</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -123,12 +123,12 @@ $(document).ready(function(){initNavTree('classjle_1_1shared__ptr.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a21cb13127329d75621924913816e8507"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjle_1_1shared__ptr.html#a21cb13127329d75621924913816e8507">shared_ptr</a> () noexcept</td></tr>
-<tr class="memdesc:a21cb13127329d75621924913816e8507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty shared_ptr.  <a href="#a21cb13127329d75621924913816e8507">More...</a><br /></td></tr>
-<tr class="separator:a21cb13127329d75621924913816e8507"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa1d75b27d0045a539d7de8bc40e161b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa1d75b27d0045a539d7de8bc40e161b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>shared_ptr</b> (const <a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a> &amp;) noexcept=default</td></tr>
-<tr class="separator:aaa1d75b27d0045a539d7de8bc40e161b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7fe3f2991467c06104334a409598c90"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjle_1_1shared__ptr.html#aa7fe3f2991467c06104334a409598c90">shared_ptr</a> ()</td></tr>
+<tr class="memdesc:aa7fe3f2991467c06104334a409598c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty shared_ptr.  <a href="#aa7fe3f2991467c06104334a409598c90">More...</a><br /></td></tr>
+<tr class="separator:aa7fe3f2991467c06104334a409598c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18b41cd1704bab6258593b2c5af8ba4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18b41cd1704bab6258593b2c5af8ba4b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>shared_ptr</b> (const <a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a> &amp;)=default</td></tr>
+<tr class="separator:a18b41cd1704bab6258593b2c5af8ba4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a605310c21815731a1b8388bf6fad761a"><td class="memTemplParams" colspan="2">template&lt;typename _Tp1 &gt; </td></tr>
 <tr class="memitem:a605310c21815731a1b8388bf6fad761a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classjle_1_1shared__ptr.html#a605310c21815731a1b8388bf6fad761a">shared_ptr</a> (_Tp1 *__p)</td></tr>
 <tr class="memdesc:a605310c21815731a1b8388bf6fad761a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a shared_ptr that owns the pointer <em>__p</em>.  <a href="#a605310c21815731a1b8388bf6fad761a">More...</a><br /></td></tr>
@@ -149,20 +149,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a084bd10df36c1a3a9a81b8041aa8cc23"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classjle_1_1shared__ptr.html#a084bd10df36c1a3a9a81b8041aa8cc23">shared_ptr</a> (nullptr_t __p, _Deleter __d, _Alloc __a)</td></tr>
 <tr class="memdesc:a084bd10df36c1a3a9a81b8041aa8cc23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a shared_ptr that owns a null pointer and the deleter <em>__d</em>.  <a href="#a084bd10df36c1a3a9a81b8041aa8cc23">More...</a><br /></td></tr>
 <tr class="separator:a084bd10df36c1a3a9a81b8041aa8cc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac478eea2d855bd80b43357db4adb2ee7"><td class="memTemplParams" colspan="2">template&lt;typename _Tp1 , typename  = typename std::enable_if&lt;std::is_convertible&lt;_Tp1*, _Tp*&gt;::value&gt;::type&gt; </td></tr>
-<tr class="memitem:ac478eea2d855bd80b43357db4adb2ee7"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classjle_1_1shared__ptr.html#ac478eea2d855bd80b43357db4adb2ee7">shared_ptr</a> (const <a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a>&lt; _Tp1 &gt; &amp;__r) noexcept</td></tr>
-<tr class="memdesc:ac478eea2d855bd80b43357db4adb2ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a shared_ptr instance that stores <em>__p</em> and shares ownership with <em>__r</em>.  <a href="#ac478eea2d855bd80b43357db4adb2ee7">More...</a><br /></td></tr>
-<tr class="separator:ac478eea2d855bd80b43357db4adb2ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b56996d9e2b69afb07b3a9ac2a51808"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjle_1_1shared__ptr.html#a2b56996d9e2b69afb07b3a9ac2a51808">shared_ptr</a> (<a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a> &amp;&amp;__r) noexcept</td></tr>
-<tr class="memdesc:a2b56996d9e2b69afb07b3a9ac2a51808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-constructs a shared_ptr instance from <em>__r</em>.  <a href="#a2b56996d9e2b69afb07b3a9ac2a51808">More...</a><br /></td></tr>
-<tr class="separator:a2b56996d9e2b69afb07b3a9ac2a51808"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa57bc8e3d28a8285862feb2d6590cd64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjle_1_1shared__ptr.html#aa57bc8e3d28a8285862feb2d6590cd64">shared_ptr</a> (std::shared_ptr&lt; _Tp &gt; &amp;&amp;__ptr) noexcept</td></tr>
-<tr class="memdesc:aa57bc8e3d28a8285862feb2d6590cd64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-constructs a shared_ptr instance from <em>__r</em>.  <a href="#aa57bc8e3d28a8285862feb2d6590cd64">More...</a><br /></td></tr>
-<tr class="separator:aa57bc8e3d28a8285862feb2d6590cd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbfb26ad93cb57c4a16f61e934747355"><td class="memTemplParams" colspan="2">template&lt;typename _Tp1 , typename  = typename std::enable_if&lt;std::is_convertible&lt;_Tp1*, _Tp*&gt;::value&gt;::type&gt; </td></tr>
-<tr class="memitem:afbfb26ad93cb57c4a16f61e934747355"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classjle_1_1shared__ptr.html#afbfb26ad93cb57c4a16f61e934747355">shared_ptr</a> (<a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a>&lt; _Tp1 &gt; &amp;&amp;__r) noexcept</td></tr>
-<tr class="memdesc:afbfb26ad93cb57c4a16f61e934747355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-constructs a shared_ptr instance from <em>__r</em>.  <a href="#afbfb26ad93cb57c4a16f61e934747355">More...</a><br /></td></tr>
-<tr class="separator:afbfb26ad93cb57c4a16f61e934747355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87930864f63f09773c79dc5a3999b0d8"><td class="memTemplParams" colspan="2">template&lt;typename _Tp1 , typename  = typename std::enable_if&lt;std::is_convertible&lt;_Tp1*, _Tp*&gt;::value&gt;::type&gt; </td></tr>
+<tr class="memitem:a87930864f63f09773c79dc5a3999b0d8"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classjle_1_1shared__ptr.html#a87930864f63f09773c79dc5a3999b0d8">shared_ptr</a> (const <a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a>&lt; _Tp1 &gt; &amp;__r)</td></tr>
+<tr class="memdesc:a87930864f63f09773c79dc5a3999b0d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a shared_ptr instance that stores <em>__p</em> and shares ownership with <em>__r</em>.  <a href="#a87930864f63f09773c79dc5a3999b0d8">More...</a><br /></td></tr>
+<tr class="separator:a87930864f63f09773c79dc5a3999b0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48e7727ea5e4ee21c8efb75ab231f2df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjle_1_1shared__ptr.html#a48e7727ea5e4ee21c8efb75ab231f2df">shared_ptr</a> (<a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a> &amp;&amp;__r)</td></tr>
+<tr class="memdesc:a48e7727ea5e4ee21c8efb75ab231f2df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-constructs a shared_ptr instance from <em>__r</em>.  <a href="#a48e7727ea5e4ee21c8efb75ab231f2df">More...</a><br /></td></tr>
+<tr class="separator:a48e7727ea5e4ee21c8efb75ab231f2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa78af16599d92de1e744c63beb00c0e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjle_1_1shared__ptr.html#aa78af16599d92de1e744c63beb00c0e2">shared_ptr</a> (std::shared_ptr&lt; _Tp &gt; &amp;&amp;__ptr)</td></tr>
+<tr class="memdesc:aa78af16599d92de1e744c63beb00c0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-constructs a shared_ptr instance from <em>__r</em>.  <a href="#aa78af16599d92de1e744c63beb00c0e2">More...</a><br /></td></tr>
+<tr class="separator:aa78af16599d92de1e744c63beb00c0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9a14db712a2112b033210f947759b47"><td class="memTemplParams" colspan="2">template&lt;typename _Tp1 , typename  = typename std::enable_if&lt;std::is_convertible&lt;_Tp1*, _Tp*&gt;::value&gt;::type&gt; </td></tr>
+<tr class="memitem:ae9a14db712a2112b033210f947759b47"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classjle_1_1shared__ptr.html#ae9a14db712a2112b033210f947759b47">shared_ptr</a> (<a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a>&lt; _Tp1 &gt; &amp;&amp;__r)</td></tr>
+<tr class="memdesc:ae9a14db712a2112b033210f947759b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-constructs a shared_ptr instance from <em>__r</em>.  <a href="#ae9a14db712a2112b033210f947759b47">More...</a><br /></td></tr>
+<tr class="separator:ae9a14db712a2112b033210f947759b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7850435a4a7dd8131fccc2a87637047c"><td class="memTemplParams" colspan="2">template&lt;typename _Tp1 &gt; </td></tr>
 <tr class="memitem:a7850435a4a7dd8131fccc2a87637047c"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classjle_1_1shared__ptr.html#a7850435a4a7dd8131fccc2a87637047c">shared_ptr</a> (const <a class="el" href="singletonjle_1_1weak__ptr.html">weak_ptr</a>&lt; _Tp1 &gt; &amp;__r)</td></tr>
 <tr class="memdesc:a7850435a4a7dd8131fccc2a87637047c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a shared_ptr that shares ownership with <em>__r</em> and stores a copy of the pointer stored in <em>__r</em>.  <a href="#a7850435a4a7dd8131fccc2a87637047c">More...</a><br /></td></tr>
@@ -171,33 +171,33 @@ Public Member Functions</h2></td></tr>
 template&lt;typename _Tp1 , typename _Del &gt; </td></tr>
 <tr class="memitem:a237eca3db91a0a480a43159abe9b993e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>shared_ptr</b> (std::unique_ptr&lt; _Tp1, _Del &gt; &amp;&amp;__r)</td></tr>
 <tr class="separator:a237eca3db91a0a480a43159abe9b993e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a677fe5872d9647b942b2e1ef60773624"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjle_1_1shared__ptr.html#a677fe5872d9647b942b2e1ef60773624">shared_ptr</a> (nullptr_t __p) noexcept</td></tr>
-<tr class="memdesc:a677fe5872d9647b942b2e1ef60773624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty shared_ptr.  <a href="#a677fe5872d9647b942b2e1ef60773624">More...</a><br /></td></tr>
-<tr class="separator:a677fe5872d9647b942b2e1ef60773624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc86c019bd3292351302ddd6e3b6e16e"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjle_1_1shared__ptr.html#abc86c019bd3292351302ddd6e3b6e16e">shared_ptr</a> (nullptr_t __p)</td></tr>
+<tr class="memdesc:abc86c019bd3292351302ddd6e3b6e16e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty shared_ptr.  <a href="#abc86c019bd3292351302ddd6e3b6e16e">More...</a><br /></td></tr>
+<tr class="separator:abc86c019bd3292351302ddd6e3b6e16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a840ba2d87c8c6bb03e952c369d6092b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a840ba2d87c8c6bb03e952c369d6092b0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>shared_ptr</b> (const std::shared_ptr&lt; _Tp &gt; &amp;_ptr)</td></tr>
 <tr class="separator:a840ba2d87c8c6bb03e952c369d6092b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7578d39dad4864c56e11661ac137fc69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7578d39dad4864c56e11661ac137fc69"></a>
-<a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a> &amp;) noexcept=default</td></tr>
-<tr class="separator:a7578d39dad4864c56e11661ac137fc69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c001986c684f6afebf00e826c85fd50"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0c001986c684f6afebf00e826c85fd50"></a>
+<tr class="memitem:a8dfcc427e86b3513939f186591083e3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8dfcc427e86b3513939f186591083e3c"></a>
+<a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a> &amp;)=default</td></tr>
+<tr class="separator:a8dfcc427e86b3513939f186591083e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f7f10615308130748d5ca7fdc47e13b"><td class="memTemplParams" colspan="2"><a class="anchor" id="a8f7f10615308130748d5ca7fdc47e13b"></a>
 template&lt;typename _Tp1 &gt; </td></tr>
-<tr class="memitem:a0c001986c684f6afebf00e826c85fd50"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a>&lt; _Tp1 &gt; &amp;__r) noexcept</td></tr>
-<tr class="separator:a0c001986c684f6afebf00e826c85fd50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0aacc2d2a1fc30902b8118a7892575b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0aacc2d2a1fc30902b8118a7892575b0"></a>
-<a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a> &amp;&amp;__r) noexcept</td></tr>
-<tr class="separator:a0aacc2d2a1fc30902b8118a7892575b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f03ae31be80cf44542cb390aa9207cd"><td class="memTemplParams" colspan="2"><a class="anchor" id="a2f03ae31be80cf44542cb390aa9207cd"></a>
+<tr class="memitem:a8f7f10615308130748d5ca7fdc47e13b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a>&lt; _Tp1 &gt; &amp;__r)</td></tr>
+<tr class="separator:a8f7f10615308130748d5ca7fdc47e13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d38dd0155659852200f57cfab0d286"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4d38dd0155659852200f57cfab0d286"></a>
+<a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a> &amp;&amp;__r)</td></tr>
+<tr class="separator:ac4d38dd0155659852200f57cfab0d286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755bc00ad4879b8f3d620e921ffe874e"><td class="memTemplParams" colspan="2"><a class="anchor" id="a755bc00ad4879b8f3d620e921ffe874e"></a>
 template&lt;class _Tp1 &gt; </td></tr>
-<tr class="memitem:a2f03ae31be80cf44542cb390aa9207cd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a>&lt; _Tp1 &gt; &amp;&amp;__r) noexcept</td></tr>
-<tr class="separator:a2f03ae31be80cf44542cb390aa9207cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755bc00ad4879b8f3d620e921ffe874e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a>&lt; _Tp1 &gt; &amp;&amp;__r)</td></tr>
+<tr class="separator:a755bc00ad4879b8f3d620e921ffe874e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad44710e429ef1fdfd4eeaa187481a0f6"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad44710e429ef1fdfd4eeaa187481a0f6"></a>
 template&lt;typename _Tp1 , typename _Del &gt; </td></tr>
 <tr class="memitem:ad44710e429ef1fdfd4eeaa187481a0f6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (std::unique_ptr&lt; _Tp1, _Del &gt; &amp;&amp;__r)</td></tr>
 <tr class="separator:ad44710e429ef1fdfd4eeaa187481a0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90d2d66f3dc2b361ed37181aceea9b3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90d2d66f3dc2b361ed37181aceea9b3c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> () noexcept</td></tr>
-<tr class="separator:a90d2d66f3dc2b361ed37181aceea9b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a005cdf65620aebadaa87a666d9d6b766"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a005cdf65620aebadaa87a666d9d6b766"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr>
+<tr class="separator:a005cdf65620aebadaa87a666d9d6b766"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae412d411795f561b9e390b2ce76d84eb"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae412d411795f561b9e390b2ce76d84eb"></a>
 template&lt;typename _Tp1 &gt; </td></tr>
 <tr class="memitem:ae412d411795f561b9e390b2ce76d84eb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>reset</b> (_Tp1 *__p)</td></tr>
@@ -210,28 +210,28 @@ template&lt;typename _Tp1 , typename _Deleter &gt; </td></tr>
 template&lt;typename _Tp1 , typename _Deleter , typename _Alloc &gt; </td></tr>
 <tr class="memitem:ac60e786499e3500ac0e979f47ea0d238"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>reset</b> (_Tp1 *__p, _Deleter __d, _Alloc __a)</td></tr>
 <tr class="separator:ac60e786499e3500ac0e979f47ea0d238"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b56e904a761668476763fdc17c050b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b56e904a761668476763fdc17c050b0"></a>
+<tr class="memitem:ad6c34bb4b3db125dcbfa5e8ce48ab8be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6c34bb4b3db125dcbfa5e8ce48ab8be"></a>
 std::add_lvalue_reference&lt; _Tp &gt;<br class="typebreak" />
-::type&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> () const noexcept</td></tr>
-<tr class="separator:a0b56e904a761668476763fdc17c050b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a503dae89decde95c27a4ce2aeaf7846b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a503dae89decde95c27a4ce2aeaf7846b"></a>
-_Tp *&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> () const noexcept</td></tr>
-<tr class="separator:a503dae89decde95c27a4ce2aeaf7846b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+::type&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> () const </td></tr>
+<tr class="separator:ad6c34bb4b3db125dcbfa5e8ce48ab8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad772f54205dfbffdac5dd96fbd5c2b38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad772f54205dfbffdac5dd96fbd5c2b38"></a>
+_Tp *&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> () const </td></tr>
+<tr class="separator:ad772f54205dfbffdac5dd96fbd5c2b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50a3fb12acd1fb2838657d91559feab1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50a3fb12acd1fb2838657d91559feab1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>expired</b> (void) const </td></tr>
 <tr class="separator:a50a3fb12acd1fb2838657d91559feab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd7c0522d89fb55487ab9191ed74a39e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd7c0522d89fb55487ab9191ed74a39e"></a>
-_Tp *&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> () const noexcept</td></tr>
-<tr class="separator:acd7c0522d89fb55487ab9191ed74a39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a215e6969acb05100fc5ba732520e4846"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a215e6969acb05100fc5ba732520e4846"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>unique</b> () const noexcept</td></tr>
-<tr class="separator:a215e6969acb05100fc5ba732520e4846"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1555f47135df4e2b99dd512f867a2143"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1555f47135df4e2b99dd512f867a2143"></a>
-long&#160;</td><td class="memItemRight" valign="bottom"><b>use_count</b> () const noexcept</td></tr>
-<tr class="separator:a1555f47135df4e2b99dd512f867a2143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a284e765c8edcadcfe0ffd8a673270da8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a284e765c8edcadcfe0ffd8a673270da8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (std::__shared_ptr&lt; _Tp, _Lp &gt; &amp;__other) noexcept</td></tr>
-<tr class="separator:a284e765c8edcadcfe0ffd8a673270da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a420e163ee563bb2462253a70772cd4f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a420e163ee563bb2462253a70772cd4f3"></a>
+_Tp *&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> () const </td></tr>
+<tr class="separator:a420e163ee563bb2462253a70772cd4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3544c2338e344852f1c3a71a2b88d939"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3544c2338e344852f1c3a71a2b88d939"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>unique</b> () const </td></tr>
+<tr class="separator:a3544c2338e344852f1c3a71a2b88d939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac682a96221e4295adc138a210a02385a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac682a96221e4295adc138a210a02385a"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><b>use_count</b> () const </td></tr>
+<tr class="separator:ac682a96221e4295adc138a210a02385a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68576c926c71e534515a87de30be9f12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68576c926c71e534515a87de30be9f12"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (std::__shared_ptr&lt; _Tp, _Lp &gt; &amp;__other)</td></tr>
+<tr class="separator:a68576c926c71e534515a87de30be9f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a624ba7237025b006f8e4d21dda2998ab"><td class="memTemplParams" colspan="2"><a class="anchor" id="a624ba7237025b006f8e4d21dda2998ab"></a>
 template&lt;typename _Tp1 &gt; </td></tr>
 <tr class="memitem:a624ba7237025b006f8e4d21dda2998ab"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>owner_before</b> (std::__shared_ptr&lt; _Tp1, _Lp &gt; const &amp;__rhs) const </td></tr>
@@ -331,7 +331,7 @@ class jle::shared_ptr&lt; _Tp, _Lp &gt;</h3>
 <div class="line">}</div>
 </div><!-- fragment --> <dl><dt><b>Examples: </b></dt><dd><a class="el" href="_2support_2shared_ptr_8cpp-example.html#_a0">/support/shared_ptr.cpp</a>, and <a class="el" href="_2support_2weak_ptr_8cpp-example.html#_a1">/support/weak_ptr.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a21cb13127329d75621924913816e8507"></a>
+<a class="anchor" id="aa7fe3f2991467c06104334a409598c90"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -349,7 +349,7 @@ template&lt;typename _Tp, std::_Lock_policy _Lp = std::__default_lock_policy&gt;
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -640,7 +640,7 @@ template&lt;typename _Deleter , typename _Alloc &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac478eea2d855bd80b43357db4adb2ee7"></a>
+<a class="anchor" id="a87930864f63f09773c79dc5a3999b0d8"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -661,7 +661,7 @@ template&lt;typename _Tp1 , typename  = typename std::enable_if&lt;std::is_conve
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -690,7 +690,7 @@ template&lt;typename _Tp1 , typename  = typename std::enable_if&lt;std::is_conve
 
 </div>
 </div>
-<a class="anchor" id="a2b56996d9e2b69afb07b3a9ac2a51808"></a>
+<a class="anchor" id="a48e7727ea5e4ee21c8efb75ab231f2df"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -709,7 +709,7 @@ template&lt;typename _Tp, std::_Lock_policy _Lp = std::__default_lock_policy&gt;
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -725,7 +725,7 @@ template&lt;typename _Tp, std::_Lock_policy _Lp = std::__default_lock_policy&gt;
 
 </div>
 </div>
-<a class="anchor" id="aa57bc8e3d28a8285862feb2d6590cd64"></a>
+<a class="anchor" id="aa78af16599d92de1e744c63beb00c0e2"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -744,7 +744,7 @@ template&lt;typename _Tp, std::_Lock_policy _Lp = std::__default_lock_policy&gt;
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -760,7 +760,7 @@ template&lt;typename _Tp, std::_Lock_policy _Lp = std::__default_lock_policy&gt;
 
 </div>
 </div>
-<a class="anchor" id="afbfb26ad93cb57c4a16f61e934747355"></a>
+<a class="anchor" id="ae9a14db712a2112b033210f947759b47"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -781,7 +781,7 @@ template&lt;typename _Tp1 , typename  = typename std::enable_if&lt;std::is_conve
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -840,7 +840,7 @@ template&lt;typename _Tp1 &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a677fe5872d9647b942b2e1ef60773624"></a>
+<a class="anchor" id="abc86c019bd3292351302ddd6e3b6e16e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -859,7 +859,7 @@ template&lt;typename _Tp, std::_Lock_policy _Lp = std::__default_lock_policy&gt;
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -940,7 +940,7 @@ template&lt;typename _Tp1 , typename _Alloc , typename... _Args&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>jle</b></li><li class="navelem"><a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a></li>
-    <li class="footer">Generated on Fri Apr 3 2015 18:43:03 for jle_toolkit_c++ by
+    <li class="footer">Generated on Sat Apr 4 2015 00:46:25 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

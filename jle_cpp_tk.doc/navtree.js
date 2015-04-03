@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "jle_toolkit_c++", "index.html", [
+  [ "jle_cpp_tk", "index.html", [
     [ "libs", "md_src_support_support.html", [
       [ "support", "md_src_support_support.html#support", null ]
     ] ],
