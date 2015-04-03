@@ -2,6 +2,16 @@
 - ### ![](images/ic_wb_sunny_24px.svg) Here
 - You are looking my timeline, thanks for your interest
 
+
+- ### now
+2015
+- ### ![](images/book-stack-32.png) Small, safe, self contained, soft realtime C++ toolkit
+- I wrote and collected tools previously, but now, I'm going to rewrite the ideas from scratch
+in order to use C++11 and C++14 (and even C++17) and remove the tools added on these new C++ versions
+[(src)](https://github.com/jleahred/jle_cpp_tk) [(doc)](../jle_cpp_tk.doc/index.html)
+
+
+
 - ### now
 2011
 - ### ![](images/ic_account_balance_24px.svg) Grupo CIMD
@@ -16,7 +26,6 @@ backend and frontend applications
 Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki
 
 And... *continues*
-
 
 
 - ### 2015
