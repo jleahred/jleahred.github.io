@@ -1,8 +1,10 @@
 var NAVTREEINDEX0 =
 {
 ".html":[1,0,0],
-"_2support_2shared_ptr_8cpp-example.html":[3,0],
-"_2support_2weak_ptr_8cpp-example.html":[3,1],
+"_2support_2jle_ss_8cpp-example.html":[3,0],
+"_2support_2shared_ptr_8cpp-example.html":[3,1],
+"_2support_2test_8cpp-example.html":[3,2],
+"_2support_2weak_ptr_8cpp-example.html":[3,3],
 "annotated.html":[1,0],
 "classes.html":[1,1],
 "classjle_1_1enable__shared__from__this.html":[1,0,0,0],
@@ -59,7 +61,10 @@ var NAVTREEINDEX0 =
 "hierarchy.html":[1,2],
 "index.html":[],
 "md_src_support_support.html":[0],
+"md_src_support_support.html#smart_pointers":[0,0,0],
+"md_src_support_support.html#string":[0,0,2],
 "md_src_support_support.html#support":[0,0],
+"md_src_support_support.html#test":[0,0,1],
 "misc_8h_source.html":[2,0,0,0,0],
 "pages.html":[],
 "shared__ptr_8hpp_source.html":[2,0,0,0,1],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">jle_cpp_tk
-   &#160;<span id="projectnumber">0.0  2015-04-03</span>
+   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;a9aa47955b7404b650ed08634e84b7a9945058fe&quot;</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -108,14 +108,15 @@ $(document).ready(function(){initNavTree('index.html','');});
 <p>...soon</p>
 <h2>About</h2>
 <h3>Why</h3>
+<p>C++ is not the safest programing language in the world. In fact, it's easy to produce <em>undefined behaviour</em> working with C++. It would be interesting to work with C++ in a safe way. Not only for me, also for less C++ experience people in a team.</p>
 <p>Some years ago I wrote a C++ toolkit with regular expressions, tuples, class definition IDL, fsm IDL, config files. LL(n) parser, signal-slot, monotonic date time with adjustments...</p>
-<p>These last years, C++ world has moved a lot.</p>
+<p>These last years, C++'s world has moved a lot.</p>
 <p>Now gcc and other compilers run a lot of features from C++11, C++14 and partially from C++17</p>
 <p>Some of the tools I wrote or added to my library, are not necessary any more. The implementation and API can also be improved.</p>
-<p>In example... I wrote a smart_pointer called CountPtr. I also wrote to manage tuples I added a small library for regular expressions. These features has been added to C++</p>
+<p>For example... I wrote a smart_pointer called CountPtr. I also wrote to manage tuples, I added a small library for regular expressions. These features have been added to C++</p>
 <p>Now, we also have type inference, lambdas, variadic templates, initializer lists...</p>
 <p>It's time to enjoy and write a new set of tools based on modern C++</p>
-<p>Previously I wrote the documentation with <b>asciidoc</b>, muse over emacs and doxys. Now I'm going to do it with doxygen with this project (I'm not a fan of these kind of tools, but it's an extandard).</p>
+<p>Previously I wrote the documentation with <b>asciidoc</b>, muse over emacs and doxys. Now I'm going to do it with doxygen (I'm not a fan of these kind of tools, but it's a standard).</p>
 <h3>Directives</h3>
 <p>My aim is different from C++.</p>
 <ul>
@@ -166,6 +167,8 @@ $(document).ready(function(){initNavTree('index.html','');});
 <td>Invalid iterators </td><td>Exception is better than undefined behaviour (even for deterministic false positives, fail fast) </td></tr>
 <tr>
 <td>Memory leaks </td><td>same as previous one </td></tr>
+<tr>
+<td>Resource manament </td><td>memory is not the only resource. RAII everywhere </td></tr>
 <tr>
 <td>Infinite loops </td><td>reduce loops ussage </td></tr>
 <tr>
@@ -230,11 +233,12 @@ $(document).ready(function(){initNavTree('index.html','');});
 <p>I don't plan to use it daily. I will write it simultaneously with... web applications with dart, polymer, enjoing Elixir, learning from Go and Rust, following Scala...</p>
 <p>In any case, I plan to follow next order (more or less)...</p>
 <ul>
-<li>smart_pointer<ul>
-<li>just a safe wrapper over stl</li>
+<li>(done) ~~smart_pointer~~<ul>
+<li>(done) ~~just a safe wrapper over stl~~</li>
 </ul>
 </li>
 <li>signal-slot</li>
+<li>safe containers</li>
 <li>date_time</li>
 <li>exception type with stack</li>
 <li>integer div 0 protection</li>
@@ -265,7 +269,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 4 2015 00:46:25 for jle_cpp_tk by
+    <li class="footer">Generated on Sat Apr 4 2015 19:59:26 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>
