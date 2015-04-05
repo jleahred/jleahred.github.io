@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['enable_5fshared_5ffrom_5fthis',['enable_shared_from_this',['../classjle_1_1enable__shared__from__this.html',1,'jle']]]
+  ['connect',['connect',['../classjle_1_1signal.html#a317925ec28e76f0de71b20ce9a4bb66c',1,'jle::signal']]]
 ];

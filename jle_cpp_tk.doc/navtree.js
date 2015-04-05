@@ -5,7 +5,8 @@ var NAVTREE =
       [ "support", "md_src_support_support.html#support", [
         [ "smart_pointers", "md_src_support_support.html#smart_pointers", null ],
         [ "test", "md_src_support_support.html#test", null ],
-        [ "string", "md_src_support_support.html#string", null ]
+        [ "string", "md_src_support_support.html#string", null ],
+        [ "signal_slot", "md_src_support_support.html#signal_slot", null ]
       ] ]
     ] ],
     [ "Classes", null, [

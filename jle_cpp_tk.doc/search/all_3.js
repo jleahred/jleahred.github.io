@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['owner_5fless',['owner_less',['../structjle_1_1owner__less.html',1,'jle']]],
-  ['owner_5fless_3c_20shared_5fptr_3c_20_5ftp_20_3e_20_3e',['owner_less&lt; shared_ptr&lt; _Tp &gt; &gt;',['../structjle_1_1owner__less_3_01shared__ptr_3_01___tp_01_4_01_4.html',1,'jle']]],
-  ['owner_5fless_3c_20weak_5fptr_3c_20_5ftp_20_3e_20_3e',['owner_less&lt; weak_ptr&lt; _Tp &gt; &gt;',['../structjle_1_1owner__less_3_01weak__ptr_3_01___tp_01_4_01_4.html',1,'jle']]]
+  ['emit',['emit',['../classjle_1_1signal.html#a28a14637264b855fb60eccfa2dbdee0a',1,'jle::signal']]],
+  ['enable_5fshared_5ffrom_5fthis',['enable_shared_from_this',['../classjle_1_1enable__shared__from__this.html',1,'jle']]]
 ];

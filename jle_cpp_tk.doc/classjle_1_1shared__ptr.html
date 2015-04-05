@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">jle_cpp_tk
-   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;a9aa47955b7404b650ed08634e84b7a9945058fe&quot;</span>
+   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;a5b258b46dee5319bbd88f6b9ce821fd65a38c52&quot;</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -151,7 +151,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a084bd10df36c1a3a9a81b8041aa8cc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87930864f63f09773c79dc5a3999b0d8"><td class="memTemplParams" colspan="2">template&lt;typename _Tp1 , typename  = typename std::enable_if&lt;std::is_convertible&lt;_Tp1*, _Tp*&gt;::value&gt;::type&gt; </td></tr>
 <tr class="memitem:a87930864f63f09773c79dc5a3999b0d8"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classjle_1_1shared__ptr.html#a87930864f63f09773c79dc5a3999b0d8">shared_ptr</a> (const <a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a>&lt; _Tp1 &gt; &amp;__r)</td></tr>
-<tr class="memdesc:a87930864f63f09773c79dc5a3999b0d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a shared_ptr instance that stores <em>__p</em> and shares ownership with <em>__r</em>.  <a href="#a87930864f63f09773c79dc5a3999b0d8">More...</a><br /></td></tr>
+<tr class="memdesc:a87930864f63f09773c79dc5a3999b0d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">If <em>__r</em> is empty, constructs an empty shared_ptr; otherwise construct a shared_ptr that shares ownership with <em>__r</em>.  <a href="#a87930864f63f09773c79dc5a3999b0d8">More...</a><br /></td></tr>
 <tr class="separator:a87930864f63f09773c79dc5a3999b0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48e7727ea5e4ee21c8efb75ab231f2df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjle_1_1shared__ptr.html#a48e7727ea5e4ee21c8efb75ab231f2df">shared_ptr</a> (<a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a> &amp;&amp;__r)</td></tr>
 <tr class="memdesc:a48e7727ea5e4ee21c8efb75ab231f2df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-constructs a shared_ptr instance from <em>__r</em>.  <a href="#a48e7727ea5e4ee21c8efb75ab231f2df">More...</a><br /></td></tr>
@@ -666,21 +666,8 @@ template&lt;typename _Tp1 , typename  = typename std::enable_if&lt;std::is_conve
 </table>
 </div><div class="memdoc">
 
-<p>Constructs a shared_ptr instance that stores <em>__p</em> and shares ownership with <em>__r</em>. </p>
+<p>If <em>__r</em> is empty, constructs an empty shared_ptr; otherwise construct a shared_ptr that shares ownership with <em>__r</em>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">__r</td><td>A shared_ptr. </td></tr>
-    <tr><td class="paramname">__p</td><td>A pointer that will remain valid while <em>*__r</em> is valid. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section post"><dt>Postcondition</dt><dd>get() == __p &amp;&amp; use_count() == __r.use_count()</dd></dl>
-<p>This can be used to construct a <code><a class="el" href="classjle_1_1shared__ptr.html" title="A safe std smart pointer WRAPPER. ">shared_ptr</a></code> to a sub-object of an object managed by an existing <code><a class="el" href="classjle_1_1shared__ptr.html" title="A safe std smart pointer WRAPPER. ">shared_ptr</a></code>.</p>
-<div class="fragment"><div class="line"><span class="comment">//   * shared_ptr&lt; pair&lt;int,int&gt; &gt; pii(new pair&lt;int,int&gt;());</span></div>
-<div class="line"><span class="comment">//   * shared_ptr&lt;int&gt; pi(pii, &amp;pii-&gt;first);</span></div>
-<div class="line"><span class="comment">//   * assert(pii.use_count() == 2);</span></div>
-<div class="line"><span class="comment">//   * </span></div>
-</div><!-- fragment --><p> If <em>__r</em> is empty, constructs an empty shared_ptr; otherwise construct a shared_ptr that shares ownership with <em>__r</em>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">__r</td><td>A shared_ptr. </td></tr>
   </table>
@@ -940,7 +927,7 @@ template&lt;typename _Tp1 , typename _Alloc , typename... _Args&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>jle</b></li><li class="navelem"><a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a></li>
-    <li class="footer">Generated on Sat Apr 4 2015 19:59:26 for jle_cpp_tk by
+    <li class="footer">Generated on Sun Apr 5 2015 19:59:47 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>
