@@ -33,6 +33,5 @@ var classjle_1_1shared__ptr =
     [ "swap", "classjle_1_1shared__ptr.html#a68576c926c71e534515a87de30be9f12", null ],
     [ "owner_before", "classjle_1_1shared__ptr.html#a624ba7237025b006f8e4d21dda2998ab", null ],
     [ "owner_before", "classjle_1_1shared__ptr.html#a08ae20d24862a620aeb973f630c7e874", null ],
-    [ "jle::weak_ptr< _Tp >", "classjle_1_1shared__ptr.html#a24320b6ad3530e752f13dd8c37a6bd29", null ],
-    [ "allocate_shared", "classjle_1_1shared__ptr.html#a88995681205fbc4fa130e4c1c01266ba", null ]
+    [ "jle::weak_ptr< _Tp >", "classjle_1_1shared__ptr.html#a24320b6ad3530e752f13dd8c37a6bd29", null ]
 ];

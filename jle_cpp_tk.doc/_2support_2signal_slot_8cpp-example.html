@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">jle_cpp_tk
-   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;a5b258b46dee5319bbd88f6b9ce821fd65a38c52&quot;</span>
+   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;d8aa9f70b230a7be489471d226232dd4775a1b15&quot;</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('_2support_2signal_slot_8cpp-example.ht
 <div class="line">    Signal_receptor(<span class="keywordtype">int</span> _instance) : instance(_instance)</div>
 <div class="line">    {</div>
 <div class="line">        signal_resend.connect(<span class="keyword">this</span>, &amp;Signal_receptor::on_internal_resend);</div>
-<div class="line">        JLE_CONNECT_INSTANCE(signal_resend, *<span class="keyword">this</span>, on_internal_resend);</div>
+<div class="line">        JLE_CONNECT_METHOD(signal_resend, *<span class="keyword">this</span>, on_internal_resend);</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">//  connecting with this, proposed syntax  ------------------------</span></div>
 <div class="line">        JLE_CONNECT_THIS(signal_resend, on_internal_resend);</div>
@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('_2support_2signal_slot_8cpp-example.ht
 <div class="line">            Signal_receptor  sr2{2};</div>
 <div class="line">            {</div>
 <div class="line">                signal.connect(&amp;sr1, &amp;Signal_receptor::on_void_method);</div>
-<div class="line">                JLE_CONNECT_INSTANCE(signal, sr2, on_void_method);</div>
+<div class="line">                JLE_CONNECT_METHOD(signal, sr2, on_void_method);</div>
 <div class="line"></div>
 <div class="line">                signal.<a class="code" href="classjle_1_1signal.html#a28a14637264b855fb60eccfa2dbdee0a">emit</a>();</div>
 <div class="line">            }</div>
@@ -215,7 +215,7 @@ $(document).ready(function(){initNavTree('_2support_2signal_slot_8cpp-example.ht
 <div class="line">            Signal_receptor  sr2{2};</div>
 <div class="line">            {</div>
 <div class="line">                signal.connect(&amp;sr1, &amp;Signal_receptor::on_number_method);</div>
-<div class="line">                JLE_CONNECT_INSTANCE(signal, sr2, on_number_method);</div>
+<div class="line">                JLE_CONNECT_METHOD(signal, sr2, on_number_method);</div>
 <div class="line"></div>
 <div class="line">                signal.<a class="code" href="classjle_1_1signal.html#a28a14637264b855fb60eccfa2dbdee0a">emit</a>(1);</div>
 <div class="line">            }</div>
@@ -227,7 +227,7 @@ $(document).ready(function(){initNavTree('_2support_2signal_slot_8cpp-example.ht
 <div class="line">            Signal_receptor  sr2{2};</div>
 <div class="line">            {</div>
 <div class="line">                signal.connect(&amp;sr1, &amp;Signal_receptor::on_number_string_method);</div>
-<div class="line">                JLE_CONNECT_INSTANCE(signal, sr2, on_number_string_method);</div>
+<div class="line">                JLE_CONNECT_METHOD(signal, sr2, on_number_string_method);</div>
 <div class="line"></div>
 <div class="line">                signal.<a class="code" href="classjle_1_1signal.html#a28a14637264b855fb60eccfa2dbdee0a">emit</a>(1, <span class="stringliteral">&quot;one&quot;</span>);</div>
 <div class="line">                signal.<a class="code" href="classjle_1_1signal.html#a28a14637264b855fb60eccfa2dbdee0a">emit</a>(2, <span class="stringliteral">&quot;two&quot;</span>);</div>
@@ -276,7 +276,7 @@ $(document).ready(function(){initNavTree('_2support_2signal_slot_8cpp-example.ht
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Apr 5 2015 19:59:47 for jle_cpp_tk by
+    <li class="footer">Generated on Sun Apr 5 2015 23:42:58 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

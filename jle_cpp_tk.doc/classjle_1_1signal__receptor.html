@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">jle_cpp_tk
-   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;a5b258b46dee5319bbd88f6b9ce821fd65a38c52&quot;</span>
+   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;98f9a928a464d22ca6823332d3387cdaa0e72204&quot;</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -135,175 +135,7 @@ Collaboration diagram for jle::signal_receptor:</div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Any object connected to signals, has to inherit from <a class="el" href="classjle_1_1signal__receptor.html" title="Any object connected to signals, has to inherit from signal_receptor. ">signal_receptor</a>. </p>
 <p>It will track the life in order to properly disconnection</p>
-<p>Example: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"></div>
-<div class="line"><span class="preprocessor">#include &quot;support/signal_slot.hpp&quot;</span></div>
-<div class="line"></div>
-<div class="line"></div>
-<div class="line"></div>
-<div class="line"><span class="keyword">class  </span>Signal_receptor  :  <span class="keyword">public</span>  <a class="code" href="classjle_1_1signal__receptor.html">jle::signal_receptor</a></div>
-<div class="line">{</div>
-<div class="line"><span class="keyword">public</span>:</div>
-<div class="line">    Signal_receptor() = <span class="keyword">delete</span>;</div>
-<div class="line">    Signal_receptor(<span class="keywordtype">int</span> _instance) : instance(_instance)</div>
-<div class="line">    {</div>
-<div class="line">        signal_resend.connect(<span class="keyword">this</span>, &amp;Signal_receptor::on_internal_resend);</div>
-<div class="line">        JLE_CONNECT_INSTANCE(signal_resend, *<span class="keyword">this</span>, on_internal_resend);</div>
-<div class="line"></div>
-<div class="line">        <span class="comment">//  connecting with this, proposed syntax  ------------------------</span></div>
-<div class="line">        JLE_CONNECT_THIS(signal_resend, on_internal_resend);</div>
-<div class="line">        <span class="comment">//  ---------------------------------------------------------------</span></div>
-<div class="line">    }</div>
-<div class="line"></div>
-<div class="line"></div>
-<div class="line">    <span class="keywordtype">void</span> on_void_method(<span class="keywordtype">void</span>) {</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;on instance &quot;</span> &lt;&lt; instance &lt;&lt; <span class="stringliteral">&quot;  received: (void)&quot;</span>&lt;&lt; std::endl;</div>
-<div class="line">        signal_resend.emit();</div>
-<div class="line">    }</div>
-<div class="line"></div>
-<div class="line">    <span class="keywordtype">void</span> on_number_method(<span class="keywordtype">int</span> num) {</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;on instance &quot;</span> &lt;&lt; instance &lt;&lt; <span class="stringliteral">&quot;  received: &quot;</span> &lt;&lt; num &lt;&lt; std::endl;</div>
-<div class="line">    }</div>
-<div class="line"></div>
-<div class="line">    <span class="keywordtype">void</span> on_number_string_method(<span class="keywordtype">int</span> num, <span class="keyword">const</span> std::string&amp; s) {</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;on instance &quot;</span> &lt;&lt; instance &lt;&lt; <span class="stringliteral">&quot;  received: (&quot;</span> &lt;&lt; num &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; s &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line">    }</div>
-<div class="line"></div>
-<div class="line"><span class="keyword">private</span>:</div>
-<div class="line">    <span class="keywordtype">int</span> instance;</div>
-<div class="line">    <a class="code" href="classjle_1_1signal.html">jle::signal&lt;&gt;</a>  signal_resend;</div>
-<div class="line"></div>
-<div class="line">    <span class="keywordtype">void</span> on_internal_resend(<span class="keywordtype">void</span>) {</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;on instance &quot;</span> &lt;&lt; instance &lt;&lt; <span class="stringliteral">&quot;  internal resend: (void)&quot;</span>&lt;&lt; std::endl;</div>
-<div class="line">    }</div>
-<div class="line">};</div>
-<div class="line"></div>
-<div class="line"></div>
-<div class="line"><span class="keywordtype">void</span> on_void_function(<span class="keywordtype">void</span>)</div>
-<div class="line">{</div>
-<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;on function &quot;</span> &lt;&lt; <span class="stringliteral">&quot;  received: (void)&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line">}</div>
-<div class="line"></div>
-<div class="line"><span class="keywordtype">void</span> on_number_function(<span class="keywordtype">int</span> num)</div>
-<div class="line">{</div>
-<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;on function &quot;</span> &lt;&lt; <span class="stringliteral">&quot;  received: &quot;</span> &lt;&lt; num &lt;&lt; std::endl;</div>
-<div class="line">}</div>
-<div class="line"></div>
-<div class="line"><span class="keywordtype">void</span> on_number_string_function(<span class="keywordtype">int</span> num, <span class="keyword">const</span> std::string&amp; s)</div>
-<div class="line">{</div>
-<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;on function &quot;</span> &lt;&lt; <span class="stringliteral">&quot;  received: (&quot;</span> &lt;&lt; num &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; s &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line">}</div>
-<div class="line"></div>
-<div class="line"></div>
-<div class="line"></div>
-<div class="line"></div>
-<div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
-<div class="line">{</div>
-<div class="line">    <span class="comment">//  signal to functions</span></div>
-<div class="line">    {</div>
-<div class="line">        <span class="comment">//  no parameters</span></div>
-<div class="line">        {</div>
-<div class="line">            <a class="code" href="classjle_1_1signal.html">jle::signal&lt;&gt;</a>  signal;</div>
-<div class="line">            signal.connect(on_void_function);</div>
-<div class="line">            signal.<a class="code" href="classjle_1_1signal.html#a28a14637264b855fb60eccfa2dbdee0a">emit</a>();</div>
-<div class="line">            signal.<a class="code" href="classjle_1_1signal.html#adb7fe82b1301f94188927b3e9b1cacc9">notify</a>();</div>
-<div class="line">            signal();</div>
-<div class="line">        }</div>
-<div class="line"></div>
-<div class="line">        <span class="comment">//  one parameter</span></div>
-<div class="line">        {</div>
-<div class="line">            <a class="code" href="classjle_1_1signal.html">jle::signal&lt;int&gt;</a>  signal;</div>
-<div class="line">            signal.connect(on_number_function);</div>
-<div class="line">            signal.<a class="code" href="classjle_1_1signal.html#a28a14637264b855fb60eccfa2dbdee0a">emit</a>(1);</div>
-<div class="line">        }</div>
-<div class="line"></div>
-<div class="line">        <span class="comment">//  two parameters</span></div>
-<div class="line">        {</div>
-<div class="line">            <a class="code" href="classjle_1_1signal.html">jle::signal&lt;int, const std::string&amp;&gt;</a>  signal;</div>
-<div class="line">            signal.connect(on_number_string_function);</div>
-<div class="line">            signal.<a class="code" href="classjle_1_1signal.html#a28a14637264b855fb60eccfa2dbdee0a">emit</a>(1, <span class="stringliteral">&quot;one&quot;</span>);</div>
-<div class="line">            signal.<a class="code" href="classjle_1_1signal.html#a28a14637264b855fb60eccfa2dbdee0a">emit</a>(2, <span class="stringliteral">&quot;two&quot;</span>);</div>
-<div class="line">        }</div>
-<div class="line">    }</div>
-<div class="line"></div>
-<div class="line">    <span class="comment">//  signal to method</span></div>
-<div class="line">    {</div>
-<div class="line">        {   <span class="comment">//  no parameters</span></div>
-<div class="line">            <a class="code" href="classjle_1_1signal.html">jle::signal&lt;&gt;</a>  signal;</div>
-<div class="line">            Signal_receptor  sr1{1};</div>
-<div class="line">            Signal_receptor  sr2{2};</div>
-<div class="line">            {</div>
-<div class="line">                signal.connect(&amp;sr1, &amp;Signal_receptor::on_void_method);</div>
-<div class="line">                JLE_CONNECT_INSTANCE(signal, sr2, on_void_method);</div>
-<div class="line"></div>
-<div class="line">                signal.<a class="code" href="classjle_1_1signal.html#a28a14637264b855fb60eccfa2dbdee0a">emit</a>();</div>
-<div class="line">            }</div>
-<div class="line">        }</div>
-<div class="line"></div>
-<div class="line">        {   <span class="comment">//  one parameter</span></div>
-<div class="line">            <a class="code" href="classjle_1_1signal.html">jle::signal&lt;int&gt;</a>  signal;</div>
-<div class="line">            Signal_receptor  sr1{1};</div>
-<div class="line">            Signal_receptor  sr2{2};</div>
-<div class="line">            {</div>
-<div class="line">                signal.connect(&amp;sr1, &amp;Signal_receptor::on_number_method);</div>
-<div class="line">                JLE_CONNECT_INSTANCE(signal, sr2, on_number_method);</div>
-<div class="line"></div>
-<div class="line">                signal.<a class="code" href="classjle_1_1signal.html#a28a14637264b855fb60eccfa2dbdee0a">emit</a>(1);</div>
-<div class="line">            }</div>
-<div class="line">        }</div>
-<div class="line"></div>
-<div class="line">        {   <span class="comment">//  two parameters</span></div>
-<div class="line">            <a class="code" href="classjle_1_1signal.html">jle::signal&lt;int, const std::string&amp;&gt;</a>  signal;</div>
-<div class="line">            Signal_receptor  sr1{1};</div>
-<div class="line">            Signal_receptor  sr2{2};</div>
-<div class="line">            {</div>
-<div class="line">                signal.connect(&amp;sr1, &amp;Signal_receptor::on_number_string_method);</div>
-<div class="line">                JLE_CONNECT_INSTANCE(signal, sr2, on_number_string_method);</div>
-<div class="line"></div>
-<div class="line">                signal.<a class="code" href="classjle_1_1signal.html#a28a14637264b855fb60eccfa2dbdee0a">emit</a>(1, <span class="stringliteral">&quot;one&quot;</span>);</div>
-<div class="line">                signal.<a class="code" href="classjle_1_1signal.html#a28a14637264b855fb60eccfa2dbdee0a">emit</a>(2, <span class="stringliteral">&quot;two&quot;</span>);</div>
-<div class="line">            }</div>
-<div class="line">        }</div>
-<div class="line">    }</div>
-<div class="line"></div>
-<div class="line">    <span class="comment">//  signal to signal</span></div>
-<div class="line">    {</div>
-<div class="line">        {   <span class="comment">//  no parameters</span></div>
-<div class="line">            <a class="code" href="classjle_1_1signal.html">jle::signal&lt;&gt;</a>  signala;</div>
-<div class="line">            <a class="code" href="classjle_1_1signal.html">jle::signal&lt;&gt;</a>  signalb;</div>
-<div class="line">            {</div>
-<div class="line">                signala.connect(&amp;signalb);</div>
-<div class="line">                signalb.connect(on_void_function);</div>
-<div class="line"></div>
-<div class="line">                signala.<a class="code" href="classjle_1_1signal.html#a28a14637264b855fb60eccfa2dbdee0a">emit</a>();</div>
-<div class="line">            }</div>
-<div class="line">        }</div>
-<div class="line"></div>
-<div class="line">        {   <span class="comment">//  one parameter</span></div>
-<div class="line">            <a class="code" href="classjle_1_1signal.html">jle::signal&lt;int&gt;</a>  signala;</div>
-<div class="line">            <a class="code" href="classjle_1_1signal.html">jle::signal&lt;int&gt;</a>  signalb;</div>
-<div class="line">            {</div>
-<div class="line">                signala.connect(&amp;signalb);</div>
-<div class="line">                signalb.connect(on_number_function);</div>
-<div class="line"></div>
-<div class="line">                signala.<a class="code" href="classjle_1_1signal.html#a28a14637264b855fb60eccfa2dbdee0a">emit</a>(1);</div>
-<div class="line">            }</div>
-<div class="line">        }</div>
-<div class="line"></div>
-<div class="line">        {   <span class="comment">//  no parameters</span></div>
-<div class="line">            <a class="code" href="classjle_1_1signal.html">jle::signal&lt;int, const std::string&amp;&gt;</a>  signala;</div>
-<div class="line">            <a class="code" href="classjle_1_1signal.html">jle::signal&lt;int, const std::string&amp;&gt;</a>  signalb;</div>
-<div class="line">            {</div>
-<div class="line">                signala.connect(&amp;signalb);</div>
-<div class="line">                signalb.connect(on_number_string_function);</div>
-<div class="line"></div>
-<div class="line">                signala.<a class="code" href="classjle_1_1signal.html#a28a14637264b855fb60eccfa2dbdee0a">emit</a>(2, <span class="stringliteral">&quot;two&quot;</span>);</div>
-<div class="line">            }</div>
-<div class="line">        }</div>
-<div class="line">    }</div>
-<div class="line">}</div>
-</div><!-- fragment --> <dl><dt><b>Examples: </b></dt><dd><a class="el" href="_2support_2signal_slot_8cpp-example.html#_a0">/support/signal_slot.cpp</a>.</dd>
+<p>Example: </p><div class="fragment"></div><!-- fragment --> <dl><dt><b>Examples: </b></dt><dd><a class="el" href="_2support_2ex_signal_slot_8cpp-example.html#_a0">/support/ex_signal_slot.cpp</a>.</dd>
 </dl></div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/support/<a class="el" href="signal__slot_8hpp_source.html">signal_slot.hpp</a></li>
 </ul>
@@ -313,7 +145,7 @@ Collaboration diagram for jle::signal_receptor:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>jle</b></li><li class="navelem"><a class="el" href="classjle_1_1signal__receptor.html">signal_receptor</a></li>
-    <li class="footer">Generated on Sun Apr 5 2015 19:59:47 for jle_cpp_tk by
+    <li class="footer">Generated on Sat Apr 18 2015 18:10:55 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

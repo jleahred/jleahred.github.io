@@ -1,6 +1,12 @@
 var annotated =
 [
     [ "jle", null, [
+      [ "chrono", null, [
+        [ "day", "structjle_1_1chrono_1_1day.html", "structjle_1_1chrono_1_1day" ],
+        [ "month", "structjle_1_1chrono_1_1month.html", "structjle_1_1chrono_1_1month" ],
+        [ "time_point", "classjle_1_1chrono_1_1time__point.html", "classjle_1_1chrono_1_1time__point" ],
+        [ "year", "structjle_1_1chrono_1_1year.html", "structjle_1_1chrono_1_1year" ]
+      ] ],
       [ "enable_shared_from_this", "classjle_1_1enable__shared__from__this.html", "classjle_1_1enable__shared__from__this" ],
       [ "non_copyable", "classjle_1_1non__copyable.html", "classjle_1_1non__copyable" ],
       [ "owner_less", "structjle_1_1owner__less.html", null ],

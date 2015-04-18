@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">jle_cpp_tk
-   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;a9aa47955b7404b650ed08634e84b7a9945058fe&quot;</span>
+   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;98f9a928a464d22ca6823332d3387cdaa0e72204&quot;</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -103,12 +103,82 @@ $(document).ready(function(){initNavTree('_2support_2ex_shared_ptr_8cpp-example.
 <div class="title">/support/ex_shared_ptr.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"></div><!-- fragment --> </div><!-- contents -->
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#include &quot;support/shared_ptr.hpp&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">struct </span>Foo {</div>
+<div class="line">    Foo() { std::cout &lt;&lt; <span class="stringliteral">&quot;Foo...\n&quot;</span>; }</div>
+<div class="line">    ~Foo() { std::cout &lt;&lt; <span class="stringliteral">&quot;~Foo...\n&quot;</span>; }</div>
+<div class="line">};</div>
+<div class="line"></div>
+<div class="line"><span class="keyword">struct </span>D {</div>
+<div class="line">    <span class="keywordtype">void</span> operator()(Foo* p)<span class="keyword"> const </span>{</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;Call delete for Foo object...\n&quot;</span>;</div>
+<div class="line">        <span class="keyword">delete</span> p;</div>
+<div class="line">    }</div>
+<div class="line">};</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main()</div>
+<div class="line">{</div>
+<div class="line">    {</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;constructor with no managed object\n&quot;</span>;</div>
+<div class="line">        <a name="_a0"></a><a class="code" href="classjle_1_1shared__ptr.html">jle::shared_ptr&lt;Foo&gt;</a> sh1;</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    {</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;constructor with object\n&quot;</span>;</div>
+<div class="line">        <a class="code" href="classjle_1_1shared__ptr.html">jle::shared_ptr&lt;Foo&gt;</a> sh2(<span class="keyword">new</span> Foo);</div>
+<div class="line">        <a class="code" href="classjle_1_1shared__ptr.html">jle::shared_ptr&lt;Foo&gt;</a> sh3(sh2);</div>
+<div class="line">        std::cout &lt;&lt; sh2.use_count() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">        std::cout &lt;&lt; sh3.use_count() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    {</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;constructor with object and deleter\n&quot;</span>;</div>
+<div class="line">        <a class="code" href="classjle_1_1shared__ptr.html">jle::shared_ptr&lt;Foo&gt;</a> sh4(<span class="keyword">new</span> Foo, D());</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    {</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;valid pointer&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">        <span class="keyword">auto</span> ptr = jle::make_shared&lt;int&gt;(22);</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;expired &quot;</span> &lt;&lt; int(ptr.expired()) &lt;&lt; std::endl;</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    {</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;invalid pointer&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">        <span class="keyword">auto</span> ptr = jle::make_shared&lt;int&gt;(22);</div>
+<div class="line">        ptr.reset();</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;expired &quot;</span> &lt;&lt; int(ptr.expired()) &lt;&lt; std::endl;</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    {</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;invalid pointer&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">        <a class="code" href="classjle_1_1shared__ptr.html">jle::shared_ptr&lt;int&gt;</a> ptr;</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;expired &quot;</span> &lt;&lt; int(ptr.<a name="a1"></a>expired()) &lt;&lt; std::endl;</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    {</div>
+<div class="line">        <a class="code" href="classjle_1_1shared__ptr.html">jle::shared_ptr&lt;int&gt;</a> foo = jle::make_shared&lt;int&gt; (10);</div>
+<div class="line">        <span class="comment">// same as:</span></div>
+<div class="line">        <a class="code" href="classjle_1_1shared__ptr.html">jle::shared_ptr&lt;int&gt;</a> foo2 (<span class="keyword">new</span> <span class="keywordtype">int</span>(10));</div>
+<div class="line"></div>
+<div class="line">        <span class="keyword">auto</span> bar = jle::make_shared&lt;int&gt; (20);</div>
+<div class="line"></div>
+<div class="line">        <span class="keyword">auto</span> baz = jle::make_shared&lt;std::pair&lt;int,int&gt;&gt; (30,40);</div>
+<div class="line"></div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;*foo: &quot;</span> &lt;&lt; *foo &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;*bar: &quot;</span> &lt;&lt; *bar &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;*baz: &quot;</span> &lt;&lt; baz-&gt;first &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; baz-&gt;second &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 4 2015 18:35:52 for jle_cpp_tk by
+    <li class="footer">Generated on Sat Apr 18 2015 18:10:55 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

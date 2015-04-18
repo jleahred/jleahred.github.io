@@ -1,13 +1,12 @@
 var NAVTREE =
 [
   [ "jle_cpp_tk", "index.html", [
-    [ "libs", "md_src_support_support.html", [
-      [ "support", "md_src_support_support.html#support", [
-        [ "smart_pointers", "md_src_support_support.html#smart_pointers", null ],
-        [ "test", "md_src_support_support.html#test", null ],
-        [ "string", "md_src_support_support.html#string", null ],
-        [ "signal_slot", "md_src_support_support.html#signal_slot", null ]
-      ] ]
+    [ "lib_support", "md_src_support_support.html", [
+      [ "smart_pointers", "md_src_support_support.html#smart_pointers", null ],
+      [ "test", "md_src_support_support.html#test", null ],
+      [ "string", "md_src_support_support.html#string", null ],
+      [ "signal_slot", "md_src_support_support.html#signal_slot", null ],
+      [ "chrono", "md_src_support_support.html#chrono", null ]
     ] ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],

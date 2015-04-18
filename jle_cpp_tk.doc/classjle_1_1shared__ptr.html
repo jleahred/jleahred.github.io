@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">jle_cpp_tk
-   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;a5b258b46dee5319bbd88f6b9ce821fd65a38c52&quot;</span>
+   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;98f9a928a464d22ca6823332d3387cdaa0e72204&quot;</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -246,10 +246,6 @@ Friends</h2></td></tr>
 <tr class="memitem:a24320b6ad3530e752f13dd8c37a6bd29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24320b6ad3530e752f13dd8c37a6bd29"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>jle::weak_ptr&lt; _Tp &gt;</b></td></tr>
 <tr class="separator:a24320b6ad3530e752f13dd8c37a6bd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88995681205fbc4fa130e4c1c01266ba"><td class="memTemplParams" colspan="2">template&lt;typename _Tp1 , typename _Alloc , typename... _Args&gt; </td></tr>
-<tr class="memitem:a88995681205fbc4fa130e4c1c01266ba"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a>&lt; _Tp1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classjle_1_1shared__ptr.html#a88995681205fbc4fa130e4c1c01266ba">allocate_shared</a> (const _Alloc &amp;__a, _Args &amp;&amp;...__args)</td></tr>
-<tr class="memdesc:a88995681205fbc4fa130e4c1c01266ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an object that is owned by a <a class="el" href="classjle_1_1shared__ptr.html" title="A safe std smart pointer WRAPPER. ">shared_ptr</a>.  <a href="#a88995681205fbc4fa130e4c1c01266ba">More...</a><br /></td></tr>
-<tr class="separator:a88995681205fbc4fa130e4c1c01266ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename _Tp, std::_Lock_policy _Lp = std::__default_lock_policy&gt;<br />
@@ -259,77 +255,7 @@ class jle::shared_ptr&lt; _Tp, _Lp &gt;</h3>
 <p>It's almost equal to std::shared_ptr but... has the method exprired and if you try to access to noninitializated pointer, an exception will be throw</p>
 <p>operator bool has also been removed</p>
 <p><em>No external dependencies</em></p>
-<p>Example: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"></div>
-<div class="line"></div>
-<div class="line"><span class="preprocessor">#include &quot;support/shared_ptr.hpp&quot;</span></div>
-<div class="line"> </div>
-<div class="line"><span class="keyword">struct </span>Foo {</div>
-<div class="line">    Foo() { std::cout &lt;&lt; <span class="stringliteral">&quot;Foo...\n&quot;</span>; }</div>
-<div class="line">    ~Foo() { std::cout &lt;&lt; <span class="stringliteral">&quot;~Foo...\n&quot;</span>; }</div>
-<div class="line">};</div>
-<div class="line"> </div>
-<div class="line"><span class="keyword">struct </span>D { </div>
-<div class="line">    <span class="keywordtype">void</span> operator()(Foo* p)<span class="keyword"> const </span>{</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;Call delete for Foo object...\n&quot;</span>;</div>
-<div class="line">        <span class="keyword">delete</span> p;</div>
-<div class="line">    }</div>
-<div class="line">};</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main()</div>
-<div class="line">{</div>
-<div class="line">    {</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;constructor with no managed object\n&quot;</span>;</div>
-<div class="line">        <a class="code" href="classjle_1_1shared__ptr.html">jle::shared_ptr&lt;Foo&gt;</a> sh1;</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    {</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;constructor with object\n&quot;</span>;</div>
-<div class="line">        <a class="code" href="classjle_1_1shared__ptr.html">jle::shared_ptr&lt;Foo&gt;</a> sh2(<span class="keyword">new</span> Foo);</div>
-<div class="line">        <a class="code" href="classjle_1_1shared__ptr.html">jle::shared_ptr&lt;Foo&gt;</a> sh3(sh2);</div>
-<div class="line">        std::cout &lt;&lt; sh2.use_count() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line">        std::cout &lt;&lt; sh3.use_count() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    {</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;constructor with object and deleter\n&quot;</span>;</div>
-<div class="line">        <a class="code" href="classjle_1_1shared__ptr.html">jle::shared_ptr&lt;Foo&gt;</a> sh4(<span class="keyword">new</span> Foo, D());</div>
-<div class="line">    }</div>
-<div class="line">    </div>
-<div class="line">    {</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;valid pointer&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line">        <span class="keyword">auto</span> ptr = jle::make_shared&lt;int&gt;(22);</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;expired &quot;</span> &lt;&lt; int(ptr.expired()) &lt;&lt; std::endl;</div>
-<div class="line">    }</div>
-<div class="line"></div>
-<div class="line">    {</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;invalid pointer&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line">        <span class="keyword">auto</span> ptr = jle::make_shared&lt;int&gt;(22);</div>
-<div class="line">        ptr.reset();</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;expired &quot;</span> &lt;&lt; int(ptr.expired()) &lt;&lt; std::endl;</div>
-<div class="line">    }</div>
-<div class="line"></div>
-<div class="line">    {</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;invalid pointer&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line">        <a class="code" href="classjle_1_1shared__ptr.html">jle::shared_ptr&lt;int&gt;</a> ptr;</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;expired &quot;</span> &lt;&lt; int(ptr.expired()) &lt;&lt; std::endl;</div>
-<div class="line">    }</div>
-<div class="line"></div>
-<div class="line">    {    </div>
-<div class="line">        <a class="code" href="classjle_1_1shared__ptr.html">jle::shared_ptr&lt;int&gt;</a> foo = jle::make_shared&lt;int&gt; (10);</div>
-<div class="line">        <span class="comment">// same as:</span></div>
-<div class="line">        <a class="code" href="classjle_1_1shared__ptr.html">jle::shared_ptr&lt;int&gt;</a> foo2 (<span class="keyword">new</span> <span class="keywordtype">int</span>(10));</div>
-<div class="line"></div>
-<div class="line">        <span class="keyword">auto</span> bar = jle::make_shared&lt;int&gt; (20);</div>
-<div class="line"></div>
-<div class="line">        <span class="keyword">auto</span> baz = jle::make_shared&lt;std::pair&lt;int,int&gt;&gt; (30,40);</div>
-<div class="line"></div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;*foo: &quot;</span> &lt;&lt; *foo &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;*bar: &quot;</span> &lt;&lt; *bar &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;*baz: &quot;</span> &lt;&lt; baz-&gt;first &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; baz-&gt;second &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line">    }</div>
-<div class="line">}</div>
-</div><!-- fragment --> <dl><dt><b>Examples: </b></dt><dd><a class="el" href="_2support_2shared_ptr_8cpp-example.html#_a0">/support/shared_ptr.cpp</a>, <a class="el" href="_2support_2test_8cpp-example.html#_a0">/support/test.cpp</a>, and <a class="el" href="_2support_2weak_ptr_8cpp-example.html#_a1">/support/weak_ptr.cpp</a>.</dd>
+<p>Example: </p><div class="fragment"></div><!-- fragment --> <dl><dt><b>Examples: </b></dt><dd><a class="el" href="_2support_2ex_shared_ptr_8cpp-example.html#_a0">/support/ex_shared_ptr.cpp</a>, <a class="el" href="_2support_2ex_test_8cpp-example.html#_a0">/support/ex_test.cpp</a>, and <a class="el" href="_2support_2ex_weak_ptr_8cpp-example.html#_a1">/support/ex_weak_ptr.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aa7fe3f2991467c06104334a409598c90"></a>
 <div class="memitem">
@@ -862,62 +788,6 @@ template&lt;typename _Tp, std::_Lock_policy _Lp = std::__default_lock_policy&gt;
 
 </div>
 </div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a class="anchor" id="a88995681205fbc4fa130e4c1c01266ba"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename _Tp, std::_Lock_policy _Lp = std::__default_lock_policy&gt; </div>
-<div class="memtemplate">
-template&lt;typename _Tp1 , typename _Alloc , typename... _Args&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a>&lt;_Tp1&gt; allocate_shared </td>
-          <td>(</td>
-          <td class="paramtype">const _Alloc &amp;&#160;</td>
-          <td class="paramname"><em>__a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">_Args &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>__args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Create an object that is owned by a <a class="el" href="classjle_1_1shared__ptr.html" title="A safe std smart pointer WRAPPER. ">shared_ptr</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">__a</td><td>An allocator. </td></tr>
-    <tr><td class="paramname">__args</td><td>Arguments for the <em>_Tp</em> object's constructor. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classjle_1_1shared__ptr.html" title="A safe std smart pointer WRAPPER. ">shared_ptr</a> that owns the newly created object. </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">An</td><td>exception thrown from <em>_Alloc::allocate</em> or from the constructor of <em>_Tp</em>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>A copy of <em>__a</em> will be used to allocate memory for the <a class="el" href="classjle_1_1shared__ptr.html" title="A safe std smart pointer WRAPPER. ">shared_ptr</a> and the new object. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/support/<a class="el" href="shared__ptr_8hpp_source.html">shared_ptr.hpp</a></li>
 </ul>
@@ -927,7 +797,7 @@ template&lt;typename _Tp1 , typename _Alloc , typename... _Args&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>jle</b></li><li class="navelem"><a class="el" href="classjle_1_1shared__ptr.html">shared_ptr</a></li>
-    <li class="footer">Generated on Sun Apr 5 2015 19:59:47 for jle_cpp_tk by
+    <li class="footer">Generated on Sat Apr 18 2015 18:10:55 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

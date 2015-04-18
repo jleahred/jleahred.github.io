@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">jle_cpp_tk
-   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;a5b258b46dee5319bbd88f6b9ce821fd65a38c52&quot;</span>
+   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;98f9a928a464d22ca6823332d3387cdaa0e72204&quot;</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -153,35 +153,9 @@ class jle::weak_ptr&lt; _Tp &gt;</h3>
 <p>It's almost equal to std::weak_ptr but lock will return a <a class="el" href="classjle_1_1shared__ptr.html" title="A safe std smart pointer WRAPPER. ">jle::shared_ptr</a></p>
 <p><em>No external dependencies</em></p>
 <p>Example...</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &quot;support/shared_ptr.hpp&quot;</span></div>
-<div class="line"> </div>
-<div class="line"><a class="code" href="singletonjle_1_1weak__ptr.html">jle::weak_ptr&lt;int&gt;</a> gw;</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> f()</div>
-<div class="line">{</div>
-<div class="line">    <a class="code" href="classjle_1_1shared__ptr.html">jle::shared_ptr&lt;int&gt;</a> spt = gw.lock();  <span class="comment">// Has to be copied into a shared_ptr before usage</span></div>
-<div class="line">    <span class="keywordflow">if</span> (spt.expired()==<span class="keyword">false</span>) { </div>
-<div class="line">        std::cout &lt;&lt; *spt &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line">    }</div>
-<div class="line">    <span class="keywordflow">else</span> {</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;gw is expired\n&quot;</span>;</div>
-<div class="line">    }</div>
-<div class="line">}</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main()</div>
-<div class="line">{</div>
-<div class="line">    {</div>
-<div class="line">        <span class="keyword">auto</span> sp = jle::make_shared&lt;int&gt;(42);</div>
-<div class="line">        gw = sp;</div>
-<div class="line">        f();</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    f();</div>
-<div class="line">} </div>
-</div><!-- fragment --><p> A smart pointer with weak semantics.</p>
+<div class="fragment"></div><!-- fragment --><p> A smart pointer with weak semantics.</p>
 <p>With forwarding constructors and assignment operators. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="_2support_2test_8cpp-example.html#_a2">/support/test.cpp</a>, and <a class="el" href="_2support_2weak_ptr_8cpp-example.html#_a0">/support/weak_ptr.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="_2support_2ex_test_8cpp-example.html#_a2">/support/ex_test.cpp</a>, and <a class="el" href="_2support_2ex_weak_ptr_8cpp-example.html#_a0">/support/ex_weak_ptr.cpp</a>.</dd>
 </dl></div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/support/<a class="el" href="shared__ptr_8hpp_source.html">shared_ptr.hpp</a></li>
 </ul>
@@ -191,7 +165,7 @@ class jle::weak_ptr&lt; _Tp &gt;</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>jle</b></li><li class="navelem"><a class="el" href="singletonjle_1_1weak__ptr.html">weak_ptr</a></li>
-    <li class="footer">Generated on Sun Apr 5 2015 19:59:47 for jle_cpp_tk by
+    <li class="footer">Generated on Sat Apr 18 2015 18:10:55 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

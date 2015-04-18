@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>jle_cpp_tk: libs</title>
+<title>jle_cpp_tk: lib_support</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">jle_cpp_tk
-   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;a5b258b46dee5319bbd88f6b9ce821fd65a38c52&quot;</span>
+   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;98f9a928a464d22ca6823332d3387cdaa0e72204&quot;</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -100,28 +100,26 @@ $(document).ready(function(){initNavTree('md_src_support_support.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">libs </div>  </div>
+<div class="title">lib_support </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="support"></a>
-support</h1>
-<h2><a class="anchor" id="smart_pointers"></a>
-smart_pointers</h2>
-<h3>shared_ptr</h3>
+<div class="textblock"><h1><a class="anchor" id="smart_pointers"></a>
+smart_pointers</h1>
+<h2>shared_ptr</h2>
 <p>Safe shared_ptr wrapper</p>
 <p>links:</p><ul>
 <li>see: <a class="el" href="classjle_1_1shared__ptr.html" title="A safe std smart pointer WRAPPER. ">jle::shared_ptr</a></li>
-<li>example: <a class="el" href="_2support_2shared_ptr_8cpp-example.html">/support/shared_ptr.cpp</a></li>
+<li>example: <a class="el" href="_2support_2ex_shared_ptr_8cpp-example.html">/support/ex_shared_ptr.cpp</a></li>
 </ul>
-<h3>weak_ptr</h3>
+<h2>weak_ptr</h2>
 <p>Safe weak_ptr wrapper</p>
 <p>links:</p><ul>
 <li>see: <a class="el" href="singletonjle_1_1weak__ptr.html" title="A safe std weak_ptr WRAPPER. ">jle::weak_ptr</a></li>
-<li>example: <a class="el" href="_2support_2shared_ptr_8cpp-example.html">/support/shared_ptr.cpp</a></li>
+<li>example: <a class="el" href="_2support_2ex_shared_ptr_8cpp-example.html">/support/ex_shared_ptr.cpp</a></li>
 <li>header: <a class="el" href="shared__ptr_8hpp_source.html">/support/shared_ptr.hpp</a></li>
 </ul>
-<h2><a class="anchor" id="test"></a>
-test</h2>
+<h1><a class="anchor" id="test"></a>
+test</h1>
 <p>Some macros and functions to help with test <a class="el" href="test_8h_source.html">support/test.h</a></p>
 <p>See on examples/support/test_shared_ptr.cpp</p>
 <p>briefly...</p>
@@ -142,12 +140,12 @@ test</h2>
 <td>JLE_TEST_EXCEPTION: </td><td>check expression throws an exception </td></tr>
 </table>
 <p>links:</p><ul>
-<li>example: <a class="el" href="_2support_2test_8cpp-example.html">/support/test.cpp</a></li>
+<li>example: <a class="el" href="_2support_2ex_test_8cpp-example.html">/support/ex_test.cpp</a></li>
 <li>header: <a class="el" href="test_8h_source.html">/support/test.h</a></li>
 </ul>
-<h2><a class="anchor" id="string"></a>
-string</h2>
-<h3>Concatenation JLE_SS</h3>
+<h1><a class="anchor" id="string"></a>
+string</h1>
+<h2>Concatenation JLE_SS</h2>
 <p>Code like...</p>
 <div class="fragment"><div class="line">std::string s = <span class="stringliteral">&quot;asdfds&quot;</span> + var1 + var2 + <span class="stringliteral">&quot;\n&quot;</span>;</div>
 </div><!-- fragment --><p>is very dangerous and limited.</p>
@@ -158,29 +156,29 @@ string</h2>
 <div class="fragment"><div class="line">JLE_SS(<span class="stringliteral">&quot;asdfds&quot;</span> &lt;&lt; var1 &lt;&lt; var2 &lt;&lt; std::endl);</div>
 </div><!-- fragment --><p><b>JLE_SS</b> will produce a <code>ostringstream</code> with all it powers (and safer than +), therefore more expressive</p>
 <p>links:</p><ul>
-<li>example: <a class="el" href="_2support_2jle_ss_8cpp-example.html">/support/jle_ss.cpp</a></li>
+<li>example: <a class="el" href="_2support_2ex_jle_ss_8cpp-example.html">/support/ex_jle_ss.cpp</a></li>
 <li>header: <a class="el" href="string_8h_source.html">/support/string.h</a></li>
 </ul>
-<h2><a class="anchor" id="signal_slot"></a>
-signal_slot</h2>
+<h1><a class="anchor" id="signal_slot"></a>
+signal_slot</h1>
 <p>An good event system is great in order to compose. signal_slot is a static event system (good performance and strict compiling type check)</p>
 <p>I wrote one years before. I had to deal with optional parameters on templates. This implementation worked with 0 till 4 parameters. In order to add parameters, was necesary to modify the code. Very similar code. Yes, it was methaprograming and it was copy/paste (disgusting)</p>
 <p>Today, with modern C++, I wrote it with variadic templates. Fantastic experience. Quite easy, and it works with several parameters</p>
 <p>If composition with events is not enought for you, signals are also fully RAII. When signal or receiver is out of scope, signals are disconnected. You don't have to take care of disconnection before exit (destructor), neither disconnection to avoid orphan live references (problem for counter ptrs and garbage collectors)</p>
-<h3>Connection syntax recomendations...</h3>
+<h2>Connection syntax recomendations...</h2>
 <table class="doxtable">
 <tr>
 <th>Connection </th><th>Syntax  </th></tr>
 <tr>
 <td>signal -&gt; function </td><td>signal.connect(on_function_name); </td></tr>
 <tr>
-<td>signal -&gt; method </td><td>JLE_CONNECT_INSTANCE(signal, instance, on_method); </td></tr>
+<td>signal -&gt; method </td><td>JLE_CONNECT_METHOD(signal, instance, on_method); </td></tr>
 <tr>
 <td>signal -&gt; method on this </td><td>JLE_CONNECT_THIS(signal, on_method); </td></tr>
 <tr>
 <td>signal -&gt; signal </td><td>signal.connect(&amp;signal_receiver); </td></tr>
 </table>
-<h3>Performance</h3>
+<h2>Performance</h2>
 <p>In my computer with no params, you can emit arround 200.000 signals per second...</p>
 <p>Executing... <a class="el" href="">/support/signal_slot_performance.cpp</a> </p><pre class="fragment"> &gt; ---------------------------------------------------------------------
  add int loop
@@ -217,7 +215,7 @@ signal_slot</h2>
  calls/millisecond: 179642
 </pre><p>links:</p><ul>
 <li>see: <a class="el" href="classjle_1_1signal.html" title="signal instance to connect and emit ">jle::signal</a> <a class="el" href="classjle_1_1signal__receptor.html" title="Any object connected to signals, has to inherit from signal_receptor. ">jle::signal_receptor</a></li>
-<li>example: <a class="el" href="_2support_2signal_slot_8cpp-example.html">/support/signal_slot.cpp</a></li>
+<li>example: <a class="el" href="_2support_2ex_signal_slot_8cpp-example.html">/support/ex_signal_slot.cpp</a></li>
 <li>header: <a class="el" href="signal__slot_8hpp_source.html">/support/signal_slot.hpp</a></li>
 </ul>
 <dl class="section warning"><dt>Warning</dt><dd><b>What if you destroy the signal while it is emiting?</b> <br />
@@ -228,13 +226,42 @@ signal_slot</h2>
 <dd>
 <b>What if an exception is thrown processing a signal?</b> <br />
  At the moment, it is not managed. The exception will break the control flow not emiting the last connected signals. <br />
- This looks logical. An exception is an exception. I'm thinking about the option on trapping the exception and rethrow a new one after finishing signaling. But I'm not sure it is a good idea. </dd></dl>
+ This looks logical. An exception is an exception. I'm thinking about the option on trapping the exception and rethrow a new one after finishing signaling. But I'm not sure it is a good idea.</dd>
+<dd>
+<b>Probably you know a lambda is a function</b> <br />
+ Even when you assign to a variable, the function keep existing and signal is never disconnected automatically (it's a function).</dd></dl>
+<p>You can connect signals to lambdas (as connecting to functions). <br />
+ If you are surprised with problems connecting to lambdas who capture scope... this is good. <br />
+ Capturing scope is not a good idea and new mechanisms are provided in C++14.</p>
+<h1><a class="anchor" id="chrono"></a>
+chrono</h1>
+<p><b>std::chrono</b> is great, but it's very flexible and therefore verbose.</p>
+<p>For realtime applications, I need a precisse monotonic clock.</p>
+<p>PC clock is not precisse at all. And system clock syncroniced with ntp is not guaranteed to be monotonic.</p>
+<p><b>jle::time_point</b> will be monotonic ant it will syncrhonize with system clock slowly. Except once per day.</p>
+<p>using jle::chono (<code>#include "support/chrono.h"</code>), is a bit intrusive...</p>
+<ul>
+<li>It will add <code>using namespace std::literals;</code> in order to use time literals as <code>1s + 123ms</code></li>
+<li>It will define <code>operator&lt;&lt;</code> on <code>stream</code> for <code>duration</code></li>
+</ul>
+<p>To reduce verbosity, there are proposed some helpers</p>
+<ul>
+<li><code>jle::chrono::duration</code></li>
+<li><code>jle::chrono::now()</code></li>
+<li><code>jle::chrono::make_from_date(const year&amp;, const month&amp;, const day&amp;)</code></li>
+</ul>
+<p>As usual, take a look to examples.</p>
+<p>links:</p><ul>
+<li>see: <a class="el" href="classjle_1_1chrono_1_1time__point.html" title="similar to std::chrono::time_point but monotonic with adjustments to system_clock ...">jle::chrono::time_point</a></li>
+<li>example: <a class="el" href="_2support_2ex_chrono_8cpp-example.html">/support/ex_chrono.cpp</a></li>
+<li>header: <a class="el" href="chrono_8h_source.html">/support/chrono.h</a> </li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Apr 5 2015 19:59:47 for jle_cpp_tk by
+    <li class="footer">Generated on Sat Apr 18 2015 18:10:55 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">jle_cpp_tk
-   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;a5b258b46dee5319bbd88f6b9ce821fd65a38c52&quot;</span>
+   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;98f9a928a464d22ca6823332d3387cdaa0e72204&quot;</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -113,8 +113,8 @@ $(document).ready(function(){initNavTree('shared__ptr_8hpp_source.html','');});
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;exception&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;bits/shared_ptr.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef JLT_SHARED_PTR_H</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define JLT_SHARED_PTR_H 1</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef JLE_SHARED_PTR_H</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define JLE_SHARED_PTR_H 1</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace  </span><a class="code" href="namespacejle.html">jle</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
@@ -384,20 +384,20 @@ $(document).ready(function(){initNavTree('shared__ptr_8hpp_source.html','');});
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;shared_ptr pointer not valid&quot;</span>);</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    }</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  <span class="comment">// This constructor is non-standard, it is used by allocate_shared.</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> _Alloc, <span class="keyword">typename</span>... _Args&gt;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <a class="code" href="classjle_1_1shared__ptr.html#aa7fe3f2991467c06104334a409598c90">shared_ptr</a>(std::_Sp_make_shared_tag __tag, <span class="keyword">const</span> _Alloc&amp; __a,</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;       _Args&amp;&amp;... __args)</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    : ptr(__tag, __a, __args...) {}</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> _Tp1, <span class="keyword">typename</span> _Alloc, <span class="keyword">typename</span>... _Args&gt;</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keyword">friend</span> shared_ptr&lt;_Tp1&gt;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <a class="code" href="classjle_1_1shared__ptr.html#a88995681205fbc4fa130e4c1c01266ba">allocate_shared</a>(<span class="keyword">const</span> _Alloc&amp; __a, _Args&amp;&amp;... __args);</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="comment">// This constructor is non-standard, it is used by weak_ptr::lock().</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <a class="code" href="classjle_1_1shared__ptr.html#aa7fe3f2991467c06104334a409598c90">shared_ptr</a>(<span class="keyword">const</span> <a class="code" href="singletonjle_1_1weak__ptr.html">jle::weak_ptr&lt;_Tp&gt;</a>&amp; __r, std::nothrow_t)</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    : ptr(__r, std::nothrow) {}</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment">//  // This constructor is non-standard, it is used by allocate_shared.</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment">//    template&lt;typename _Alloc, typename... _Args&gt;</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment">//    shared_ptr(std::_Sp_make_shared_tag __tag, const _Alloc&amp; __a,</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="comment">//       _Args&amp;&amp;... __args)</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">//    : ptr(__tag, __a, __args...) {}</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment">//    template&lt;typename _Tp1, typename _Alloc, typename... _Args&gt;</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment">//    friend shared_ptr&lt;_Tp1&gt;</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment">//    allocate_shared(const _Alloc&amp; __a, _Args&amp;&amp;... __args);</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">//    // This constructor is non-standard, it is used by weak_ptr::lock().</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">//    shared_ptr(const jle::weak_ptr&lt;_Tp&gt;&amp; __r, std::nothrow_t)</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">//    : ptr(__r, std::nothrow) {}</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="singletonjle_1_1weak__ptr.html">jle::weak_ptr</a>&lt;_Tp&gt;;</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;};</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
@@ -652,13 +652,24 @@ $(document).ready(function(){initNavTree('shared__ptr_8hpp_source.html','');});
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;  <span class="keyword">mutable</span> <a class="code" href="singletonjle_1_1weak__ptr.html">weak_ptr&lt;_Tp&gt;</a>  _M_weak_this;</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;};</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> _Tp, <span class="keyword">typename</span> _Alloc, <span class="keyword">typename</span>... _Args&gt;</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;<span class="keyword">inline</span> <a class="code" href="classjle_1_1shared__ptr.html">shared_ptr&lt;_Tp&gt;</a></div>
-<div class="line"><a name="l00707"></a><span class="lineno"><a class="line" href="classjle_1_1shared__ptr.html#a88995681205fbc4fa130e4c1c01266ba">  707</a></span>&#160;allocate_shared(<span class="keyword">const</span> _Alloc&amp; __a, _Args&amp;&amp;... __args)</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;{</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classjle_1_1shared__ptr.html">shared_ptr&lt;_Tp&gt;</a>(std::_Sp_make_shared_tag(), __a,</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;             std::forward&lt;_Args&gt;(__args)...);</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;}</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;<span class="comment">*  @brief  Create an object that is owned by a shared_ptr.</span></div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;<span class="comment">*  @param  __a     An allocator.</span></div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;<span class="comment">*  @param  __args  Arguments for the @a _Tp object&#39;s constructor.</span></div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;<span class="comment">*  @return A shared_ptr that owns the newly created object.</span></div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;<span class="comment">*  @throw  An exception thrown from @a _Alloc::allocate or from the</span></div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;<span class="comment">*          constructor of @a _Tp.</span></div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;<span class="comment">*  A copy of @a __a will be used to allocate memory for the shared_ptr</span></div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;<span class="comment">*  and the new object.</span></div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;<span class="comment">//template&lt;typename _Tp, typename _Alloc, typename... _Args&gt;</span></div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;<span class="comment">//inline shared_ptr&lt;_Tp&gt;</span></div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;<span class="comment">//allocate_shared(const _Alloc&amp; __a, _Args&amp;&amp;... __args)</span></div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;<span class="comment">//{</span></div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;<span class="comment">//  return shared_ptr&lt;_Tp&gt;(std::_Sp_make_shared_tag(), __a,</span></div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;<span class="comment">//             std::forward&lt;_Args&gt;(__args)...);</span></div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;<span class="comment">//}</span></div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> _Tp, <span class="keyword">typename</span>... _Args&gt;</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;<span class="keyword">inline</span> <a class="code" href="classjle_1_1shared__ptr.html">shared_ptr&lt;_Tp&gt;</a></div>
@@ -687,7 +698,7 @@ $(document).ready(function(){initNavTree('shared__ptr_8hpp_source.html','');});
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;</div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;};  <span class="comment">//  namespace  jle</span></div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;<span class="preprocessor">#endif // JLT_SHARED_PTR_H</span></div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;<span class="preprocessor">#endif // JLE_SHARED_PTR_H</span></div>
 <div class="ttc" id="classjle_1_1shared__ptr_html_acf40c327d551210298b50f7eaa53b430"><div class="ttname"><a href="classjle_1_1shared__ptr.html#acf40c327d551210298b50f7eaa53b430">jle::shared_ptr::shared_ptr</a></div><div class="ttdeci">shared_ptr(_Tp1 *__p, _Deleter __d)</div><div class="ttdoc">Construct a shared_ptr that owns the pointer __p and the deleter __d. </div><div class="ttdef"><b>Definition:</b> shared_ptr.hpp:82</div></div>
 <div class="ttc" id="classjle_1_1shared__ptr_html_a084bd10df36c1a3a9a81b8041aa8cc23"><div class="ttname"><a href="classjle_1_1shared__ptr.html#a084bd10df36c1a3a9a81b8041aa8cc23">jle::shared_ptr::shared_ptr</a></div><div class="ttdeci">shared_ptr(nullptr_t __p, _Deleter __d, _Alloc __a)</div><div class="ttdoc">Construct a shared_ptr that owns a null pointer and the deleter __d. </div><div class="ttdef"><b>Definition:</b> shared_ptr.hpp:138</div></div>
 <div class="ttc" id="classjle_1_1shared__ptr_html_aa7fe3f2991467c06104334a409598c90"><div class="ttname"><a href="classjle_1_1shared__ptr.html#aa7fe3f2991467c06104334a409598c90">jle::shared_ptr::shared_ptr</a></div><div class="ttdeci">constexpr shared_ptr()</div><div class="ttdoc">Construct an empty shared_ptr. </div><div class="ttdef"><b>Definition:</b> shared_ptr.hpp:52</div></div>
@@ -699,7 +710,6 @@ $(document).ready(function(){initNavTree('shared__ptr_8hpp_source.html','');});
 <div class="ttc" id="singletonjle_1_1weak__ptr_html"><div class="ttname"><a href="singletonjle_1_1weak__ptr.html">jle::weak_ptr</a></div><div class="ttdoc">A safe std weak_ptr WRAPPER. </div><div class="ttdef"><b>Definition:</b> shared_ptr.hpp:21</div></div>
 <div class="ttc" id="classjle_1_1shared__ptr_html_ae9a14db712a2112b033210f947759b47"><div class="ttname"><a href="classjle_1_1shared__ptr.html#ae9a14db712a2112b033210f947759b47">jle::shared_ptr::shared_ptr</a></div><div class="ttdeci">shared_ptr(shared_ptr&lt; _Tp1 &gt; &amp;&amp;__r)</div><div class="ttdoc">Move-constructs a shared_ptr instance from __r. </div><div class="ttdef"><b>Definition:</b> shared_ptr.hpp:202</div></div>
 <div class="ttc" id="classjle_1_1shared__ptr_html_a48e7727ea5e4ee21c8efb75ab231f2df"><div class="ttname"><a href="classjle_1_1shared__ptr.html#a48e7727ea5e4ee21c8efb75ab231f2df">jle::shared_ptr::shared_ptr</a></div><div class="ttdeci">shared_ptr(shared_ptr &amp;&amp;__r)</div><div class="ttdoc">Move-constructs a shared_ptr instance from __r. </div><div class="ttdef"><b>Definition:</b> shared_ptr.hpp:183</div></div>
-<div class="ttc" id="classjle_1_1shared__ptr_html_a88995681205fbc4fa130e4c1c01266ba"><div class="ttname"><a href="classjle_1_1shared__ptr.html#a88995681205fbc4fa130e4c1c01266ba">jle::shared_ptr::allocate_shared</a></div><div class="ttdeci">friend shared_ptr&lt; _Tp1 &gt; allocate_shared(const _Alloc &amp;__a, _Args &amp;&amp;...__args)</div><div class="ttdoc">Create an object that is owned by a shared_ptr. </div><div class="ttdef"><b>Definition:</b> shared_ptr.hpp:707</div></div>
 <div class="ttc" id="classjle_1_1shared__ptr_html"><div class="ttname"><a href="classjle_1_1shared__ptr.html">jle::shared_ptr</a></div><div class="ttdoc">A safe std smart pointer WRAPPER. </div><div class="ttdef"><b>Definition:</b> shared_ptr.hpp:41</div></div>
 <div class="ttc" id="classjle_1_1shared__ptr_html_abc86c019bd3292351302ddd6e3b6e16e"><div class="ttname"><a href="classjle_1_1shared__ptr.html#abc86c019bd3292351302ddd6e3b6e16e">jle::shared_ptr::shared_ptr</a></div><div class="ttdeci">constexpr shared_ptr(nullptr_t __p)</div><div class="ttdoc">Construct an empty shared_ptr. </div><div class="ttdef"><b>Definition:</b> shared_ptr.hpp:227</div></div>
 <div class="ttc" id="classjle_1_1shared__ptr_html_a8977db60b91981b8f5cc84d6d5a22610"><div class="ttname"><a href="classjle_1_1shared__ptr.html#a8977db60b91981b8f5cc84d6d5a22610">jle::shared_ptr::shared_ptr</a></div><div class="ttdeci">shared_ptr(nullptr_t __p, _Deleter __d)</div><div class="ttdoc">Construct a shared_ptr that owns a null pointer and the deleter __d. </div><div class="ttdef"><b>Definition:</b> shared_ptr.hpp:100</div></div>
@@ -712,7 +722,7 @@ $(document).ready(function(){initNavTree('shared__ptr_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_021c64f412f6b3b6708367bb6d6ca209.html">support</a></li><li class="navelem"><b>shared_ptr.hpp</b></li>
-    <li class="footer">Generated on Sun Apr 5 2015 19:59:47 for jle_cpp_tk by
+    <li class="footer">Generated on Sat Apr 18 2015 18:10:55 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

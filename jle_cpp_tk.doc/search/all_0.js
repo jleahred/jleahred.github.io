@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['allocate_5fshared',['allocate_shared',['../classjle_1_1shared__ptr.html#a88995681205fbc4fa130e4c1c01266ba',1,'jle::shared_ptr']]]
+  ['connect',['connect',['../classjle_1_1signal.html#a317925ec28e76f0de71b20ce9a4bb66c',1,'jle::signal']]]
 ];

@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$singletonjle_1_1weak__ptr.html" title="A safe std weak_ptr WRAPPER. " alt="" coords="5,5,148,32"/>
+<area shape="rect" id="node1" href="$classjle_1_1non__copyable.html" title="jle::non_copyable" alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node2" href="$classjle_1_1signal__receptor.html" title="Any object connected to signals, has to inherit from signal_receptor. " alt="" coords="176,5,307,32"/>
+<area shape="rect" id="node3" href="$classjle_1_1signal.html" title="signal instance to connect and emit " alt="" coords="355,5,483,32"/>
 </map>
