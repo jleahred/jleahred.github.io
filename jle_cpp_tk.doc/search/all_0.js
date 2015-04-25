@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['connect',['connect',['../classjle_1_1signal.html#a317925ec28e76f0de71b20ce9a4bb66c',1,'jle::signal']]]
+  ['alarm',['alarm',['../structjle_1_1alarm.html',1,'jle']]]
 ];

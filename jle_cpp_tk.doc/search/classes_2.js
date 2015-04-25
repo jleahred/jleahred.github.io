@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['month',['month',['../structjle_1_1chrono_1_1month.html',1,'jle::chrono']]]
+  ['day',['day',['../structjle_1_1chrono_1_1day.html',1,'jle::chrono']]]
 ];

@@ -1,4 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$structjle_1_1owner__less_3_01shared__ptr_3_01___tp_01_4_01_4.html" title="Partial specialization of owner_less for shared_ptr. " alt="" coords="172,5,332,47"/>
-<area shape="rect" id="node3" href="$structjle_1_1owner__less_3_01weak__ptr_3_01___tp_01_4_01_4.html" title="Partial specialization of owner_less for weak_ptr. " alt="" coords="176,71,328,112"/>
+<area shape="rect" id="node1" href="$structjle_1_1owner__less.html" title="Primary template owner_less. " alt="" coords="5,5,160,32"/>
 </map>

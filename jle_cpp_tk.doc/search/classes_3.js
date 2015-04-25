@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['non_5fcopyable',['non_copyable',['../classjle_1_1non__copyable.html',1,'jle']]]
+  ['enable_5fshared_5ffrom_5fthis',['enable_shared_from_this',['../classjle_1_1enable__shared__from__this.html',1,'jle']]]
 ];

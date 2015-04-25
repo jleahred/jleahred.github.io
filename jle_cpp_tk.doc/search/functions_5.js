@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_28_29',['operator()',['../classjle_1_1signal.html#a646540eaab7b206d7bb442f43800f102',1,'jle::signal']]]
+  ['notify',['notify',['../classjle_1_1signal.html#adb7fe82b1301f94188927b3e9b1cacc9',1,'jle::signal']]]
 ];
