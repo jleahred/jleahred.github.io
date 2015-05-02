@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['non_5fcopyable',['non_copyable',['../classjle_1_1non__copyable.html',1,'jle']]],
-  ['notify',['notify',['../classjle_1_1signal.html#adb7fe82b1301f94188927b3e9b1cacc9',1,'jle::signal']]]
+  ['make_5fshared',['make_shared',['../namespacejle.html#a827ac983eb6d6a6a941f36795e84942b',1,'jle']]],
+  ['map',['map',['../classjle_1_1map.html',1,'jle']]],
+  ['month',['month',['../structjle_1_1chrono_1_1month.html',1,'jle::chrono']]]
 ];

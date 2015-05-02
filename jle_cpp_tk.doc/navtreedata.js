@@ -1,13 +1,15 @@
 var NAVTREE =
 [
   [ "jle_cpp_tk", "index.html", [
-    [ "lib_support", "md_src_support_support.html", [
-      [ "smart_pointers", "md_src_support_support.html#smart_pointers", null ],
-      [ "test", "md_src_support_support.html#test", null ],
-      [ "string", "md_src_support_support.html#string", null ],
-      [ "signal_slot", "md_src_support_support.html#signal_slot", null ],
-      [ "chrono", "md_src_support_support.html#chrono", null ],
-      [ "alarm", "md_src_support_support.html#alarm", null ]
+    [ "lib_core", "md_src_core_core.html", [
+      [ "smart_pointers", "md_src_core_core.html#smart_pointers", null ],
+      [ "test", "md_src_core_core.html#test", null ],
+      [ "string", "md_src_core_core.html#string", null ],
+      [ "signal_slot", "md_src_core_core.html#signal_slot", null ],
+      [ "chrono", "md_src_core_core.html#chrono", null ],
+      [ "alarm", "md_src_core_core.html#alarm", null ],
+      [ "dbl", "md_src_core_core.html#dbl", null ],
+      [ "containers", "md_src_core_core.html#containers", null ]
     ] ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", null, [
@@ -36,7 +38,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_2support_2ex_alarm_8cpp-example.html"
+"_2core_2ex_alarm_8cpp-example.html",
+"classjle_1_1set_1_1iterator.html#a433453a95ccfae0851c2227b3b28094b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

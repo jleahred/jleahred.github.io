@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['time_5fpoint',['time_point',['../classjle_1_1chrono_1_1time__point.html',1,'jle::chrono']]]
+  ['non_5fcopyable',['non_copyable',['../classjle_1_1non__copyable.html',1,'jle']]]
 ];
