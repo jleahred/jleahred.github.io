@@ -54,6 +54,7 @@ _If you require an updated version, please contact me by email_
 
 * Small toolkit for C++ (using C++11 and C++14) [(src)](https://github.com/jleahred/jle_cpp_tk) [(doc)](jle_cpp_tk.doc/index.html)
 * `i3_status_jle`. My i3 status line personalization focused on memory display [(src)](https://github.com/jleahred/i3_status_jle)
+* Small tech exercises and katas [(src)](https://github.com/jleahred/katas)
 * Practical editor for **asciidoc** **Qt/C++** [(src)](http://code.google.com/p/qadoc/)
 * General editor component **Qt/C++** [(src)](http://code.google.com/p/mqeditor/)
 * To practice elemental maths routines **Qt/C++** (for kids) [(src)](http://code.google.com/p/kids-math-practice/)
