@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">jle_cpp_tk
-   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;1b533ce7dc2700b09f71140b8e9b08ba3d08faab&quot;</span>
+   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;bed01dae9e2623ddaa1e037287079efb3a2f9e68&quot;</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('shared__ptr_8hpp_source.html','');});
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> _Tp1, <span class="keyword">typename</span> = <span class="keyword">typename</span></div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      std::enable_if&lt;std::is_convertible&lt;_Tp1*, _Tp*&gt;::value&gt;::type&gt;</div>
 <div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="classjle_1_1shared__ptr.html#a87930864f63f09773c79dc5a3999b0d8">  175</a></span>&#160;    <a class="code" href="classjle_1_1shared__ptr.html#a87930864f63f09773c79dc5a3999b0d8">shared_ptr</a>(<span class="keyword">const</span> <a class="code" href="classjle_1_1shared__ptr.html">shared_ptr&lt;_Tp1&gt;</a>&amp; __r) <span class="comment">/*noexcept*/</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    : ptr(std::<a class="code" href="classjle_1_1shared__ptr.html">shared_ptr</a>&lt;_Tp&gt;(__r.__internal_dangerous__get_std_shared_ptr())) {}</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    : ptr(<a class="code" href="namespacestd.html">std</a>::<a class="code" href="classjle_1_1shared__ptr.html">shared_ptr</a>&lt;_Tp&gt;(__r.__internal_dangerous__get_std_shared_ptr())) {}</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
 <div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classjle_1_1shared__ptr.html#a48e7727ea5e4ee21c8efb75ab231f2df">  183</a></span>&#160;    <a class="code" href="classjle_1_1shared__ptr.html#a48e7727ea5e4ee21c8efb75ab231f2df">shared_ptr</a>(<a class="code" href="classjle_1_1shared__ptr.html">shared_ptr</a>&amp;&amp; __r) <span class="comment">/*noexcept*/</span></div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    : ptr(__r.ptr) {}</div>
@@ -359,22 +359,22 @@ $(document).ready(function(){initNavTree('shared__ptr_8hpp_source.html','');});
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment">//      { return ptr._M_get_deleter(__ti); }</span></div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment">//      template&lt;typename _Tp1&gt;</span></div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment">//  static _Tp1*</span></div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">//  _S_raw_ptr(_Tp1* __ptr)</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment">//  { return __ptr; }</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment">//    static _Tp1*</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">//    _S_raw_ptr(_Tp1* __ptr)</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment">//    { return __ptr; }</span></div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="comment">//      template&lt;typename _Tp1&gt;</span></div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="comment">//  static auto</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment">//  _S_raw_ptr(_Tp1 __ptr) -&gt; decltype(std::__addressof(*__ptr))</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="comment">//  { return std::__addressof(*__ptr); }</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="comment">//    static auto</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment">//    _S_raw_ptr(_Tp1 __ptr) -&gt; decltype(std::__addressof(*__ptr))</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="comment">//    { return std::__addressof(*__ptr); }</span></div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="comment">//      template&lt;typename _Tp1, _Lock_policy _Lp1&gt; friend class __shared_ptr;</span></div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="comment">//      template&lt;typename _Tp1, _Lock_policy _Lp1&gt; friend class __weak_ptr;</span></div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="comment">//      template&lt;typename _Del, typename _Tp1, _Lock_policy _Lp1&gt;</span></div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="comment">//  friend _Del* get_deleter(const __shared_ptr&lt;_Tp1, _Lp1&gt;&amp;) /*noexcept*/;</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="comment">//    friend _Del* get_deleter(const __shared_ptr&lt;_Tp1, _Lp1&gt;&amp;) /*noexcept*/;</span></div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="comment">//      _Tp*           _M_ptr;         // Contained pointer.</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="comment">//      _Tp*              _M_ptr;         // Contained pointer.</span></div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="comment">//      __shared_count&lt;_Lp&gt;  _M_refcount;    // Reference counter.</span></div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment">//    };</span></div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
@@ -703,6 +703,7 @@ $(document).ready(function(){initNavTree('shared__ptr_8hpp_source.html','');});
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;</div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;<span class="preprocessor">#endif // JLE_SHARED_PTR_H</span></div>
 <div class="ttc" id="classjle_1_1shared__ptr_html_acf40c327d551210298b50f7eaa53b430"><div class="ttname"><a href="classjle_1_1shared__ptr.html#acf40c327d551210298b50f7eaa53b430">jle::shared_ptr::shared_ptr</a></div><div class="ttdeci">shared_ptr(_Tp1 *__p, _Deleter __d)</div><div class="ttdoc">Construct a shared_ptr that owns the pointer __p and the deleter __d. </div><div class="ttdef"><b>Definition:</b> shared_ptr.hpp:82</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> http_server.h:9</div></div>
 <div class="ttc" id="classjle_1_1shared__ptr_html_a084bd10df36c1a3a9a81b8041aa8cc23"><div class="ttname"><a href="classjle_1_1shared__ptr.html#a084bd10df36c1a3a9a81b8041aa8cc23">jle::shared_ptr::shared_ptr</a></div><div class="ttdeci">shared_ptr(nullptr_t __p, _Deleter __d, _Alloc __a)</div><div class="ttdoc">Construct a shared_ptr that owns a null pointer and the deleter __d. </div><div class="ttdef"><b>Definition:</b> shared_ptr.hpp:138</div></div>
 <div class="ttc" id="classjle_1_1shared__ptr_html_aa7fe3f2991467c06104334a409598c90"><div class="ttname"><a href="classjle_1_1shared__ptr.html#aa7fe3f2991467c06104334a409598c90">jle::shared_ptr::shared_ptr</a></div><div class="ttdeci">constexpr shared_ptr()</div><div class="ttdoc">Construct an empty shared_ptr. </div><div class="ttdef"><b>Definition:</b> shared_ptr.hpp:52</div></div>
 <div class="ttc" id="namespacejle_html_a827ac983eb6d6a6a941f36795e84942b"><div class="ttname"><a href="namespacejle.html#a827ac983eb6d6a6a941f36795e84942b">jle::make_shared</a></div><div class="ttdeci">shared_ptr&lt; _Tp &gt; make_shared(_Args &amp;&amp;...__args)</div><div class="ttdoc">Create an object that is owned by a shared_ptr. </div><div class="ttdef"><b>Definition:</b> shared_ptr.hpp:722</div></div>
@@ -726,7 +727,7 @@ $(document).ready(function(){initNavTree('shared__ptr_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><b>shared_ptr.hpp</b></li>
-    <li class="footer">Generated on Sun May 3 2015 00:08:58 for jle_cpp_tk by
+    <li class="footer">Generated on Sat Sep 12 2015 23:18:19 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

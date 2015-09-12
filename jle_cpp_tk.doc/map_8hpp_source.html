@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>jle_cpp_tk: src/core/map.hpp Source File</title>
+<title>jle_cpp_tk: src/core/cont/map.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">jle_cpp_tk
-   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;1b533ce7dc2700b09f71140b8e9b08ba3d08faab&quot;</span>
+   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;bed01dae9e2623ddaa1e037287079efb3a2f9e68&quot;</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('map_8hpp_source.html','');});
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;container_support.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;alarm.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;core/alarm.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
@@ -270,16 +270,16 @@ $(document).ready(function(){initNavTree('map_8hpp_source.html','');});
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">//--------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment">//      IMPLEMENTATION</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment">//        IMPLEMENTATION</span></div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">//--------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> key_type, <span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;map&lt;key_type, T&gt;::map(<span class="keyword">const</span> map&lt;key_type, T&gt;&amp; m)</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  : registered_as (internal_for_containers::register_container( imap.size()==0? true : false))</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  : registered_as (internal_for_containers::register_container( imap.empty() ? true : false))</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;{</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    imap = m.imap;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">if</span>(imap.size() != 0)</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">if</span>(imap.empty() == <span class="keyword">false</span>)</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        internal_for_containers::register_container_size_change(registered_as);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
@@ -287,8 +287,8 @@ $(document).ready(function(){initNavTree('map_8hpp_source.html','');});
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;map&lt;key_type, T&gt;&amp; map&lt;key_type, T&gt;::operator=(<span class="keyword">const</span> map&lt;key_type, T&gt;&amp; m)</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;{</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    imap = m.imap;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    registered_as = internal_for_containers::register_container( imap.size()==0? <span class="keyword">true</span> : <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">if</span>(imap.size() != 0)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    registered_as = internal_for_containers::register_container( imap.empty() ? <span class="keyword">true</span> : <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">if</span>(imap.empty() == <span class="keyword">false</span>)</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        internal_for_containers::register_container_size_change(registered_as);</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;}</div>
@@ -315,7 +315,7 @@ $(document).ready(function(){initNavTree('map_8hpp_source.html','');});
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    it.registered_owner = registered_as;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    it.i_end_iterator = imap.end();</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">if</span> (imap.size()&gt;0)</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">if</span> (imap.empty()==<span class="keyword">false</span>)</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        it.last_updated_container = internal_for_containers::get_registered_container_last_size_change(registered_as);</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        it.last_updated_container = 0;        <span class="comment">//  no valid value</span></div>
@@ -441,7 +441,7 @@ $(document).ready(function(){initNavTree('map_8hpp_source.html','');});
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    it.registered_owner = registered_as;</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    it.i_end_iterator = imap.end();</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordflow">if</span> (imap.size()&gt;0)</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordflow">if</span> (imap.empty()==<span class="keyword">false</span>)</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        it.last_updated_container = internal_for_containers::get_registered_container_last_size_change(registered_as);</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        it.last_updated_container = 0;        <span class="comment">//  no valid value</span></div>
@@ -738,7 +738,7 @@ $(document).ready(function(){initNavTree('map_8hpp_source.html','');});
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;</div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    result.registered_owner = registered_as;</div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    result.i_end_iterator = imap.end();</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <span class="keywordflow">if</span> (imap.size()&gt;0)</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <span class="keywordflow">if</span> (imap.empty()==<span class="keyword">false</span>)</div>
 <div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        result.last_updated_container = internal_for_containers::get_registered_container_last_size_change(registered_as);</div>
 <div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;        result.last_updated_container = 0;        <span class="comment">//  no valid value</span></div>
@@ -811,7 +811,7 @@ $(document).ready(function(){initNavTree('map_8hpp_source.html','');});
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classjle_1_1map_1_1const__iterator_html"><div class="ttname"><a href="classjle_1_1map_1_1const__iterator.html">jle::map::const_iterator</a></div><div class="ttdef"><b>Definition:</b> map.hpp:52</div></div>
-<div class="ttc" id="structjle_1_1alarm_html"><div class="ttname"><a href="structjle_1_1alarm.html">jle::alarm</a></div><div class="ttdef"><b>Definition:</b> alarm.h:94</div></div>
+<div class="ttc" id="structjle_1_1alarm_html"><div class="ttname"><a href="structjle_1_1alarm.html">jle::alarm</a></div><div class="ttdef"><b>Definition:</b> alarm.h:95</div></div>
 <div class="ttc" id="classjle_1_1map_html"><div class="ttname"><a href="classjle_1_1map.html">jle::map</a></div><div class="ttdef"><b>Definition:</b> map.hpp:20</div></div>
 <div class="ttc" id="classjle_1_1map_1_1iterator_html"><div class="ttname"><a href="classjle_1_1map_1_1iterator.html">jle::map::iterator</a></div><div class="ttdef"><b>Definition:</b> map.hpp:24</div></div>
 <div class="ttc" id="namespacejle_html"><div class="ttname"><a href="namespacejle.html">jle</a></div><div class="ttdoc">generic namespace </div><div class="ttdef"><b>Definition:</b> alarm.cpp:12</div></div>
@@ -820,8 +820,8 @@ $(document).ready(function(){initNavTree('map_8hpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><b>map.hpp</b></li>
-    <li class="footer">Generated on Sun May 3 2015 00:08:58 for jle_cpp_tk by
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="dir_104bf488bf675f305ccce46e520ac504.html">cont</a></li><li class="navelem"><b>map.hpp</b></li>
+    <li class="footer">Generated on Sat Sep 12 2015 23:18:19 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

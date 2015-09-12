@@ -1,7 +1,7 @@
 var searchData=
 [
   ['s_5fnormalize_5futf8',['s_normalize_utf8',['../namespacejle.html#aafb158fb121c95b9621647efa460b44e',1,'jle']]],
-  ['s_5fsplit',['s_split',['../namespacejle.html#a0683e5230fef0b12d826e81d01bae0a1',1,'jle']]],
+  ['s_5fsplit',['s_split',['../namespacejle.html#a71b45e424d5f12e0925ebf5415a80cc2',1,'jle']]],
   ['s_5ftrim',['s_trim',['../namespacejle.html#a73c6822d31e2147e6714adee70575f2d',1,'jle::s_trim(const std::string &amp;s, char char2remove)'],['../namespacejle.html#a95d627978202f2291907fcd5eedfbf1a',1,'jle::s_trim(const std::string &amp;s, const std::string &amp;chars2remove)']]],
   ['s_5ftry_5fs2d',['s_try_s2d',['../namespacejle.html#ad39e2a3c23591da8ff05bd255b096f96',1,'jle']]],
   ['s_5ftry_5fs2dur',['s_try_s2dur',['../namespacejle.html#ab906986c650f941db2d9e0a23f590f13',1,'jle']]],

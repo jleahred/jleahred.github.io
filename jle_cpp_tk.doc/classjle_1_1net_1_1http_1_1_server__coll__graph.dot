@@ -1,0 +1,14 @@
+digraph "jle::net::http::Server"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="jle::net::http::Server",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="jle::signal_receptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjle_1_1signal__receptor.html",tooltip="Any object connected to signals, has to inherit from signal_receptor. "];
+  Node3 -> Node2 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="jle::non_copyable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjle_1_1non__copyable.html"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" signal_request_received" ,fontname="Helvetica"];
+  Node4 [label="jle::signal\< const\l jle::jle::shared_ptr\l\< jle::net::http::Request \> & \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjle_1_1signal.html"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

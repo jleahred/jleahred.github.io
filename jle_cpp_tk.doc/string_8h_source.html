@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">jle_cpp_tk
-   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;1b533ce7dc2700b09f71140b8e9b08ba3d08faab&quot;</span>
+   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;bed01dae9e2623ddaa1e037287079efb3a2f9e68&quot;</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('string_8h_source.html','');});
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;cont/vector.hpp&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;core/chrono.h&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('string_8h_source.html','');});
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    std::string     <a class="code" href="namespacejle.html#a73c6822d31e2147e6714adee70575f2d">s_trim</a>    (<span class="keyword">const</span> std::string&amp;    s , <span class="keyword">const</span> std::string&amp; chars2remove);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    std::vector&lt;std::string&gt; <a class="code" href="namespacejle.html#a0683e5230fef0b12d826e81d01bae0a1">s_split</a> (</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="classjle_1_1vector.html">jle::vector&lt;std::string&gt;</a> <a class="code" href="namespacejle.html#a71b45e424d5f12e0925ebf5415a80cc2">s_split</a> (</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                    <span class="keyword">const</span> std::string&amp;  s,</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                    <span class="keyword">const</span> std::string&amp;  separator</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                );</div>
@@ -181,8 +181,9 @@ $(document).ready(function(){initNavTree('string_8h_source.html','');});
 <div class="ttc" id="namespacejle_html_a86503ade4cc8e893811bf6c0fd6e51ef"><div class="ttname"><a href="namespacejle.html#a86503ade4cc8e893811bf6c0fd6e51ef">jle::s_try_s2tp</a></div><div class="ttdeci">std::tuple&lt; chrono::time_point, bool &gt; s_try_s2tp(const std::string &amp;s, const chrono::time_point &amp;def_val)</div><div class="ttdoc">try to convert from string to jle::time_point possible formats... </div><div class="ttdef"><b>Definition:</b> string.cpp:148</div></div>
 <div class="ttc" id="namespacejle_html_a73c6822d31e2147e6714adee70575f2d"><div class="ttname"><a href="namespacejle.html#a73c6822d31e2147e6714adee70575f2d">jle::s_trim</a></div><div class="ttdeci">std::string s_trim(const std::string &amp;s, char char2remove)</div><div class="ttdoc">remove from left and right char2remove from string s </div><div class="ttdef"><b>Definition:</b> string.cpp:15</div></div>
 <div class="ttc" id="namespacejle_html_aafb158fb121c95b9621647efa460b44e"><div class="ttname"><a href="namespacejle.html#aafb158fb121c95b9621647efa460b44e">jle::s_normalize_utf8</a></div><div class="ttdeci">std::string s_normalize_utf8(const std::string &amp;source_string)</div><div class="ttdoc">return a valid utf8 string from a raw one If char is "special" as á, é, í, ó, ú, ñ, ü (and uppercases) it will be converted to utf8. Other weird values will be replaced by "_" </div><div class="ttdef"><b>Definition:</b> string.cpp:286</div></div>
-<div class="ttc" id="namespacejle_html_a0683e5230fef0b12d826e81d01bae0a1"><div class="ttname"><a href="namespacejle.html#a0683e5230fef0b12d826e81d01bae0a1">jle::s_split</a></div><div class="ttdeci">std::vector&lt; std::string &gt; s_split(const std::string &amp;s, const std::string &amp;separator)</div><div class="ttdoc">divide string s with separator </div><div class="ttdef"><b>Definition:</b> string.cpp:205</div></div>
+<div class="ttc" id="namespacejle_html_a71b45e424d5f12e0925ebf5415a80cc2"><div class="ttname"><a href="namespacejle.html#a71b45e424d5f12e0925ebf5415a80cc2">jle::s_split</a></div><div class="ttdeci">jle::vector&lt; std::string &gt; s_split(const std::string &amp;s, const std::string &amp;separator)</div><div class="ttdoc">divide string s with separator </div><div class="ttdef"><b>Definition:</b> string.cpp:205</div></div>
 <div class="ttc" id="namespacejle_html_ab906986c650f941db2d9e0a23f590f13"><div class="ttname"><a href="namespacejle.html#ab906986c650f941db2d9e0a23f590f13">jle::s_try_s2dur</a></div><div class="ttdeci">std::tuple&lt; chrono::duration, bool &gt; s_try_s2dur(const std::string &amp;_s, const chrono::duration &amp;def_val)</div><div class="ttdoc">try to convert from string to jle::duration possible formats... </div><div class="ttdef"><b>Definition:</b> string.cpp:63</div></div>
+<div class="ttc" id="classjle_1_1vector_html"><div class="ttname"><a href="classjle_1_1vector.html">jle::vector</a></div><div class="ttdef"><b>Definition:</b> vector.hpp:17</div></div>
 <div class="ttc" id="namespacejle_html"><div class="ttname"><a href="namespacejle.html">jle</a></div><div class="ttdoc">generic namespace </div><div class="ttdef"><b>Definition:</b> alarm.cpp:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -190,7 +191,7 @@ $(document).ready(function(){initNavTree('string_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><b>string.h</b></li>
-    <li class="footer">Generated on Sun May 3 2015 00:08:58 for jle_cpp_tk by
+    <li class="footer">Generated on Sat Sep 12 2015 23:18:19 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

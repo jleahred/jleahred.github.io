@@ -1,0 +1,9 @@
+digraph "src/core/cont" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_aebb8dcc11953d78e620bbef0b9e2183 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="core" fontname="Helvetica", fontsize="10", URL="dir_aebb8dcc11953d78e620bbef0b9e2183.html"]
+  dir_104bf488bf675f305ccce46e520ac504 [shape=box, label="cont", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_104bf488bf675f305ccce46e520ac504.html"];
+  }
+}

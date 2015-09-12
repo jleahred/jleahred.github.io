@@ -9,14 +9,23 @@ var NAVTREE =
       [ "chrono", "md_src_core_core.html#chrono", null ],
       [ "alarm", "md_src_core_core.html#alarm", null ],
       [ "dbl", "md_src_core_core.html#dbl", null ],
-      [ "containers", "md_src_core_core.html#containers", null ]
+      [ "containers", "md_src_core_core.html#containers", null ],
+      [ "optional", "md_src_core_core.html#optional", null ],
+      [ "tuple", "md_src_core_core.html#tuple", null ],
+      [ "timers", "md_src_core_core.html#timers", null ],
+      [ "synchr", "md_src_core_core.html#synchr", null ]
     ] ],
+    [ "lib_net", "md_src_net_net.html", [
+      [ "http", "md_src_net_net.html#http", null ]
+    ] ],
+    [ "STATS", "md__s_t_a_t_s.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
-        [ "Functions", "namespacemembers_func.html", null ]
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ]
       ] ]
     ] ],
     [ "Classes", null, [
@@ -38,8 +47,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_2core_2ex_alarm_8cpp-example.html",
-"classjle_1_1set_1_1iterator.html#a433453a95ccfae0851c2227b3b28094b"
+".html",
+"classjle_1_1optional.html#a8f9591b668914509f2e3342be53f06b5",
+"md_src_core_core.html#containers",
+"structns__serve__http__opts.html#a9d568dbbc8bf2c655feb36d1a94e2ce6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

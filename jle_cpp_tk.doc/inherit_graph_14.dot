@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="jle::map\< key_type,\l T \>::iterator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjle_1_1map_1_1iterator.html"];
+  Node1 [label="jle::list\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjle_1_1list.html"];
 }

@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">jle_cpp_tk
-   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;1b533ce7dc2700b09f71140b8e9b08ba3d08faab&quot;</span>
+   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;bed01dae9e2623ddaa1e037287079efb3a2f9e68&quot;</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -110,12 +110,14 @@ $(document).ready(function(){initNavTree('md_src_core_core.html','');});
 smart_pointers</h1>
 <h2>shared_ptr</h2>
 <p>Safe shared_ptr wrapper</p>
+<p>Same interface as std::shared_ptr but, with no undefined behaviour</p>
 <p>links:</p><ul>
 <li>see: <a class="el" href="classjle_1_1shared__ptr.html" title="A safe std smart pointer WRAPPER. ">jle::shared_ptr</a></li>
 <li>example: <a class="el" href="_2core_2ex_shared_ptr_8cpp-example.html">/core/ex_shared_ptr.cpp</a></li>
 </ul>
 <h2>weak_ptr</h2>
 <p>Safe weak_ptr wrapper</p>
+<p>Same interface as std::shared_ptr but, with no undefined behaviour</p>
 <p>links:</p><ul>
 <li>see: <a class="el" href="classjle_1_1weak__ptr.html" title="A safe std weak_ptr WRAPPER. ">jle::weak_ptr</a></li>
 <li>example: <a class="el" href="_2core_2ex_shared_ptr_8cpp-example.html">/core/ex_shared_ptr.cpp</a></li>
@@ -130,7 +132,7 @@ test</h1>
 <tr>
 <th>Macro </th><th>Description  </th></tr>
 <tr>
-<td>JLE_TEST_header: </td><td>at the begining of execution file </td></tr>
+<td>JLE_TEST_FILE: </td><td>at the begining of execution file </td></tr>
 <tr>
 <td>JLE_TEST_REPORT: </td><td>at the end of execution file </td></tr>
 <tr>
@@ -320,21 +322,62 @@ containers</h1>
 <li><a class="el" href="classjle_1_1list.html">jle::list</a></li>
 <li><a class="el" href="classjle_1_1map.html">jle::map</a></li>
 <li><a class="el" href="classjle_1_1set.html">jle::set</a></li>
-<li>example: <a class="el" href="">/core/ex_container.cpp</a></li>
+<li>example: <a class="el" href="_2core_2ex_container_8cpp-example.html">/core/ex_container.cpp</a></li>
 <li>headers:<ul>
-<li><a class="el" href="vector_8hpp_source.html">/core/vector.hpp</a></li>
-<li><a class="el" href="list_8hpp_source.html">/core/list.hpp</a></li>
-<li><a class="el" href="map_8hpp_source.html">/core/map.hpp</a></li>
-<li><a class="el" href="set_8hpp_source.html">/core/set.hpp</a> </li>
+<li><a class="el" href="vector_8hpp_source.html">/core/cont/vector.hpp</a></li>
+<li><a class="el" href="list_8hpp_source.html">/core/cont/list.hpp</a></li>
+<li><a class="el" href="map_8hpp_source.html">/core/cont/map.hpp</a></li>
+<li><a class="el" href="set_8hpp_source.html">/core/cont/set.hpp</a></li>
 </ul>
 </li>
+</ul>
+<h1><a class="anchor" id="optional"></a>
+optional</h1>
+<p>I could contain a value, it could not contain a value...</p>
+<p>This is a safe std::experimental::optional wrapper. No undefined behaviour</p>
+<p>Some years ago, I wrote something similar with the name of nullable.</p>
+<p>The right way to do it, is using algebraic data types. But, we don't have it in C++.</p>
+<p>I was thinking of working with algebraic data types with templates and macros, but finally, I decided to postpone it to the sdl to define data structs.</p>
+<p>But this is a common, basic, core and very frecuently needed, therefore, here it is the optional type.</p>
+<p>links:</p><ul>
+<li>see: <a class="el" href="classjle_1_1optional.html" title="Class template for optional values. ">jle::optional</a></li>
+<li>example: <a class="el" href="_2core_2ex_optional_8cpp-example.html">/core/ex_optional.cpp</a></li>
+</ul>
+<h1><a class="anchor" id="tuple"></a>
+tuple</h1>
+<p>Now we have tuples on C++, but I want to write them at stream.</p>
+<p>jle::tuple is not a wrapper, it is just an alias to std::tuple</p>
+<p>When you include <a class="el" href="tuple_8hpp_source.html">core/tuple.hpp</a> it will inject ostream &lt;&lt; support on tuples.</p>
+<p>As this is a bit invasive, we created the alias jle::tuple. If you see jle::tuple, you know it has ostream&lt;&lt; suport</p>
+<p>links:</p><ul>
+<li>see: <a class="el" href="tuple_8hpp_source.html">core/tuple.hpp</a></li>
+<li>example: <a class="el" href="">/core/ex_tuple.cpp</a></li>
+</ul>
+<h1><a class="anchor" id="timers"></a>
+timers</h1>
+<p>It is part or reactive programming.</p>
+<p>Only one line is necessary to configure a timer, check the example.</p>
+<p>links:</p><ul>
+<li>see: <a class="el" href="timer_8h_source.html">core/timer.h</a></li>
+<li>example: <a class="el" href="_2core_2ex_timer_8cpp-example.html">/core/ex_timer.cpp</a></li>
+</ul>
+<h1><a class="anchor" id="synchr"></a>
+synchr</h1>
+<p>I don't try to run several threads in a safe way in C++</p>
+<p>In fact, I do the opposite.</p>
+<p>With this library, you can run multiple threads sequentially.</p>
+<p>If you use a third party library with other thread callbacks, or if you want to run passive waiting (and you need a thread), you can call JLE_SYNCR to avoid having more than one thread running simultaneously.</p>
+<p>Also you have here the way to start and stop the jle mail loop.</p>
+<p>links:</p><ul>
+<li>see: <a class="el" href="synchr_8h_source.html">core/synchr.h</a></li>
+<li>example: <a class="el" href="">/core/ex_synchr.cpp</a> </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 3 2015 00:08:58 for jle_cpp_tk by
+    <li class="footer">Generated on Sat Sep 12 2015 23:18:19 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

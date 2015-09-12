@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="jle::owner_less\< _Tp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structjle_1_1owner__less.html",tooltip="Primary template owner_less. "];
+  Node1 [label="jle::list\< T \>::const\l_reverse_iterator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classjle_1_1list_1_1const__reverse__iterator.html"];
 }

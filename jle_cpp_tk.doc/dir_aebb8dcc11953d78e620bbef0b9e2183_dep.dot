@@ -4,6 +4,10 @@ digraph "src/core" {
   edge [ labelfontsize="10", labelfontname="Helvetica"];
   subgraph clusterdir_68267d1309a1af8e8297ef4c3efbcdba {
     graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_68267d1309a1af8e8297ef4c3efbcdba.html"]
-  dir_aebb8dcc11953d78e620bbef0b9e2183 [shape=box, label="core", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_aebb8dcc11953d78e620bbef0b9e2183.html"];
+  subgraph clusterdir_aebb8dcc11953d78e620bbef0b9e2183 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_aebb8dcc11953d78e620bbef0b9e2183.html"];
+    dir_aebb8dcc11953d78e620bbef0b9e2183 [shape=plaintext label="core"];
+    dir_104bf488bf675f305ccce46e520ac504 [shape=box label="cont" color="black" fillcolor="white" style="filled" URL="dir_104bf488bf675f305ccce46e520ac504.html"];
+  }
   }
 }

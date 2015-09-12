@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>jle_cpp_tk: src/core/list.hpp Source File</title>
+<title>jle_cpp_tk: src/core/cont/list.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">jle_cpp_tk
-   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;1b533ce7dc2700b09f71140b8e9b08ba3d08faab&quot;</span>
+   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;bed01dae9e2623ddaa1e037287079efb3a2f9e68&quot;</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('list_8hpp_source.html','');});
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;container_support.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;alarm.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;core/alarm.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
@@ -366,17 +366,17 @@ $(document).ready(function(){initNavTree('list_8hpp_source.html','');});
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment">//--------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">//      IMPLEMENTATION</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">//        IMPLEMENTATION</span></div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment">//--------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;list&lt;T&gt;::list(<span class="keyword">const</span> list&lt;T&gt;&amp; l)</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  : registered_as (internal_for_containers::register_container( ilist.size()==0? true : false))</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  : registered_as (internal_for_containers::register_container( ilist.empty() ? true : false))</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;{</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    ilist = l.ilist;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">if</span> (ilist.size() !=0)</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">if</span> (ilist.empty() == <span class="keyword">false</span>)</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        internal_for_containers::register_container_size_change(registered_as);</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;}</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
@@ -384,8 +384,8 @@ $(document).ready(function(){initNavTree('list_8hpp_source.html','');});
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;list&lt;T&gt;&amp; list&lt;T&gt;::operator=(<span class="keyword">const</span> list&lt;T&gt;&amp; l)</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;{</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    ilist = l.ilist;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    registered_as = internal_for_containers::register_container( ilist.size()==0? <span class="keyword">true</span> : <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordflow">if</span> (ilist.size() !=0)</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    registered_as = internal_for_containers::register_container( ilist.empty() ? <span class="keyword">true</span> : <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordflow">if</span> (ilist.empty() == <span class="keyword">false</span>)</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        internal_for_containers::register_container_size_change(registered_as);</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;}</div>
@@ -1001,7 +1001,7 @@ $(document).ready(function(){initNavTree('list_8hpp_source.html','');});
 <div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;</div>
 <div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;    result.registered_owner = registered_as;</div>
 <div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;    result.i_end_iterator = ilist.end();</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    <span class="keywordflow">if</span> (ilist.size()&gt;0)</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    <span class="keywordflow">if</span> (ilist.empty() == <span class="keyword">false</span>)</div>
 <div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;        result.last_updated_container = internal_for_containers::get_registered_container_last_size_change(registered_as);</div>
 <div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;        result.last_updated_container = 0;        <span class="comment">//  no valid value</span></div>
@@ -1043,7 +1043,7 @@ $(document).ready(function(){initNavTree('list_8hpp_source.html','');});
 <div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;            result.iiterator = ilist.erase(next.iiterator);</div>
 <div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;            result.registered_owner = registered_as;</div>
 <div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;            result.i_end_iterator = ilist.end();</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;            <span class="keywordflow">if</span> (ilist.size()&gt;0)</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;            <span class="keywordflow">if</span> (ilist.empty() == <span class="keyword">false</span>)</div>
 <div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;                result.last_updated_container = internal_for_containers::get_registered_container_last_size_change(registered_as);</div>
 <div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;            <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;                result.last_updated_container = 0;        <span class="comment">//  no valid value</span></div>
@@ -1116,7 +1116,7 @@ $(document).ready(function(){initNavTree('list_8hpp_source.html','');});
 <div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;</div>
 <div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;<span class="preprocessor">#endif // JLE_LIST__HPP</span></div>
 <div class="ttc" id="classjle_1_1list_1_1const__iterator_html"><div class="ttname"><a href="classjle_1_1list_1_1const__iterator.html">jle::list::const_iterator</a></div><div class="ttdef"><b>Definition:</b> list.hpp:54</div></div>
-<div class="ttc" id="structjle_1_1alarm_html"><div class="ttname"><a href="structjle_1_1alarm.html">jle::alarm</a></div><div class="ttdef"><b>Definition:</b> alarm.h:94</div></div>
+<div class="ttc" id="structjle_1_1alarm_html"><div class="ttname"><a href="structjle_1_1alarm.html">jle::alarm</a></div><div class="ttdef"><b>Definition:</b> alarm.h:95</div></div>
 <div class="ttc" id="classjle_1_1list_1_1iterator_html"><div class="ttname"><a href="classjle_1_1list_1_1iterator.html">jle::list::iterator</a></div><div class="ttdef"><b>Definition:</b> list.hpp:26</div></div>
 <div class="ttc" id="classjle_1_1list_1_1reverse__iterator_html"><div class="ttname"><a href="classjle_1_1list_1_1reverse__iterator.html">jle::list::reverse_iterator</a></div><div class="ttdef"><b>Definition:</b> list.hpp:99</div></div>
 <div class="ttc" id="classjle_1_1list_1_1const__reverse__iterator_html"><div class="ttname"><a href="classjle_1_1list_1_1const__reverse__iterator.html">jle::list::const_reverse_iterator</a></div><div class="ttdef"><b>Definition:</b> list.hpp:127</div></div>
@@ -1127,8 +1127,8 @@ $(document).ready(function(){initNavTree('list_8hpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><b>list.hpp</b></li>
-    <li class="footer">Generated on Sun May 3 2015 00:08:58 for jle_cpp_tk by
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="dir_104bf488bf675f305ccce46e520ac504.html">cont</a></li><li class="navelem"><b>list.hpp</b></li>
+    <li class="footer">Generated on Sat Sep 12 2015 23:18:19 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

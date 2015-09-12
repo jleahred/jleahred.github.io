@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['non_5fcopyable',['non_copyable',['../classjle_1_1non__copyable.html',1,'jle']]]
+  ['json_5ftoken',['json_token',['../structjson__token.html',1,'']]]
 ];
