@@ -55,6 +55,7 @@ _If you require an updated version, please contact me by email_
 [(me on github)](https://github.com/jleahred)
 
 * Small toolkit for C++ (using C++11 and C++14) [(src)](https://github.com/jleahred/jle_cpp_tk) [(doc)](jle_cpp_tk.doc/index.html)
+* Rust kata rubiks solver [(src)](https://github.com/jleahred/katas/tree/master/langs/rust/rubiks_solver)
 * `i3_status_jle`. My i3 status line personalization focused on memory display [(src)](https://github.com/jleahred/i3_status_jle)
 * Small tech exercises and katas [(src)](https://github.com/jleahred/katas)
 * Practical editor for **asciidoc** **Qt/C++** [(src)](https://github.com/jleahred/qadoc)
