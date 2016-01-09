@@ -38,6 +38,12 @@ Pure functional, ML sytax, nice errors information, easy to start...
 This is a very small and simple calculator
 
 
+- ### 2015-09
+- ### ![](images/book-stack-32.png) Practice with Rust
+- To feel Rust and practice what I read... [src](https://github.com/jleahred/katas/tree/master/langs/rust/rubiks_solver) [src](https://github.com/jleahred/katas/tree/master/langs/rust/minis)
+
+
+
 - ### 2015
 - ### ![](images/book-stack-32.png) Dart, Polymer and Web SPA development
 - I investigated Dart and Single Page Application development
