@@ -45,6 +45,8 @@ and creating Polymer components
 
 This page is my first Polymer component [src](https://github.com/jleahred/timeline)
 
+An interesting multipuzzle. Three diferent topologies [link](http://jleahred.github.io/apps/puzzle3t/index.html) [src](https://github.com/jleahred/puzzle3t)
+
 
 - ### 2014-10
 - ### ![](images/talk-32.png) Elixir talk
