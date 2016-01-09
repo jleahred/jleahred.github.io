@@ -28,6 +28,16 @@ Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki
 And... *continues*
 
 
+- ### 2016-01
+- ### ![](images/book-stack-32.png) My very first elm program
+- My first elm application. [link](http://jleahred.github.io/apps/calculator/calculator.html) [src](https://github.com/jleahred/katas/tree/master/langs/elm/calculator)
+
+Elm is an amazing FRP (functional reactive programming language).
+Pure functional, ML sytax, nice errors information, easy to start...
+
+This is a very small and simple calculator
+
+
 - ### 2015
 - ### ![](images/book-stack-32.png) Dart, Polymer and Web SPA development
 - I investigated Dart and Single Page Application development
