@@ -33,10 +33,11 @@ Let me show you some links related to me (blog, cv, programs...)
     
 ### web apps
 
-* A timeline html polymer component developed with dart [(link)](timeline/index.html) [(src)](https://github.com/jleahred/timeline)
-* A slidding puzzle with tree diferent topologies  [(link)](apps/puzzle3t/index.html) [(src)](https://github.com/jleahred/puzzle3t)
+* A timeline html polymer component developed with **Dart** [(link)](timeline/index.html) [(src)](https://github.com/jleahred/timeline)
+* A slidding puzzle with tree diferent topologies **Dart**  [(link)](apps/puzzle3t/index.html) [(src)](https://github.com/jleahred/puzzle3t)
 * My first **Dart** application [(link)](apps/hello_world/index.html) [(src)](https://github.com/jleahred/dart_hello_world)
 * My first **elm** application [(link)](apps/calculator/calculator.html) [(src)](https://github.com/jleahred/katas/tree/master/langs/elm/calculator)
+* Status tree viewer with updates **elm** [(link)](apps/status_tree/index.html) [(src)](https://github.com/jleahred/katas/tree/master/langs/elm/status_tree)
 
 
 ### talks

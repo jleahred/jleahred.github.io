@@ -29,13 +29,17 @@ And... *continues*
 
 
 - ### 2016-01
-- ### ![](images/book-stack-32.png) My very first elm program
-- My first elm application. [link](http://jleahred.github.io/apps/calculator/calculator.html) [src](https://github.com/jleahred/katas/tree/master/langs/elm/calculator)
-
-Elm is an amazing FRP (functional reactive programming language).
+- ### ![](images/book-stack-32.png) My very first **elm** program, and second too
+- Elm is an amazing FRP (functional reactive programming language).
 Pure functional, ML sytax, nice errors information, easy to start...
 
+My first elm application. 
 This is a very small and simple calculator
+[link](http://jleahred.github.io/apps/calculator/calculator.html) [src](https://github.com/jleahred/katas/tree/master/langs/elm/calculator)
+
+Status tree viewer with **udates**
+[link](http://jleahred.github.io/apps/status_tree/index.html) [src](https://github.com/jleahred/katas/tree/master/langs/elm/status_tree)
+
 
 
 - ### 2015-09
