@@ -6,6 +6,8 @@ Hi, I'm José Luis.
 
 Here you have a "sort" timeline [(link)](timeline/index.html) 
 
+[(me on github)](https://github.com/jleahred)
+
 I've been working on software development for several years.
 
 As you can see, I'm not a web designer, in fact, I'm not a graphical designer of any kind.
