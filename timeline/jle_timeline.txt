@@ -23,9 +23,23 @@ Financial markets and FIX connections real-time and distributed platform designe
 Developer and maintaner of safe, real-time, multiplatform C++ library used in
 backend and frontend applications
 
-Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki
+Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki, jenkins
 
 And... *continues*
+
+
+- ### 2016-02
+- ### ![](images/book-stack-32.png) Added LL(n) parser with "compiler" jle\_cpp\_tk
+- I've added LL(n) with transformations rules to jle\_cpp\_tk
+
+This is the base to create external DSLs like idl or fsm [src/doc](https://github.com/jleahred/jle_cpp_tk/tree/master/src/core/hp)
+
+A small tool to develop [src/doc](https://github.com/jleahred/jle_cpp_tk/tree/master/tools/qt/hpgui)
+
+An example with a basic idl [src/doc](https://github.com/jleahred/jle_cpp_tk/tree/master/examples/project/idl)
+
+A tool to run the parser and transformation rules loaded from files [src/doc](https://github.com/jleahred/jle_cpp_tk/tree/master/tools/hpt)
+
 
 
 - ### 2016-01
