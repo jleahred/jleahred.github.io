@@ -4,6 +4,7 @@ var examples =
     [ "/core/ex_chrono.cpp", "_2core_2ex_chrono_8cpp-example.html", null ],
     [ "/core/ex_container.cpp", "_2core_2ex_container_8cpp-example.html", null ],
     [ "/core/ex_dbl.cpp", "_2core_2ex_dbl_8cpp-example.html", null ],
+    [ "/core/ex_int_div0.cpp", "_2core_2ex_int_div0_8cpp-example.html", null ],
     [ "/core/ex_jle_ss.cpp", "_2core_2ex_jle_ss_8cpp-example.html", null ],
     [ "/core/ex_jle_string.cpp", "_2core_2ex_jle_string_8cpp-example.html", null ],
     [ "/core/ex_optional.cpp", "_2core_2ex_optional_8cpp-example.html", null ],

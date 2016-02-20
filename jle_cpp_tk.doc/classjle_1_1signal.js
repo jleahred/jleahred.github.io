@@ -1,7 +1,11 @@
 var classjle_1_1signal =
 [
     [ "signal", "classjle_1_1signal.html#a8c3c315d30680f436be3c2fa938f671a", null ],
+    [ "signal", "classjle_1_1signal.html#a97a47446172d1402cd7e6dc1f4d84803", null ],
+    [ "signal", "classjle_1_1signal.html#a49fd16550388f520dfee5950b9a0591d", null ],
     [ "~signal", "classjle_1_1signal.html#a7fa77cd1dcbdf6e71b77eb91bad3fb10", null ],
+    [ "operator=", "classjle_1_1signal.html#add8669e3b5a114dee7f56032f5ec8c4d", null ],
+    [ "operator=", "classjle_1_1signal.html#afdaf94c6a73ba98f0cb2d1302a719fb3", null ],
     [ "get_processing_emits", "classjle_1_1signal.html#a9e9456e0bf185f9a6015203f0902ba13", null ],
     [ "connect", "classjle_1_1signal.html#a9e1e0550830f1334938d2b46421245d1", null ],
     [ "disconnect", "classjle_1_1signal.html#a52c03cc8a13e570fedf958c011eb1103", null ],

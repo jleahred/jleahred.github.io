@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">jle_cpp_tk
-   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;bed01dae9e2623ddaa1e037287079efb3a2f9e68&quot;</span>
+   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;5b384a47adab413caa03937aeb19d76f5715e7ea&quot;</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -110,7 +110,6 @@ $(document).ready(function(){initNavTree('namespacejle_1_1chrono.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">jle::chrono Namespace Reference</div>  </div>
@@ -124,6 +123,8 @@ $(document).ready(function(){initNavTree('namespacejle_1_1chrono.html','');});
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjle_1_1chrono_1_1day.html">day</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjle_1_1chrono_1_1duration.html">duration</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjle_1_1chrono_1_1month.html">month</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjle_1_1chrono_1_1time__point.html">time_point</a></td></tr>
@@ -131,12 +132,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjle_1_1chrono_1_1year.html">year</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ab3b94fcf4118454988fc2e839490cefe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3b94fcf4118454988fc2e839490cefe"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>duration</b> = std::chrono::milliseconds</td></tr>
-<tr class="separator:ab3b94fcf4118454988fc2e839490cefe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -153,6 +148,12 @@ Functions</h2></td></tr>
 std::tuple&lt; std::tm, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejle_1_1chrono.html#ae402e6620a3be6cfda815fb8b30f1ddb">get_tm_millisecs</a> (const <a class="el" href="classjle_1_1chrono_1_1time__point.html">jle::chrono::time_point</a> &amp;tp)</td></tr>
 <tr class="memdesc:ae402e6620a3be6cfda815fb8b30f1ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a std::tm and milliseconds in int from <a class="el" href="classjle_1_1chrono_1_1time__point.html" title="similar to std::chrono::time_point but monotonic with adjustments to system_clock ...">time_point</a> <br /></td></tr>
 <tr class="separator:ae402e6620a3be6cfda815fb8b30f1ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d5d2880dbf654c089feb0cde2db5900"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d5d2880dbf654c089feb0cde2db5900"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;out, const <a class="el" href="classjle_1_1chrono_1_1time__point.html">jle::chrono::time_point</a> &amp;tp)</td></tr>
+<tr class="separator:a9d5d2880dbf654c089feb0cde2db5900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12cbad970e89cb99f91f7c8270386bda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12cbad970e89cb99f91f7c8270386bda"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;out, const <a class="el" href="structjle_1_1chrono_1_1duration.html">jle::chrono::duration</a> &amp;d)</td></tr>
+<tr class="separator:a12cbad970e89cb99f91f7c8270386bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Here we have helpers and functions for <a class="el" href="classjle_1_1chrono_1_1time__point.html" title="similar to std::chrono::time_point but monotonic with adjustments to system_clock ...">time_point</a> and durations. </p>
@@ -162,7 +163,7 @@ std::tuple&lt; std::tm, int &gt;&#160;</td><td class="memItemRight" valign="bott
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacejle.html">jle</a></li><li class="navelem"><a class="el" href="namespacejle_1_1chrono.html">chrono</a></li>
-    <li class="footer">Generated on Sat Sep 12 2015 23:18:19 for jle_cpp_tk by
+    <li class="footer">Generated on Sat Feb 20 2016 23:22:38 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

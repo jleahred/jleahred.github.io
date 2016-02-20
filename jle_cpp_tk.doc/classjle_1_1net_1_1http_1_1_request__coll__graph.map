@@ -1,0 +1,10 @@
+<map id="jle::net::http::Request" name="jle::net::http::Request">
+<area shape="rect" id="node2" href="$classjle_1_1signal__receptor.html" title="Any object connected to signals, has to inherit from signal_receptor. " alt="" coords="762,19,893,45"/>
+<area shape="rect" id="node3" href="$classjle_1_1non__copyable.html" title="jle::non_copyable" alt="" coords="492,5,615,32"/>
+<area shape="rect" id="node4" href="$structjle_1_1net_1_1http_1_1_request__msg.html" title="jle::net::http::Request_msg" alt="" coords="737,95,917,121"/>
+<area shape="rect" id="node5" href="$structjle_1_1net_1_1http_1_1_list.html" title="jle::net::http::List" alt="" coords="493,56,613,83"/>
+<area shape="rect" id="node6" href="$classjle_1_1list.html" title="jle::list\&lt; std::string \&gt;" alt="" coords="225,56,368,83"/>
+<area shape="rect" id="node7" href="$structjle_1_1net_1_1http_1_1_req__resp__line.html" title="jle::net::http::Req\l_resp_line" alt="" coords="492,170,615,211"/>
+<area shape="rect" id="node8" href="$structjle_1_1net_1_1http_1_1_map.html" title="jle::net::http::Map" alt="" coords="235,143,359,169"/>
+<area shape="rect" id="node9" href="$classjle_1_1map.html" title="jle::map\&lt; std::string,\l std::string \&gt;" alt="" coords="5,135,148,177"/>
+</map>

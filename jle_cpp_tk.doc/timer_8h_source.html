@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">jle_cpp_tk
-   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;bed01dae9e2623ddaa1e037287079efb3a2f9e68&quot;</span>
+   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;5b384a47adab413caa03937aeb19d76f5715e7ea&quot;</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -165,18 +165,18 @@ $(document).ready(function(){initNavTree('timer_8h_source.html','');});
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">namespace </span>internal {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="classjle_1_1signal.html">jle::signal&lt;&gt;</a>&amp;  register_timer(<span class="keyword">const</span> jle::chrono::duration&amp; dur, <span class="keywordtype">int</span> call_times);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="classjle_1_1signal.html">jle::signal&lt;&gt;</a>&amp;  register_timer(<span class="keyword">const</span> <a class="code" href="structjle_1_1chrono_1_1duration.html">jle::chrono::duration</a>&amp; dur, <span class="keywordtype">int</span> call_times);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keyword">struct </span>Timer : <a class="code" href="classjle_1_1signal__receptor.html">jle::signal_receptor</a> {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keyword">explicit</span> Timer( <span class="keyword">const</span> <a class="code" href="classjle_1_1chrono_1_1time__point.html">jle::chrono::time_point</a>&amp;  _last_call,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                <span class="keyword">const</span> jle::chrono::duration&amp;    _interval,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                <span class="keyword">const</span> <a class="code" href="structjle_1_1chrono_1_1duration.html">jle::chrono::duration</a>&amp;    _interval,</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                <span class="keywordtype">int</span>                             _call_times);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                Timer()             = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                Timer(<span class="keyword">const</span> Timer&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <a class="code" href="classjle_1_1chrono_1_1time__point.html">jle::chrono::time_point</a>  last_call;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                jle::chrono::duration    interval;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <a class="code" href="structjle_1_1chrono_1_1duration.html">jle::chrono::duration</a>    interval;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordtype">int</span>                      call_times;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <a class="code" href="classjle_1_1signal.html">jle::signal&lt;&gt;</a>            signal;</div>
@@ -190,9 +190,10 @@ $(document).ready(function(){initNavTree('timer_8h_source.html','');});
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};<span class="comment">//namespace jle {</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif // JLE_TIMER_H</span></div>
-<div class="ttc" id="classjle_1_1chrono_1_1time__point_html"><div class="ttname"><a href="classjle_1_1chrono_1_1time__point.html">jle::chrono::time_point</a></div><div class="ttdoc">similar to std::chrono::time_point but monotonic with adjustments to system_clock ...</div><div class="ttdef"><b>Definition:</b> chrono.h:30</div></div>
-<div class="ttc" id="classjle_1_1signal__receptor_html"><div class="ttname"><a href="classjle_1_1signal__receptor.html">jle::signal_receptor</a></div><div class="ttdoc">Any object connected to signals, has to inherit from signal_receptor. </div><div class="ttdef"><b>Definition:</b> signal_slot.hpp:84</div></div>
-<div class="ttc" id="classjle_1_1signal_html"><div class="ttname"><a href="classjle_1_1signal.html">jle::signal</a></div><div class="ttdoc">signal instance to connect and emit </div><div class="ttdef"><b>Definition:</b> signal_slot.hpp:222</div></div>
+<div class="ttc" id="classjle_1_1chrono_1_1time__point_html"><div class="ttname"><a href="classjle_1_1chrono_1_1time__point.html">jle::chrono::time_point</a></div><div class="ttdoc">similar to std::chrono::time_point but monotonic with adjustments to system_clock ...</div><div class="ttdef"><b>Definition:</b> chrono.h:42</div></div>
+<div class="ttc" id="classjle_1_1signal__receptor_html"><div class="ttname"><a href="classjle_1_1signal__receptor.html">jle::signal_receptor</a></div><div class="ttdoc">Any object connected to signals, has to inherit from signal_receptor. </div><div class="ttdef"><b>Definition:</b> signal_slot.hpp:87</div></div>
+<div class="ttc" id="classjle_1_1signal_html"><div class="ttname"><a href="classjle_1_1signal.html">jle::signal</a></div><div class="ttdoc">signal instance to connect and emit </div><div class="ttdef"><b>Definition:</b> signal_slot.hpp:232</div></div>
+<div class="ttc" id="structjle_1_1chrono_1_1duration_html"><div class="ttname"><a href="structjle_1_1chrono_1_1duration.html">jle::chrono::duration</a></div><div class="ttdef"><b>Definition:</b> chrono.h:22</div></div>
 <div class="ttc" id="namespacejle_html"><div class="ttname"><a href="namespacejle.html">jle</a></div><div class="ttdoc">generic namespace </div><div class="ttdef"><b>Definition:</b> alarm.cpp:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -200,7 +201,7 @@ $(document).ready(function(){initNavTree('timer_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><b>timer.h</b></li>
-    <li class="footer">Generated on Sat Sep 12 2015 23:18:19 for jle_cpp_tk by
+    <li class="footer">Generated on Sat Feb 20 2016 23:22:38 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

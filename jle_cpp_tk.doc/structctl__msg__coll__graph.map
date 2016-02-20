@@ -1,0 +1,6 @@
+<map id="ctl_msg" name="ctl_msg">
+<area shape="rect" id="node2" href="$structns__connection.html" title="ns_connection" alt="" coords="70,133,177,159"/>
+<area shape="rect" id="node5" href="$structns__mgr.html" title="ns_mgr" alt="" coords="168,245,233,272"/>
+<area shape="rect" id="node3" href="$structmbuf.html" title="mbuf" alt="" coords="45,5,95,32"/>
+<area shape="rect" id="node4" href="$unionsocket__address.html" title="socket_address" alt="" coords="119,5,234,32"/>
+</map>

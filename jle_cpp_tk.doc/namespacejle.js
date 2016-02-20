@@ -2,6 +2,10 @@ var namespacejle =
 [
     [ "al", "namespacejle_1_1al.html", "namespacejle_1_1al" ],
     [ "chrono", "namespacejle_1_1chrono.html", "namespacejle_1_1chrono" ],
+    [ "hp", null, [
+      [ "AST_node_item", "classjle_1_1hp_1_1_a_s_t__node__item.html", "classjle_1_1hp_1_1_a_s_t__node__item" ],
+      [ "Humble_parser", "classjle_1_1hp_1_1_humble__parser.html", "classjle_1_1hp_1_1_humble__parser" ]
+    ] ],
     [ "net", null, [
       [ "http", null, [
         [ "List", "structjle_1_1net_1_1http_1_1_list.html", "structjle_1_1net_1_1http_1_1_list" ],

@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">jle_cpp_tk
-   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;bed01dae9e2623ddaa1e037287079efb3a2f9e68&quot;</span>
+   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;5b384a47adab413caa03937aeb19d76f5715e7ea&quot;</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('exec__max__frec_8hpp_source.html','');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define JLE_EXEC_MAX_FREC_THIS(___TIMEINTERVAL___)                                              \</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define JLE_EXEC_MAX_FREC_THIS(___TIMEINTERVAL___)                                               \</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">            {                   \</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">            auto __now__jle_exec_max_frec__ = jle::chrono::now(); \</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">            static auto __map_last_informed__jle__ = std::map&lt;long, jle::optional&lt;jle::chrono::time_point&gt;&gt;{};       \</span></div>
@@ -156,22 +156,22 @@ $(document).ready(function(){initNavTree('exec__max__frec_8hpp_source.html','');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define JLE_EXEC_MAX_FREC_STATIC(___TIMEINTERVAL___)                                            \</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define JLE_EXEC_MAX_FREC_STATIC(___TIMEINTERVAL___)                                               \</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">            {                                                                           \</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">            auto __now__jle_exec_max_frec__ = jle::chrono::now(); \</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">            static jle::chrono::time_point  __last_informed__jle_exec_max_frec__ =  __now__jle_exec_max_frec__ - 24h;       \</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">            if (__last_informed__jle_exec_max_frec__ &gt; __now__jle_exec_max_frec__)                                      \</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">            if (__last_informed__jle_exec_max_frec__ &gt; __now__jle_exec_max_frec__)                                         \</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">                __last_informed__jle_exec_max_frec__ =  __now__jle_exec_max_frec__-24h;                        \</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">            if (__now__jle_exec_max_frec__ - __last_informed__jle_exec_max_frec__ &gt;  (___TIMEINTERVAL___) )  {          \</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">            if (__now__jle_exec_max_frec__ - __last_informed__jle_exec_max_frec__ &gt;  (___TIMEINTERVAL___) )  {             \</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">                __last_informed__jle_exec_max_frec__ = __now__jle_exec_max_frec__;</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#define JLE_EXEC_MAX_FREC_STATIC_NO_FIRST(___TIMEINTERVAL___)                                               \</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">            {                                                                           \</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">            auto __now__jle_exec_max_frec__ = jle::chrono::now(); \</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">            static jle::chrono::time_point  __last_informed__jle_exec_max_frec__ =  __now__jle_exec_max_frec__;       \</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">            if (__last_informed__jle_exec_max_frec__ &gt; __now__jle_exec_max_frec__)                                      \</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">            if (__last_informed__jle_exec_max_frec__ &gt; __now__jle_exec_max_frec__)                                         \</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">                __last_informed__jle_exec_max_frec__ =  __now__jle_exec_max_frec__-24h;                        \</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">            if (__now__jle_exec_max_frec__ - __last_informed__jle_exec_max_frec__ &gt;  (___TIMEINTERVAL___) )  {          \</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">            if (__now__jle_exec_max_frec__ - __last_informed__jle_exec_max_frec__ &gt;  (___TIMEINTERVAL___) )  {             \</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">                __last_informed__jle_exec_max_frec__ = __now__jle_exec_max_frec__;</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
@@ -198,7 +198,7 @@ $(document).ready(function(){initNavTree('exec__max__frec_8hpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><b>exec_max_frec.hpp</b></li>
-    <li class="footer">Generated on Sat Sep 12 2015 23:18:19 for jle_cpp_tk by
+    <li class="footer">Generated on Sat Feb 20 2016 23:22:38 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

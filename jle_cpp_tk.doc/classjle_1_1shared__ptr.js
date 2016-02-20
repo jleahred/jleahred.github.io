@@ -28,6 +28,7 @@ var classjle_1_1shared__ptr =
     [ "operator->", "classjle_1_1shared__ptr.html#ad772f54205dfbffdac5dd96fbd5c2b38", null ],
     [ "expired", "classjle_1_1shared__ptr.html#a50a3fb12acd1fb2838657d91559feab1", null ],
     [ "get", "classjle_1_1shared__ptr.html#a420e163ee563bb2462253a70772cd4f3", null ],
+    [ "operator bool", "classjle_1_1shared__ptr.html#a1720d0760d27ec6ef76f73d09d889bc6", null ],
     [ "unique", "classjle_1_1shared__ptr.html#a3544c2338e344852f1c3a71a2b88d939", null ],
     [ "use_count", "classjle_1_1shared__ptr.html#ac682a96221e4295adc138a210a02385a", null ],
     [ "swap", "classjle_1_1shared__ptr.html#a68576c926c71e534515a87de30be9f12", null ],

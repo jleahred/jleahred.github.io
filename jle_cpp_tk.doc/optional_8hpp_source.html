@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="jleahred2s.jpeg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">jle_cpp_tk
-   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;bed01dae9e2623ddaa1e037287079efb3a2f9e68&quot;</span>
+   &#160;<span id="projectnumber">0.0  2015-04-03  sh1:&quot;5b384a47adab413caa03937aeb19d76f5715e7ea&quot;</span>
    </div>
    <div id="projectbrief">A small, safe, selft contained, soft-realtime C++ toolkit</div>
   </td>
@@ -684,9 +684,18 @@ $(document).ready(function(){initNavTree('optional_8hpp_source.html','');});
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    }</div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;</div>
 <div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;}       <span class="comment">//  namespace jle</span></div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;<span class="preprocessor">#endif // jle_optional__h</span></div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> _Tp&gt;</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;std::ostream&amp; operator&lt;&lt; (std::ostream&amp; os, const jle::optional&lt;_Tp&gt;&amp; opt)</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;{</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    <span class="keywordflow">if</span>(!opt)    os &lt;&lt; <span class="stringliteral">&quot;null&quot;</span>;</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    <span class="keywordflow">else</span>        os &lt;&lt; *opt;</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;}</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;}       <span class="comment">//  namespace jle</span></div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;<span class="preprocessor">#endif // jle_optional__h</span></div>
 <div class="ttc" id="structjle_1_1in__place__t_html"><div class="ttname"><a href="structjle_1_1in__place__t.html">jle::in_place_t</a></div><div class="ttdoc">Tag type for in-place construction. </div><div class="ttdef"><b>Definition:</b> optional.hpp:33</div></div>
 <div class="ttc" id="structjle_1_1nullopt__t_html"><div class="ttname"><a href="structjle_1_1nullopt__t.html">jle::nullopt_t</a></div><div class="ttdef"><b>Definition:</b> optional.hpp:16</div></div>
 <div class="ttc" id="namespacejle_html_a3d6d8a178cda5cbf5e7e6557fefec124"><div class="ttname"><a href="namespacejle.html#a3d6d8a178cda5cbf5e7e6557fefec124">jle::in_place</a></div><div class="ttdeci">constexpr in_place_t in_place</div><div class="ttdoc">Tag for in-place construction. </div><div class="ttdef"><b>Definition:</b> optional.hpp:36</div></div>
@@ -698,7 +707,7 @@ $(document).ready(function(){initNavTree('optional_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><b>optional.hpp</b></li>
-    <li class="footer">Generated on Sat Sep 12 2015 23:18:19 for jle_cpp_tk by
+    <li class="footer">Generated on Sat Feb 20 2016 23:22:38 for jle_cpp_tk by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

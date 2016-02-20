@@ -1,0 +1,5 @@
+<map id="jle::net::http::Server" name="jle::net::http::Server">
+<area shape="rect" id="node2" href="$classjle_1_1signal__receptor.html" title="Any object connected to signals, has to inherit from signal_receptor. " alt="" coords="177,5,308,32"/>
+<area shape="rect" id="node4" href="$classjle_1_1signal.html" title="jle::signal\&lt; const\l jle::jle::shared_ptr\l\&lt; jle::net::http::Request \&gt; &amp; \&gt;" alt="" coords="357,39,555,95"/>
+<area shape="rect" id="node3" href="$classjle_1_1non__copyable.html" title="jle::non_copyable" alt="" coords="5,5,128,32"/>
+</map>
