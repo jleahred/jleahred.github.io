@@ -1,4 +1,6 @@
 <map id="jle::signal_receptor" name="jle::signal_receptor">
-<area shape="rect" id="node3" href="$classjle_1_1signal.html" title="signal instance to connect and emit " alt="" coords="7,155,135,181"/>
-<area shape="rect" id="node2" href="$classjle_1_1non__copyable.html" title="jle::non_copyable" alt="" coords="9,5,132,32"/>
+<area shape="rect" id="node2" href="$classjle_1_1net_1_1http_1_1_request.html" title="jle::net::http::Request" alt="" coords="209,5,357,32"/>
+<area shape="rect" id="node3" href="$classjle_1_1net_1_1http_1_1_server.html" title="jle::net::http::Server" alt="" coords="214,56,351,83"/>
+<area shape="rect" id="node4" href="$classjle_1_1signal.html" title="signal instance to connect and emit " alt="" coords="219,107,347,133"/>
+<area shape="rect" id="node6" href="$classjle_1_1signal.html" title="jle::signal\&lt; const\l jle::jle::shared_ptr\l\&lt; jle::net::http::Request \&gt; &amp; \&gt;" alt="" coords="184,223,381,279"/>
 </map>

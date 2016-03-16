@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classjle_1_1vector_1_1const__reverse__iterator.html" title="jle::vector\&lt; T \&gt;::const\l_reverse_iterator" alt="" coords="5,5,156,47"/>
+<area shape="rect" id="node1" href="$classjle_1_1signal__receptor.html" title="Any object connected to signals, has to inherit from signal_receptor. " alt="" coords="5,81,136,108"/>
+<area shape="rect" id="node2" href="$classjle_1_1net_1_1http_1_1_request.html" title="jle::net::http::Request" alt="" coords="209,5,357,32"/>
+<area shape="rect" id="node3" href="$classjle_1_1net_1_1http_1_1_server.html" title="jle::net::http::Server" alt="" coords="214,56,351,83"/>
+<area shape="rect" id="node4" href="$classjle_1_1signal.html" title="signal instance to connect and emit " alt="" coords="219,107,347,133"/>
+<area shape="rect" id="node5" href="$classjle_1_1signal.html" title="jle::signal\&lt; const\l jle::jle::shared_ptr\l\&lt; jle::net::http::Request \&gt; &amp; \&gt;" alt="" coords="184,157,381,213"/>
 </map>

@@ -64,6 +64,14 @@ var hierarchy =
     [ "jle::optional< _Tp >", "classjle_1_1optional.html", null ],
     [ "jle::owner_less< _Tp >", "structjle_1_1owner__less.html", null ],
     [ "proto_data_http", "structproto__data__http.html", null ],
+    [ "QSyntaxHighlighter", null, [
+      [ "Highlighter", "class_highlighter.html", null ]
+    ] ],
+    [ "qt_meta_stringdata_Highlighter_t", "structqt__meta__stringdata___highlighter__t.html", null ],
+    [ "qt_meta_stringdata_Widget_t", "structqt__meta__stringdata___widget__t.html", null ],
+    [ "QWidget", null, [
+      [ "Widget", "class_widget.html", null ]
+    ] ],
     [ "jle::net::http::Req_resp_line", "structjle_1_1net_1_1http_1_1_req__resp__line.html", null ],
     [ "jle::net::http::Request_msg", "structjle_1_1net_1_1http_1_1_request__msg.html", null ],
     [ "jle::net::http::Response_msg", "structjle_1_1net_1_1http_1_1_response__msg.html", null ],
@@ -83,6 +91,9 @@ var hierarchy =
     ] ],
     [ "socket_address", "unionsocket__address.html", null ],
     [ "jle::chrono::time_point", "classjle_1_1chrono_1_1time__point.html", null ],
+    [ "Ui_WidgetClass", "class_ui___widget_class.html", [
+      [ "Ui::WidgetClass", "class_ui_1_1_widget_class.html", null ]
+    ] ],
     [ "jle::vector< T >", "classjle_1_1vector.html", null ],
     [ "jle::weak_ptr< _Tp >", "classjle_1_1weak__ptr.html", null ],
     [ "websocket_message", "structwebsocket__message.html", null ],
