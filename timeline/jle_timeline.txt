@@ -29,6 +29,26 @@ Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki, jenkins
 
 And... *continues*
 
+- ### 2016-04-27
+- ### ![](images/talk-32.png) Talk at Madrid Elixir Meetup
+- [(slides)](https://docs.google.com/presentation/d/13pARtd4MKpr0vMFTkYsgnIie0KpkUQAPnPamFiKOPxY/edit?usp=sharing) [(meetup)](http://www.meetup.com/Madrid-Elixir/events/230312000/)
+
+Very nice comments...
+
+Conociendo a Jose Luis, tenía altas expectativas. Pero al ver tantos problemas reconocidos, tantos detalles de los lenguajes y los paradigmas tratados; tan bien explicados y con tan buen sentido del humor, las expectativas quedaron en nada en comparación con el buen rato que pasé. Felicidades!
+
+La charla fue genial, José Luis nos guió a través de las características de muchos lenguajes para terminar en porqué la elección de Erlang como base para Elixir y porqué Elixir mejora lo que se puede hacer sobre la máquina virtual de Erlang que en Erlang sería más complicado de hacer.
+
+Charla genial!
+
+Gracias a todos por venir, a Jose Luis por la excelente y divertida charla, y a Liferay por alojarnos una vez más.
+
+Gran capacidad didáctica de José Luis para llevarnos hasta Elixr desde las carencias de otros lenguajes.
+
+Espero al video para poder compartirlo con algunos compañeros.
+
+
+
 
 - ### 2016-02
 - ### ![](images/book-stack-32.png) Added LL(n) parser with "compiler" jle\_cpp\_tk

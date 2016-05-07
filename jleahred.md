@@ -44,6 +44,8 @@ Let me show you some links related to me (blog, cv, programs...)
 
 ### talks
 
+* Elixir meetup Madrid [(slides)](https://docs.google.com/presentation/d/13pARtd4MKpr0vMFTkYsgnIie0KpkUQAPnPamFiKOPxY/edit?usp=sharing) [(meetup)](http://www.meetup.com/Madrid-Elixir/events/230312000/) (Very nice comments)
+
 * Erlounge Madrid 2014-10... Elixir [(link)](talks/elixir-2014-10.html) [(src)](https://github.com/jleahred/talks/tree/master/elixir_2014-10)
 
 
