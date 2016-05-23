@@ -31,7 +31,7 @@ And... *continues*
 
 - ### 2016-04-27
 - ### ![](images/talk-32.png) Talk at Madrid Elixir Meetup
-- [(slides)](https://docs.google.com/presentation/d/13pARtd4MKpr0vMFTkYsgnIie0KpkUQAPnPamFiKOPxY/edit?usp=sharing) [(meetup)](http://www.meetup.com/Madrid-Elixir/events/230312000/)
+- [(slides)](https://docs.google.com/presentation/d/13pARtd4MKpr0vMFTkYsgnIie0KpkUQAPnPamFiKOPxY/edit?usp=sharing) [(meetup)](http://www.meetup.com/Madrid-Elixir/events/230312000/) [(video)](https://www.youtube.com/watch?v=kQgwHUrmqlo)
 
 Very nice comments...
 
