@@ -44,6 +44,9 @@ Let me show you some links related to me (blog, cv, programs...)
 
 ### talks
 
+* OpenExpo2016 (meetup funct prog). [(slides)](https://docs.google.com/presentation/d/1JznL2c1WZqWfsyFPy1BYS0VL0VuJqN33k7oldaEK_a0/edit?usp=sharing) [(OpenExpo2016)](http://www.openexpo.es/openexpo-2016/ponentes-2016) [(OpenExpo2016 program)](http://www.openexpo.es/openexpo-2016/programa-horario)  [(meetup)](http://www.meetup.com/Haskell-MAD/events/230564520/)
+
+
 * Elixir meetup Madrid [(slides)](https://docs.google.com/presentation/d/13pARtd4MKpr0vMFTkYsgnIie0KpkUQAPnPamFiKOPxY/edit?usp=sharing) [(meetup)](http://www.meetup.com/Madrid-Elixir/events/230312000/) [(video)](https://www.youtube.com/watch?v=kQgwHUrmqlo) (Very nice comments)
 
 * Erlounge Madrid 2014-10... Elixir [(link)](talks/elixir-2014-10.html) [(src)](https://github.com/jleahred/talks/tree/master/elixir_2014-10)
