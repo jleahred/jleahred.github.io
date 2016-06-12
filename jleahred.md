@@ -68,6 +68,7 @@ _If you require an updated version, please contact me by email_
 [(adoc)](jle_cpp_tk.doc/jle_cpp_tk.html)
 [(doxygen)](jle_cpp_tk.doc/index.html)
 * LL(n) parser as part of my C++ toolkit. With tools to run dinamically, edit and test [(src)](https://github.com/jleahred/jle_cpp_tk/tree/master/src/core/hp)
+* [Elixfix](https://github.com/jleahred/elixfix) [doc](http://jleahred.github.io/elixfix.doc/readme.html). A real-life exercise working with elixir language.
 * Rust kata rubiks solver [(src)](https://github.com/jleahred/katas/tree/master/langs/rust/rubiks_solver)
 * `i3_status_jle`. My i3 status line personalization focused on memory display [(src)](https://github.com/jleahred/i3_status_jle)
 * Small tech exercises and katas [(src)](https://github.com/jleahred/katas)
