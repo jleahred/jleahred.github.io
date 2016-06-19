@@ -123,6 +123,15 @@
 </div>
   
 </div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_tag_value_mandatory_ints/2">get_tag_value_mandatory_ints(msg_map, tags)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Return {[ints], [errors]} from [tags]</p>
+</div>
+  
+</div>
 
   </div>
 
@@ -151,7 +160,7 @@
     </a>
     <span class="signature">check_mandatory_tags(arg, tags)</span>
       
-      <a href="https://github.com/jleahred/elixfix/blob/master/lib/f/support/fmsgmapsupport.ex#L93" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/jleahred/elixfix/blob/master/lib/f/support/fmsgmapsupport.ex#L122" class="view-source" rel="help" title="View Source">
        <i class="icon-code"></i>
      </a>
     
@@ -236,6 +245,36 @@ iex&gt; FMsgMapSupport.get_tag_value_mandatory_int(:ClOrdID, msg_map)
 {:ok, 13346}
 iex&gt; FMsgMapSupport.get_tag_value_mandatory_int(:TargetCompID, msg_map)
 {:error, &quot;invalid val on tag TargetCompID(56)&quot;}</code></pre>
+
+  </section>
+</div>
+<div class="detail" id="get_tag_value_mandatory_ints/2">
+  <div class="detail-header">
+    <a href="#get_tag_value_mandatory_ints/2" class="detail-link" title="Link to this function">
+      <i class="icon-link"></i>
+    </a>
+    <span class="signature">get_tag_value_mandatory_ints(msg_map, tags)</span>
+      
+      <a href="https://github.com/jleahred/elixfix/blob/master/lib/f/support/fmsgmapsupport.ex#L97" class="view-source" rel="help" title="View Source">
+       <i class="icon-code"></i>
+     </a>
+    
+  </div>
+  
+  <section class="docstring">
+    <p>Return {[ints], [errors]} from [tags]</p>
+<p>It will return</p>
+<blockquote><p>{[ints], [errors]}</p>
+</blockquote>
+<pre><code class="iex elixir">iex&gt; msg_map = FMsgParse.parse_string_test(
+...&gt; &quot;8=FIX.4.1|9=122|35=D|34=215|49=CLIENT12|&quot;&lt;&gt;
+...&gt; &quot;52=20100225-19:41:57.316|56=B|1=Marcel|11=13346|&quot;&lt;&gt;
+...&gt; &quot;21=1|40=2|44=5|54=1|59=0|60=20100225-19:39:52.020|10=072|&quot;)
+...&gt; .parsed.msg_map
+iex&gt; FMsgMapSupport.get_tag_value_mandatory_ints(msg_map, [:BodyLength, :Price, :ClOrdID])
+{[122, 5, 13346], []}
+iex&gt; FMsgMapSupport.get_tag_value_mandatory_ints(msg_map, [:BodyLength, :Price, :HandlInst, :SenderCompID, :Account])
+{[122, 5, 1, nil, nil], [&quot;invalid val on tag SenderCompID(49)&quot;, &quot;invalid val on tag Account(1)&quot;]}</code></pre>
 
   </section>
 </div>
