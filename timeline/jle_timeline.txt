@@ -30,6 +30,14 @@ Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki, jenkins
 And... *continues*
 
 
+
+- ### 2016-06-28
+- ### ![](images/talk-32.png) Talk at desarrolloweb.com
+- Talk in desarrolloweb.com [(link)](https://www.youtube.com/watch?v=_stVvsLLm6o&feature=youtu.be)
+
+
+
+
 - ### 2016-06-02
 - ### ![](images/talk-32.png) Talk at OpenExpo2016 (Meetup funct prog)
 - [(slides)](https://docs.google.com/presentation/d/1JznL2c1WZqWfsyFPy1BYS0VL0VuJqN33k7oldaEK_a0/edit?usp=sharing)
