@@ -40,6 +40,7 @@ Let me show you some links related to me (blog, cv, programs...)
 * My first **Dart** application [(link)](apps/hello_world/index.html) [(src)](https://github.com/jleahred/dart_hello_world)
 * My first **elm** application [(link)](apps/calculator/calculator.html) [(src)](https://github.com/jleahred/katas/tree/master/langs/elm/calculator)
 * Status tree viewer with updates **elm** [(link)](apps/status_tree/index.html) [(src)](https://github.com/jleahred/katas/tree/master/langs/elm/status_tree)
+* Angular2 exercise. A simple table with updates from a service  [(link)](apps/ang2_table/index.html) [(src)](https://github.com/jleahred/katas/tree/master/web/angular2/ws_table_proto)
 
 
 ### talks
