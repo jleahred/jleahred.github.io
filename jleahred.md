@@ -16,7 +16,7 @@ I've been working in algorithms and backend software with many technologies.
 
 You can see more details in my C.V. below
 
-I love learning and technologies. Check my blog, link in next section (spanish)
+I love technologies and learning new things. Check my blog, link in next section (spanish)
 
 Let me show you some links related to me (blog, cv, programs...)
 
@@ -40,10 +40,14 @@ Let me show you some links related to me (blog, cv, programs...)
 * My first **Dart** application [(link)](apps/hello_world/index.html) [(src)](https://github.com/jleahred/dart_hello_world)
 * My first **elm** application [(link)](apps/calculator/calculator.html) [(src)](https://github.com/jleahred/katas/tree/master/langs/elm/calculator)
 * Status tree viewer with updates **elm** [(link)](apps/status_tree/index.html) [(src)](https://github.com/jleahred/katas/tree/master/langs/elm/status_tree)
-* Angular2 exercise. A simple table with updates from a service  [(link)](apps/ang2_table/index.html) [(src)](https://github.com/jleahred/katas/tree/master/web/angular2/ws_table_proto)
+* Angular2 exercise. A simple table with updates from a service  [(src)](https://github.com/jleahred/katas/tree/master/web/angular2/ws_table_proto)
 
 
 ### talks
+
+* Meetup "Effects & Haskell" [(video)](https://www.youtube.com/watch?v=s6eLE0fZDuM&list=PL0bR48K8xUg5AlSGoO2bi-opioe-6sv4I) [(slides)](https://docs.google.com/presentation/d/1LIewEHMYjU5I646c_JJqZmwNqA0AMC8SgqA0DC6DGXo/edit) [(meetup)](https://www.meetup.com/Haskell-MAD/events/234814002/)
+
+* Talk about microservices in source-d [(slides)](https://docs.google.com/presentation/d/1XA1eDX34V5Wy-Pf46EY8yZepCZAzjlnITSlXRH85Wbs/edit?usp=sharing) 
 
 * desarrolloweb.com talk [(link)](https://www.youtube.com/watch?v=_stVvsLLm6o&feature=youtu.be)
 

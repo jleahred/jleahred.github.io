@@ -22,12 +22,55 @@ in order to use C++11 and C++14 (and even C++17) and remove the tools added on t
 Financial markets and FIX connections real-time and distributed platform designer
 (back and front), developer and responsible.
 
-Developer and maintaner of safe, real-time, multiplatform C++ library used in
+Developer and maintaner of reliable, real-time, multiplatform C++ library used in
 backend and frontend applications
 
-Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki, jenkins
+Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki, jenkins, python, mariadb, angular2...
 
 And... *continues*
+
+
+- ### 2016-10-27
+- ### ![](images/talk-32.png) Talk "Haskell & Effects"
+- [(video)](https://www.youtube.com/watch?v=s6eLE0fZDuM&list=PL0bR48K8xUg5AlSGoO2bi-opioe-6sv4I) [(slides)](https://docs.google.com/presentation/d/1LIewEHMYjU5I646c_JJqZmwNqA0AMC8SgqA0DC6DGXo/edit) [(meetup)](https://www.meetup.com/Haskell-MAD/events/234814002/)
+
+Daremos un repaso de los conceptos "efectos", "pureza" y "transparencia referencial". 
+
+· ¿Qué son los efectos? 
+· ¿Necesito efectos? 
+· Lenguajes imperativos -> Programación orientada a efectos. 
+· ¿Qué nos pueden enseñar los lenguajes imperativos? 
+· Haskell & efectos
+
+Si no conoces Haskell y quieres saber de sus características fundamentales, si tienes dudas sobre Haskell y los efectos, si quieres pasar un rato reflexionando sobre Haskell, si quieres conocer a más gente entusiasta con la programación funcional y Haskell, ¡te esperamos!
+
+nice comments:
+
+Brillante, una charla para hacernos pensar. Con lo justo y necesario para hacer huir a la gente de los lenguajes "imperativos" sin asustarles por segunda vez para convencerles de que la programación funcional no es accesible y hacer desear al personal dejarlo todo e irse al campo a cultivar patatas.
+
+Excelente charla, uno de los mejores alegatos que he escuchado referido a los principales motivos de porque utilizar Haskell....
+
+Una verdadera gozada de charla
+
+Genial la charla de José Luis, con una claridad difícil de encontrar incluso entre profesores de universidad.
+
+
+
+Concretando un poco más, la charla me pareció muy didáctica y muy amena...
+
+De nuevo, un placer acoger la brillante charla de ayer...
+
+Genial!! Muy productiva y divertida.
+
+
+- ### 2016-10-26
+- ### ![](images/talk-32.png) Interview in Katade
+- [(link)](http://katade.com/jose-luis-esteban-aprender-haskell/)
+
+
+- ### 2016-09-19
+- ### ![](images/talk-32.png) Talk  about microservices
+- [(slides)](https://docs.google.com/presentation/d/1XA1eDX34V5Wy-Pf46EY8yZepCZAzjlnITSlXRH85Wbs/edit?usp=sharing) 
 
 
 
@@ -55,7 +98,7 @@ And... *continues*
 - ### ![](images/talk-32.png) Talk at Madrid Elixir Meetup
 - [(slides)](https://docs.google.com/presentation/d/13pARtd4MKpr0vMFTkYsgnIie0KpkUQAPnPamFiKOPxY/edit?usp=sharing) [(meetup)](http://www.meetup.com/Madrid-Elixir/events/230312000/) [(video)](https://www.youtube.com/watch?v=kQgwHUrmqlo)
 
-Very nice comments...
+nice comments...
 
 Conociendo a Jose Luis, tenía altas expectativas. Pero al ver tantos problemas reconocidos, tantos detalles de los lenguajes y los paradigmas tratados; tan bien explicados y con tan buen sentido del humor, las expectativas quedaron en nada en comparación con el buen rato que pasé. Felicidades!
 
