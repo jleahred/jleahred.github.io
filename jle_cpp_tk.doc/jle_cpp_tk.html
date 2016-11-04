@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.2">
+<meta name="generator" content="Asciidoctor 1.5.5">
 <title>JLE TOOLKIT</title>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Varela+Round|Open+Sans:400italic,600italic,400,600|Ubuntu+Mono:400);
@@ -705,10 +705,7 @@ pre.pygments.highlight { background-color: rgba(16, 195, 196, 0.05); }
 .pygments .tok-c { color: #999 !important; }
 
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad()</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
@@ -805,7 +802,7 @@ Version
 Commit
 </td>
 <td class="hdlist2">
-<p>"d699093732dd5f321606d0ff7a6b63b229f1922c"</p>
+<p>"f02a72b50e51c52cda7b69fa2277563311913a6a"</p>
 </td>
 </tr>
 <tr>
@@ -813,7 +810,7 @@ Commit
 Generated
 </td>
 <td class="hdlist2">
-<p>2016-03-16 20:15:47 CET</p>
+<p>2016-03-27 23:53:04 CEST</p>
 </td>
 </tr>
 </table>
@@ -829,7 +826,7 @@ Generated
 <div class="paragraph">
 <p>On line doc
 <a href="http://jleahred.github.io/jle_cpp_tk.doc/jle_cpp_tk.html">(adoc)</a>
-<a href="http://jleahred.github.io/jle_cpp_tk.doc/index.html">(doxys)</a></p>
+<a href="http://jleahred.github.io/jle_cpp_tk.doc/index.html">(doxygen)</a></p>
 </div>
 <div class="sect2">
 <h3 id="_about">1.1. About</h3>
@@ -837,7 +834,7 @@ Generated
 <h4 id="_why">1.1.1. Why</h4>
 <div class="paragraph">
 <p>C++ is growing incredible fast and it will continue in next future.
-A more complete library, variadic templates, lambdas, string-view, smart-pointers, move semantic, concurrency, files, initializer lists, type inference&#8230;&#8203;</p>
+To get more complete library, variadic templates, lambdas, string-view, smart-pointers, move semantic, concurrency, files, initializer lists, type inference&#8230;&#8203;</p>
 </div>
 <div class="paragraph">
 <p>To learn, to practice new features from C++, to have a toolset to complete C++ library, to program in C++ with less "undefined behavior"</p>
@@ -849,28 +846,30 @@ A more complete library, variadic templates, lambdas, string-view, smart-pointer
 <p>I wrote some rules and C++ tools to help colleagues with no experience in C++ to survive with it.</p>
 </div>
 <div class="paragraph">
-<p>But later, I discover It was pleasant to work with these tools, safe, easy to use, low dependencies&#8230;&#8203; I&#8217;m also very interested in doing safe programs (no crashes)</p>
+<p>But later, I discover It was pleasant to work with these tools, safe, easy to use, low dependencies&#8230;&#8203; I&#8217;m also very interested in making safe programs (no crashes)</p>
 </div>
 <div class="paragraph">
-<p>This toolset compiles with modern C++ (and will be, C++ feature), but is not fully idiomatic. Some of the tools has been added to C++ (regular expressions, tuples, date time&#8230;&#8203;), and there are new ways to solve most of the problems.</p>
+<p>This toolset compiles with modern C++ (and it will be), but is not fully idiomatic. Some of the tools has been added to C++ standard library (regular expressions, tuples, date time&#8230;&#8203;), and there are new ways to solve most of the problems.
+It was time to play and learn with new C++ and these concepts</p>
 </div>
 <div class="paragraph">
 <p>Let&#8217;s enjoy and learn new C++. Let&#8217;s have toolkit working with new C++. Let&#8217;s create your basic tools to develop from scratch. It&#8217;s a great excuse!!!</p>
 </div>
 <div class="paragraph">
-<p>I loved my CountPtr implementation, I did with tuples what was possible and having my own tuples has been very interesting, now all this things&#8230;&#8203; will be replaced by std implementation or a new development using new C++.</p>
+<p>I loved my CountPtr implementation, my old tuples worked fine&#8230;&#8203;
+Now both will be replaced by std implementation. Other tools, will be rewrited with modern C++.</p>
 </div>
 <div class="paragraph">
-<p>I know It will be necessary to rewrite some parts of the library in order to be updated to last versions of C++. It&#8217;s part of the game.</p>
+<p>I know It will be necessary to update frequently some parts of the library in order to keep updated to last versions of C++. It&#8217;s part of the game.</p>
 </div>
 <div class="paragraph">
-<p>Previously I wrote the documentation with <strong>asciidoc</strong>, muse over emacs and doxys on some projects. Now I&#8217;m going to do it with doxygen (I&#8217;m not a fan of these kind of tools, I prefer something like asciidoc or emacs/muse, but it&#8217;s a standard).</p>
+<p>Previously I wrote the documentation with <strong>asciidoc</strong>, <strong>muse</strong> over emacs and <strong>doxys</strong> on some projects. Now I&#8217;m going to add doxygen (I&#8217;m not a fan of these kind of tools, I prefer something like asciidoc or emacs/muse, but it&#8217;s a standard).</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_directives">1.1.2. Directives</h4>
 <div class="paragraph">
-<p>My aim is different from C++.</p>
+<p>I&#8217;m not focused on radical performance, I prefer:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -881,13 +880,13 @@ A more complete library, variadic templates, lambdas, string-view, smart-pointer
 <p>I don&#8217;t like undefined behaviour</p>
 </li>
 <li>
-<p>I don&#8217;t like crashes due to programming mistakes. C++ is a dangerous language. It&#8217;s easy to have crashes, I want a library protecting and helping the programmer.</p>
+<p>I don&#8217;t like crashes due to programming mistakes. C++ could be a dangerous language. It&#8217;s easy to have crashes, I want a library protecting and helping the programmer.</p>
 </li>
 <li>
 <p>Message driven programming</p>
 </li>
 <li>
-<p>If we have a fail processing a message, usually is better to inform about it and continue with next one.</p>
+<p>If we have a failure processing a message, usually is better to inform about it and continue with next one.</p>
 </li>
 <li>
 <p>KISS and YAGNI</p>
@@ -899,22 +898,22 @@ A more complete library, variadic templates, lambdas, string-view, smart-pointer
 <p>I will introduce features as soon I will require</p>
 </li>
 <li>
-<p>No thousands of options, better few options, easy to use and less verbose</p>
+<p>No thousands of options, better few options, easy to use and less verbose (try to compose, please)</p>
 </li>
 <li>
 <p>Make difficult to produce <strong>"write only code"</strong> using this library. The code using this library&#8230;&#8203;</p>
 </li>
 <li>
-<p>could not be simple to write</p>
+<p>has to be easy to read</p>
 </li>
 <li>
-<p>has to be easy to read</p>
+<p>writting simplicity is less important</p>
 </li>
 <li>
 <p>Small</p>
 </li>
 <li>
-<p>This is to have basic features, not incredible possibilities. There are great C++ libraries for that.</p>
+<p>This is about having basic features, not incredible possibilities. There are great C++ libraries for that.</p>
 </li>
 <li>
 <p>Portability (win/linux)</p>
@@ -923,7 +922,7 @@ A more complete library, variadic templates, lambdas, string-view, smart-pointer
 <p>zero dependency</p>
 </li>
 <li>
-<p>C++ doesn&#8217;t have a standard dependency tool. It is going to be a small library, complex dependencies not required</p>
+<p>C++ doesn&#8217;t have a standard dependency tool. It is going to be a small library, complex dependencies will be avoided</p>
 </li>
 <li>
 <p>Easy to compile</p>
@@ -950,7 +949,7 @@ Important working on a team.
 </table>
 </div>
 <div class="paragraph">
-<p>C++ is not the safest programing language in the world. In fact, it&#8217;s easy to produce <strong>undefined behaviour</strong> working with C++.</p>
+<p>C++ is not the safest programming language in the world. In fact, it&#8217;s easy to produce <strong>undefined behaviour</strong> working with C++.</p>
 </div>
 <div class="admonitionblock warning">
 <table>
@@ -977,12 +976,12 @@ undefined behavior is all arround you&#8230;&#8203;
 <p>Most of these undefined behaviours ends with a program crash.</p>
 </div>
 <div class="paragraph">
-<p>My aim is to reduce program crashes. I want my program keep running even after an error.</p>
+<p>My aim is to reduce program crashes. I want my programs keep running even after an error.</p>
 </div>
 <div class="paragraph">
 <p>I don&#8217;t try to transform C++ in Erlang or Elixir.
 And yes, I know that Rust is the tool which try to be efficient,
-close to metal and  with no undefined behaviour.</p>
+close to metal and safe.</p>
 </div>
 <div class="paragraph">
 <p>I enjoy learning and practicing Erlang/elixir. I learned several concepts with them.
@@ -1095,7 +1094,7 @@ Important working on a team.
 <p>Avoid active waiting</p>
 </li>
 <li>
-<p>Use all machine cores (better perfornce)</p>
+<p>Use all machine cores (better performance)</p>
 </li>
 <li>
 <p>Avoid full program stop waiting for a task</p>
@@ -1131,7 +1130,7 @@ continues being difficult to maintain.</p>
 </div>
 </blockquote>
 <div class="attribution">
-&#8212; Chromim Guidelines<br>
+&#8212; Chromium Guidelines<br>
 <cite>http://www.chromium.org/developers/coding-style/cpp-dos-and-donts</cite>
 </div>
 </div>
@@ -1450,9 +1449,9 @@ make compile_examples</pre>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all" style="width: 50%;">
 <colgroup>
-<col style="width: 33%;">
-<col style="width: 33%;">
-<col style="width: 33%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
 <thead>
 <tr>
@@ -1464,17 +1463,17 @@ make compile_examples</pre>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">/</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">19152</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">82</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">32263</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">91</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">src/</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">12272</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">12282</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">38</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">src/core/</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">9353</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">9363</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">35</p></td>
 </tr>
 <tr>
@@ -1484,8 +1483,8 @@ make compile_examples</pre>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">examples/</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">3402</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">15064</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">29</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">test/</p></td>
@@ -1494,16 +1493,16 @@ make compile_examples</pre>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">tools/</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">1571</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">9</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3010</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">13</p></td>
 </tr>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
 <colgroup>
-<col style="width: 33%;">
-<col style="width: 33%;">
-<col style="width: 33%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
 <thead>
 <tr>
@@ -2174,24 +2173,25 @@ signal_slot is a static event system (good performance and strict compiling type
 <div class="paragraph">
 <p>I wrote one years before. I had to deal with optional parameters on templates. This implementation
 worked with 0 till 4 parameters. In order to add parameters, was necessary to modify the code.
-Very similar code. Yes, it was methaprograming and it was copy/paste (disgusting)</p>
+Very similar code. Yes, it was methaprogramming and it was copy/paste (disgusting)</p>
 </div>
 <div class="paragraph">
-<p>Today, with modern C++, I wrote it with variadic templates. Fantastic experience. Quite easy, and it
-works with several parameters</p>
+<p>Today, with modern C++, I wrote it with variadic templates. It has been a
+fantastic experience. Quite easy, and it works with several parameters</p>
 </div>
 <div class="paragraph">
 <p>If composition with events is not enougth for you, signals are also fully RAII.
-When signal or receiver is out of scope, signals are disconnected.
-You don&#8217;t have to take care of disconnection before exit (destructor), neither disconnection to avoid
-orphan live references (problem for counter ptrs and garbage collectors)</p>
+When signal or receiver gets out of scope, signals are disconnected.
+You don&#8217;t have to take care of disconnection before exit (destructor), neither
+disconnection to avoid orphan live references (problem for counter ptrs
+and garbage collectors)</p>
 </div>
 <div class="sect3">
 <h4 id="_connection_syntax_recomendations">3.5.1. Connection syntax recomendations&#8230;&#8203;</h4>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 33%;">
-<col style="width: 66%;">
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
 </colgroup>
 <thead>
 <tr>
@@ -2222,7 +2222,7 @@ orphan live references (problem for counter ptrs and garbage collectors)</p>
 <div class="sect3">
 <h4 id="_performance">3.5.2. Performance</h4>
 <div class="paragraph">
-<p>In my computer with no params, you can emit around 200.000 signals per second&#8230;&#8203;</p>
+<p>In my computer with no params, you can emit around 200.000 signals per millisecond&#8230;&#8203;</p>
 </div>
 <div class="paragraph">
 <p>Executing&#8230;&#8203;  @link /core/signal_slot_performance.cpp @endlink</p>
@@ -4856,8 +4856,11 @@ Then you can use it simulating unions on ADT combined with cpp switch
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-03-16 20:15:47 CET
+Last updated 2016-03-27 23:53:04 CEST
 </div>
 </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+<script>hljs.initHighlighting()</script>
 </body>
 </html>
