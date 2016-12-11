@@ -25,6 +25,27 @@ Let me show you some links related to me (blog, cv, programs...)
 ## Links 
 
 
+### talks
+
+
+* 2016-11-30: Rust. A new hope. [(slides)](https://docs.google.com/presentation/d/1UjRLpgGLi0eYD4ZTxuoL1cmZPp0fKFixTNuWqxiM8wU/edit?usp=sharing) 
+
+
+* 2016-10-27: Meetup "Effects & Haskell" [(video)](https://www.youtube.com/watch?v=s6eLE0fZDuM&list=PL0bR48K8xUg5AlSGoO2bi-opioe-6sv4I) [(slides)](https://docs.google.com/presentation/d/1LIewEHMYjU5I646c_JJqZmwNqA0AMC8SgqA0DC6DGXo/edit) [(meetup)](https://www.meetup.com/Haskell-MAD/events/234814002/)
+
+* 2016-09: Talk about microservices in source-d [(slides)](https://docs.google.com/presentation/d/1XA1eDX34V5Wy-Pf46EY8yZepCZAzjlnITSlXRH85Wbs/edit?usp=sharing) 
+
+* 2016-06-28: Desarrolloweb.com talk [(link)](https://www.youtube.com/watch?v=_stVvsLLm6o&feature=youtu.be)
+
+* 2016-06-02: OpenExpo2016 (meetup funct prog). [(slides)](https://docs.google.com/presentation/d/1JznL2c1WZqWfsyFPy1BYS0VL0VuJqN33k7oldaEK_a0/edit?usp=sharing) [(OpenExpo2016)](http://www.openexpo.es/openexpo-2016/ponentes-2016) [(OpenExpo2016 program)](http://www.openexpo.es/openexpo-2016/programa-horario)  [(meetup)](http://www.meetup.com/Haskell-MAD/events/230564520/)
+
+
+* 2016-04-27: Elixir meetup Madrid [(slides)](https://docs.google.com/presentation/d/13pARtd4MKpr0vMFTkYsgnIie0KpkUQAPnPamFiKOPxY/edit?usp=sharing) [(meetup)](http://www.meetup.com/Madrid-Elixir/events/230312000/) [(video)](https://www.youtube.com/watch?v=kQgwHUrmqlo) (Very nice comments)
+
+* 2014-10: Erlounge Madrid 2014-10... Elixir [(link)](talks/elixir-2014-10.html) [(src)](https://github.com/jleahred/talks/tree/master/elixir_2014-10)
+
+
+
 ### blogs
 
 * Thoughts about techs, organization, planification, teams, developments (spanish) [(link)](http://departamentodesarrollo.blogspot.com.es/)
@@ -41,22 +62,6 @@ Let me show you some links related to me (blog, cv, programs...)
 * My first **elm** application [(link)](apps/calculator/calculator.html) [(src)](https://github.com/jleahred/katas/tree/master/langs/elm/calculator)
 * Status tree viewer with updates **elm** [(link)](apps/status_tree/index.html) [(src)](https://github.com/jleahred/katas/tree/master/langs/elm/status_tree)
 * Angular2 exercise. A simple table with updates from a service  [(src)](https://github.com/jleahred/katas/tree/master/web/angular2/ws_table_proto)
-
-
-### talks
-
-* Meetup "Effects & Haskell" [(video)](https://www.youtube.com/watch?v=s6eLE0fZDuM&list=PL0bR48K8xUg5AlSGoO2bi-opioe-6sv4I) [(slides)](https://docs.google.com/presentation/d/1LIewEHMYjU5I646c_JJqZmwNqA0AMC8SgqA0DC6DGXo/edit) [(meetup)](https://www.meetup.com/Haskell-MAD/events/234814002/)
-
-* Talk about microservices in source-d [(slides)](https://docs.google.com/presentation/d/1XA1eDX34V5Wy-Pf46EY8yZepCZAzjlnITSlXRH85Wbs/edit?usp=sharing) 
-
-* desarrolloweb.com talk [(link)](https://www.youtube.com/watch?v=_stVvsLLm6o&feature=youtu.be)
-
-* OpenExpo2016 (meetup funct prog). [(slides)](https://docs.google.com/presentation/d/1JznL2c1WZqWfsyFPy1BYS0VL0VuJqN33k7oldaEK_a0/edit?usp=sharing) [(OpenExpo2016)](http://www.openexpo.es/openexpo-2016/ponentes-2016) [(OpenExpo2016 program)](http://www.openexpo.es/openexpo-2016/programa-horario)  [(meetup)](http://www.meetup.com/Haskell-MAD/events/230564520/)
-
-
-* Elixir meetup Madrid [(slides)](https://docs.google.com/presentation/d/13pARtd4MKpr0vMFTkYsgnIie0KpkUQAPnPamFiKOPxY/edit?usp=sharing) [(meetup)](http://www.meetup.com/Madrid-Elixir/events/230312000/) [(video)](https://www.youtube.com/watch?v=kQgwHUrmqlo) (Very nice comments)
-
-* Erlounge Madrid 2014-10... Elixir [(link)](talks/elixir-2014-10.html) [(src)](https://github.com/jleahred/talks/tree/master/elixir_2014-10)
 
 
 ### C.V. (not updated):

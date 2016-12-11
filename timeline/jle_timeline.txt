@@ -29,6 +29,18 @@ Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki, jenkins, python, mariad
 
 And... *continues*
 
+- ### 2016-11-30
+- ### ![](images/talk-32.png) Talk "Rust, a new hope..."
+- [(slides)](https://docs.google.com/presentation/d/1UjRLpgGLi0eYD4ZTxuoL1cmZPp0fKFixTNuWqxiM8wU/edit?usp=sharing)
+
+A very long talk (almost 3 hours) about programming languages situation and Rust proposal.
+
+Rust is a very nice tech and a hard bet. Systems language with deep control and extreme speed, but also safe.
+
+Reduce bugs, reduce runtime errors, is thread safe, no segfaults but not reduce control and speed.
+
+A new hope...
+
 
 - ### 2016-10-27
 - ### ![](images/talk-32.png) Talk "Haskell & Effects"
@@ -71,6 +83,20 @@ Genial!! Muy productiva y divertida.
 - ### 2016-09-19
 - ### ![](images/talk-32.png) Talk  about microservices
 - [(slides)](https://docs.google.com/presentation/d/1XA1eDX34V5Wy-Pf46EY8yZepCZAzjlnITSlXRH85Wbs/edit?usp=sharing) 
+
+Microservices is a great way to desing good software.
+
+Microservices are a great way to design good software.
+
+Keep in mind maintainability, performance and reliability.
+
+Maintanability: Clear APIS, isolation, easy to work on teams, separating design from implementation.
+
+Performance: Scalable vertically and horizontally.
+
+Reliability: Isolating fails and easy to redundant
+
+But it also have some risks. If you don't know them, perhaps would be better not to try.
 
 
 
