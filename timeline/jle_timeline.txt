@@ -21,8 +21,10 @@ And... *continues*
 
 
 - ### 2017-04-22
-- ### ![](images/book-stack-32.png) Small rust library to tokenize text based on indentation
+- ### ![](images/book-stack-32.png) Small rust libraries to tokenize and prepare for parse text based on indentation
 - Indent tokenizer [(src)](https://github.com/jleahred/indent_tokenizer) [(rust cargo)](https://crates.io/crates/indent_tokenizer)
+
+Indent flattener [(src)](https://github.com/jleahred/indentation_flattener) [(rust cargo)](https://crates.io/crates/indentation_flattener)
 
 
 - ### 2017-04-19

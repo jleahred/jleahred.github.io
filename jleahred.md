@@ -83,6 +83,7 @@ _If you require an updated version, please contact me by email_
 [(adoc)](jle_cpp_tk.doc/jle_cpp_tk.html)
 [(doxygen)](jle_cpp_tk.doc/index.html)
 * LL(n) parser as part of my C++ toolkit. With tools to run dynamically, edit and test [(src)](https://github.com/jleahred/jle_cpp_tk/tree/master/src/core/hp)
+* Indent flattener [(src)](https://github.com/jleahred/indentation_flattener) [(rust cargo)](https://crates.io/crates/indentation_flattener)
 * Indent tokenizer [(src)](https://github.com/jleahred/indent_tokenizer) [(rust cargo)](https://crates.io/crates/indent_tokenizer)
 * Rust fix msg parser kata [(src)](https://github.com/jleahred/katas/tree/master/langs/rust/rustfix)
 * ElixFIX [(src)](https://github.com/jleahred/elixfix) [(doc)](http://jleahred.github.io/elixfix.doc/readme.html). A real-life exercise working with elixir language.
