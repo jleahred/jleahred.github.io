@@ -20,6 +20,11 @@ Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki, jenkins, python, mariad
 And... *continues*
 
 
+- ### 2017-04-22
+- ### ![](images/book-stack-32.png) Small rust library to tokenize text based on indentation
+- Indent tokenizer [(src)](https://github.com/jleahred/indent_tokenizer) [(rust cargo)](https://crates.io/crates/indent_tokenizer)
+
+
 - ### 2017-04-19
 - ### ![](images/talk-32.png) Talk "short introduction to Haskell"
 - [(slides)](https://docs.google.com/presentation/d/1HIakWOKLuK_5q8IPhP-P3L4mVi8KX06J2CE1Z8uVqjE/edit#slide=id.g1d81a17347_0_836)
@@ -57,12 +62,12 @@ A new hope...
 - ### ![](images/talk-32.png) Talk "Haskell & Effects"
 - [(video)](https://www.youtube.com/watch?v=s6eLE0fZDuM&list=PL0bR48K8xUg5AlSGoO2bi-opioe-6sv4I) [(slides)](https://docs.google.com/presentation/d/1LIewEHMYjU5I646c_JJqZmwNqA0AMC8SgqA0DC6DGXo/edit) [(meetup)](https://www.meetup.com/Haskell-MAD/events/234814002/)
 
-Daremos un repaso de los conceptos "efectos", "pureza" y "transparencia referencial". 
+Daremos un repaso de los conceptos "efectos", "pureza" y "transparencia referencial".
 
-· ¿Qué son los efectos? 
-· ¿Necesito efectos? 
-· Lenguajes imperativos -> Programación orientada a efectos. 
-· ¿Qué nos pueden enseñar los lenguajes imperativos? 
+· ¿Qué son los efectos?
+· ¿Necesito efectos?
+· Lenguajes imperativos -> Programación orientada a efectos.
+· ¿Qué nos pueden enseñar los lenguajes imperativos?
 · Haskell & efectos
 
 Si no conoces Haskell y quieres saber de sus características fundamentales, si tienes dudas sobre Haskell y los efectos, si quieres pasar un rato reflexionando sobre Haskell, si quieres conocer a más gente entusiasta con la programación funcional y Haskell, ¡te esperamos!
@@ -93,7 +98,7 @@ Genial!! Muy productiva y divertida.
 
 - ### 2016-09-19
 - ### ![](images/talk-32.png) Talk  about microservices
-- [(slides)](https://docs.google.com/presentation/d/1XA1eDX34V5Wy-Pf46EY8yZepCZAzjlnITSlXRH85Wbs/edit?usp=sharing) 
+- [(slides)](https://docs.google.com/presentation/d/1XA1eDX34V5Wy-Pf46EY8yZepCZAzjlnITSlXRH85Wbs/edit?usp=sharing)
 
 Microservices is a great way to desing good software.
 
@@ -122,9 +127,9 @@ But it also have some risks. If you don't know them, perhaps would be better not
 - ### ![](images/talk-32.png) Talk at OpenExpo2016 (Meetup funct prog)
 - [(slides)](https://docs.google.com/presentation/d/1JznL2c1WZqWfsyFPy1BYS0VL0VuJqN33k7oldaEK_a0/edit?usp=sharing)
 
-[(OpenExpo2016)](http://www.openexpo.es/openexpo-2016/ponentes-2016) 
+[(OpenExpo2016)](http://www.openexpo.es/openexpo-2016/ponentes-2016)
 
-[(OpenExpo2016 program)](http://www.openexpo.es/openexpo-2016/programa-horario)  
+[(OpenExpo2016 program)](http://www.openexpo.es/openexpo-2016/programa-horario)
 
 [(meetup)](http://www.meetup.com/Haskell-MAD/events/230564520/)
 
@@ -171,7 +176,7 @@ A tool to run the parser and transformation rules loaded from files [src/doc](ht
 - Elm is an amazing FRP (functional reactive programming language).
 Pure functional, ML sytax, nice errors information, easy to start...
 
-My first elm application. 
+My first elm application.
 This is a very small and simple calculator
 [link](http://jleahred.github.io/apps/calculator/calculator.html) [src](https://github.com/jleahred/katas/tree/master/langs/elm/calculator)
 

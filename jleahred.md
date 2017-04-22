@@ -4,7 +4,7 @@
 
 Hi, I'm José Luis.
 
-Here you have a "sort" timeline [(link)](timeline/index.html) 
+Here you have a "sort" timeline [(link)](timeline/index.html)
 
 [(me on github)](https://github.com/jleahred)
 
@@ -22,21 +22,21 @@ Let me show you some links related to me (blog, cv, programs...)
 
 
 
-## Links 
+## Links
 
 
 ### talks
 
 
-* 2017-04-19: Short introduction to Haskell on Madrid Data Science Meetup. [(slides)](https://docs.google.com/presentation/d/1HIakWOKLuK_5q8IPhP-P3L4mVi8KX06J2CE1Z8uVqjE/edit#slide=id.g1d81a17347_0_836)  [(meetup)](https://www.meetup.com/Haskell-MAD/events/239103965/) 
+* 2017-04-19: Short introduction to Haskell on Madrid Data Science Meetup. [(slides)](https://docs.google.com/presentation/d/1HIakWOKLuK_5q8IPhP-P3L4mVi8KX06J2CE1Z8uVqjE/edit#slide=id.g1d81a17347_0_836)  [(meetup)](https://www.meetup.com/Haskell-MAD/events/239103965/)
 
 
-* 2016-11-30: Rust. A new hope. [(slides)](https://docs.google.com/presentation/d/1UjRLpgGLi0eYD4ZTxuoL1cmZPp0fKFixTNuWqxiM8wU/edit?usp=sharing) 
+* 2016-11-30: Rust. A new hope. [(slides)](https://docs.google.com/presentation/d/1UjRLpgGLi0eYD4ZTxuoL1cmZPp0fKFixTNuWqxiM8wU/edit?usp=sharing)
 
 
 * 2016-10-27: Meetup "Effects & Haskell" [(video)](https://www.youtube.com/watch?v=s6eLE0fZDuM&list=PL0bR48K8xUg5AlSGoO2bi-opioe-6sv4I) [(slides)](https://docs.google.com/presentation/d/1LIewEHMYjU5I646c_JJqZmwNqA0AMC8SgqA0DC6DGXo/edit) [(meetup)](https://www.meetup.com/Haskell-MAD/events/234814002/)
 
-* 2016-09: Talk about microservices in source-d [(slides)](https://docs.google.com/presentation/d/1XA1eDX34V5Wy-Pf46EY8yZepCZAzjlnITSlXRH85Wbs/edit?usp=sharing) 
+* 2016-09: Talk about microservices in source-d [(slides)](https://docs.google.com/presentation/d/1XA1eDX34V5Wy-Pf46EY8yZepCZAzjlnITSlXRH85Wbs/edit?usp=sharing)
 
 * 2016-06-28: Desarrolloweb.com talk [(link)](https://www.youtube.com/watch?v=_stVvsLLm6o&feature=youtu.be)
 
@@ -55,8 +55,8 @@ Let me show you some links related to me (blog, cv, programs...)
 * My old blog with several kind of ideas (spanish) [(link)](http://joseluisestebanaparicio.blogspot.com/)
 
 [Some source articles on github](https://github.com/jleahred/blogs)
-    
-    
+
+
 ### web apps
 
 * A timeline html polymer component developed with **Dart** [(link)](timeline/index.html) [(src)](https://github.com/jleahred/timeline)
@@ -79,11 +79,15 @@ _If you require an updated version, please contact me by email_
 
 [(me on github)](https://github.com/jleahred)
 
-* Small toolkit for C++ (using C++11 and C++14)[(src)](https://github.com/jleahred/jle_cpp_tk) 
+* Small toolkit for C++ (using C++11 and C++14)[(src)](https://github.com/jleahred/jle_cpp_tk)
 [(adoc)](jle_cpp_tk.doc/jle_cpp_tk.html)
 [(doxygen)](jle_cpp_tk.doc/index.html)
-* LL(n) parser as part of my C++ toolkit. With tools to run dinamically, edit and test [(src)](https://github.com/jleahred/jle_cpp_tk/tree/master/src/core/hp)
+* LL(n) parser as part of my C++ toolkit. With tools to run dynamically, edit and test [(src)](https://github.com/jleahred/jle_cpp_tk/tree/master/src/core/hp)
+* Indent tokenizer [(src)](https://github.com/jleahred/indent_tokenizer) [(rust cargo)](https://crates.io/crates/indent_tokenizer)
+* Rust fix msg parser kata [(src)](https://github.com/jleahred/katas/tree/master/langs/rust/rustfix)
 * ElixFIX [(src)](https://github.com/jleahred/elixfix) [(doc)](http://jleahred.github.io/elixfix.doc/readme.html). A real-life exercise working with elixir language.
+* Rust work distribution [(src)](https://github.com/jleahred/katas/tree/master/langs/rust/machine_revisions_problem)
+* Haskell work distribution [(src)](https://github.com/jleahred/katas/tree/master/langs/haskell/machine_revisions_problem)
 * Rust kata rubiks solver [(src)](https://github.com/jleahred/katas/tree/master/langs/rust/rubiks_solver)
 * `i3_status_jle`. My i3 status line personalization focused on memory display [(src)](https://github.com/jleahred/i3_status_jle)
 * Small tech exercises and katas [(src)](https://github.com/jleahred/katas)
@@ -99,25 +103,25 @@ _If you require an updated version, please contact me by email_
 
 * [Tecnologías divertidas (old)](http://departamentodesarrollo.blogspot.com.es/2012/11/tecnologias-divertidas.html)
 * [Pensar: Ideas para darle al coco (old)](https://sites.google.com/site/joseluisestebanaparicio/pensar)
- 
 
- 
+
+
 ## How this page was made...
 
-Previously, I had a _google site_ [(link)](https://sites.google.com/site/joseluisestebanaparicio/home). It was a kind 
+Previously, I had a _google site_ [(link)](https://sites.google.com/site/joseluisestebanaparicio/home). It was a kind
 of _wyiswyg_ editor to prepare a **html**. Well, this is not very funny.
 Even more important, it's not flexible neither practical (specially for someone with programming knowledgment). Behind _wyiswyg_
 there are a lot of pain and problems (even for not programming guys).
 
 Therefore, I prepared this little page to replace the boring one (obviously, 100% free of _wysiwyg_).
 
-When you load this page in your browser, a minimum **html** file is rendered. It calls a **Dart** program compiled 
-in **javascript**. 
+When you load this page in your browser, a minimum **html** file is rendered. It calls a **Dart** program compiled
+in **javascript**.
 
-This miniprogram, will request for a text file, **markdown** formated, to the server. It will also 
-compile (the js code running on client) the **markdown** generating **html** content and it will insert it in **DOM**. 
+This miniprogram, will request for a text file, **markdown** formated, to the server. It will also
+compile (the js code running on client) the **markdown** generating **html** content and it will insert it in **DOM**.
 
-When I need to add or modif content on this page, I can do it in a simple **markdown** file. Avoiding the unpleasant 
+When I need to add or modif content on this page, I can do it in a simple **markdown** file. Avoiding the unpleasant
 direct **html** codes.
 
 Yes, in order to prepare it, I had to deal with a bit of **html** and a small **css**.
