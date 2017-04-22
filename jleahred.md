@@ -28,6 +28,9 @@ Let me show you some links related to me (blog, cv, programs...)
 ### talks
 
 
+* 2017-04-19: Short introduction to Haskell on Madrid Data Science Meetup. [(slides)](https://docs.google.com/presentation/d/1HIakWOKLuK_5q8IPhP-P3L4mVi8KX06J2CE1Z8uVqjE/edit#slide=id.g1d81a17347_0_836)  [(meetup)](https://www.meetup.com/Haskell-MAD/events/239103965/) 
+
+
 * 2016-11-30: Rust. A new hope. [(slides)](https://docs.google.com/presentation/d/1UjRLpgGLi0eYD4ZTxuoL1cmZPp0fKFixTNuWqxiM8wU/edit?usp=sharing) 
 
 
