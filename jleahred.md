@@ -27,6 +27,8 @@ Let me show you some links related to me (blog, cv, programs...)
 
 ### talks
 
+* 2017-06-21: Haskell TODAY. [(slides)](https://docs.google.com/presentation/d/1kc_P-tE9LnN-oZpvbmijEH3ogC3dNiLyqXpHZyMpul0/edit?usp=sharing)  [(meetup)](https://www.meetup.com/Haskell-MAD/events/240663770/)
+
 
 * 2017-04-19: Short introduction to Haskell on Madrid Data Science Meetup. [(slides)](https://docs.google.com/presentation/d/1HIakWOKLuK_5q8IPhP-P3L4mVi8KX06J2CE1Z8uVqjE/edit#slide=id.g1d81a17347_0_836)  [(meetup)](https://www.meetup.com/Haskell-MAD/events/239103965/)
 

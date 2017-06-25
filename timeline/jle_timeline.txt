@@ -20,6 +20,25 @@ Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki, jenkins, python, mariad
 And... *continues*
 
 
+- ### 2017-06-21
+- ### ![](images/talk-32.png) Talk "Haskell TODAY"
+- [(slides)](https://docs.google.com/presentation/d/1kc_P-tE9LnN-oZpvbmijEH3ogC3dNiLyqXpHZyMpul0/edit?usp=sharing)  [(meetup)](https://www.meetup.com/Haskell-MAD/events/240663770/)
+
+Nice comments... [(comments)](https://www.meetup.com/Haskell-MAD/events/240663770/?comment_table_id=480826634&comment_table_name=event_comment)
+
+Muchísimas gracias José Luis tanto por la charla tan magistral que nos diste como por todo este material que nos dejas. Un saludo.
+
+Muy clarificadora, didáctica.
+
+Una excelente charla, interesante punto de vista de porque el buen diseño de Haskell le permite no necesitar cambios abruptos y mantener una vigencia increíble.
+
+Introducción muy amena y bien hilada. Presentación proyectada muy cuidada. Sugerente e interesante. Y después de la charla, una gran ocasión para charlar con conocidos y con gente nueva. Otra gran tarde :-)
+
+Muy buena introducción a Haskell y la programación funcional.
+
+Como siempre las charlas de José Luis son realmente amenas y provechosas.
+
+
 - ### 2017-04-22
 - ### ![](images/book-stack-32.png) Small rust libraries to tokenize and prepare for parse text based on indentation
 - Indent tokenizer [(src)](https://github.com/jleahred/indent_tokenizer) [(rust cargo)](https://crates.io/crates/indent_tokenizer)
@@ -364,6 +383,8 @@ An extremely amazing moment was programing in C my own rational numbers library.
 way to calculate greatest common divisor. I suspected that someone did it before, I estimated it woud be arround 2000 years ago.
 I was absolutely right
 
+Some time later, I calculated 2000 decimals of _e_ number, next 2000 decimals of square root of 2, and finally 1000 decimals of PI. All from scratch and no internet.
+
 
 - ### ­1992
 - ![](images/cannon-24.png) Military service
@@ -385,6 +406,10 @@ I played a couple of chess matches winning both
 - First my Uncle and his computer.
 He showed me the first program. It was basic and it calculated multiplication table.
 To me was complex to understand the destructive assignment.
+
+LET X = X + 1
+
+No way!!!!  This is incorrect!!!
 
 Some days, some weeks on summer, I used his computer (Commodore 64) and I started to program.
 First basic, later 6502/6510 assembler
@@ -410,8 +435,8 @@ Nixon ends the US trade embargo against China.
 
 - -4mill
 - Humans started to move
-- We have been in this planet for less than 6 million of years. Dinosaurs were on earth for more than 200 million years, and life just for
-thousands of years. Is it **our** planet?
+- We have been in this planet for less than 6 million of years. Dinosaurs were on earth for more than 200 million years, and life for
+few thousands of years. Is it **our** planet?
 
 
 - -65mill
