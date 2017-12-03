@@ -27,6 +27,10 @@ Let me show you some links related to me (blog, cv, programs...)
 
 ### talks
 
+* 2017-11-18: OSW Rust introduction. [(slides)](https://docs.google.com/presentation/d/1I1RxMsQRKPsHfHwfJ1_-IZom7LuYuCbMh0vt-CEC0Kk/edit?usp=sharing)
+
+* 2017-10-02: Short stories on developing and Haskell. [(slides)](https://docs.google.com/presentation/d/1Cjfi_EWhm2wYhiNoV7VsHaTuN1v6K88qE0NgImL5RDM/edit?usp=sharing)
+
 * 2017-06-21: Haskell TODAY. [(slides)](https://docs.google.com/presentation/d/1kc_P-tE9LnN-oZpvbmijEH3ogC3dNiLyqXpHZyMpul0/edit?usp=sharing)  [(meetup)](https://www.meetup.com/Haskell-MAD/events/240663770/)
 
 

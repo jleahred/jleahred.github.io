@@ -19,6 +19,14 @@ Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki, jenkins, python, mariad
 
 And... *continues*
 
+- ### 2017-11-18
+- ### ![](images/talk-32.png) Talk "Rust introduccion on OSW"
+- [(slides)](https://docs.google.com/presentation/d/1I1RxMsQRKPsHfHwfJ1_-IZom7LuYuCbMh0vt-CEC0Kk/edit?usp=sharing)
+
+- ### 2017-10-02
+- ### ![](images/talk-32.png) Talk "Short stories on developing and Haskell"
+- [(slides)](https://docs.google.com/presentation/d/1Cjfi_EWhm2wYhiNoV7VsHaTuN1v6K88qE0NgImL5RDM/edit?usp=sharing)
+
 
 - ### 2017-06-21
 - ### ![](images/talk-32.png) Talk "Haskell TODAY"
