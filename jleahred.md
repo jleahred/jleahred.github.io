@@ -108,6 +108,7 @@ _If you require an updated version, please contact me by email_
 
 ## misc
 
+* [Some physical puzzles I enjoy solving](puzzles/puzzles.html)
 * [Tecnologías divertidas (old)](http://departamentodesarrollo.blogspot.com.es/2012/11/tecnologias-divertidas.html)
 * [Pensar: Ideas para darle al coco (old)](https://sites.google.com/site/joseluisestebanaparicio/pensar)
 
