@@ -19,6 +19,15 @@ Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki, jenkins, python, mariad
 
 And... *continues*
 
+- ### 2018-04-05
+- ### ![](images/talk-32.png) Talk in Madrid Rust meetup (mutability, ownership, borrowing)
+- [(video)](https://youtu.be/xokT905_X2Q?t=2733)
+
+[(slides)](https://docs.google.com/presentation/d/1NzVkuqu8Mah48L1J2NJxD0JQ2qbsjL_VJCs4u9Fv5lw/edit?usp=sharing)
+
+[(meetup)](https://www.meetup.com/es-ES/MadRust/events/248884690/)
+
+
 - ### 2017-11-18
 - ### ![](images/talk-32.png) Talk "Rust introduccion on OSW"
 - [(slides)](https://docs.google.com/presentation/d/1I1RxMsQRKPsHfHwfJ1_-IZom7LuYuCbMh0vt-CEC0Kk/edit?usp=sharing)
