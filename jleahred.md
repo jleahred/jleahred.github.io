@@ -27,7 +27,9 @@ Let me show you some links related to me (blog, cv, programs...)
 
 ### talks
 
-* 2017-11-18: OSW Rust introduction. [(slides)](https://docs.google.com/presentation/d/1I1RxMsQRKPsHfHwfJ1_-IZom7LuYuCbMh0vt-CEC0Kk/edit?usp=sharing)
+* 2018-04-05: The selfish side of Rust. [(video)](https://youtu.be/xokT905_X2Q?t=2733)  [(slides)](https://docs.google.com/presentation/d/1NzVkuqu8Mah48L1J2NJxD0JQ2qbsjL_VJCs4u9Fv5lw/edit?usp=sharing) [(meetup)](https://www.meetup.com/es-ES/MadRust/events/248884690/)
+
+* 2017-11-18: OSW Rust introduction. [(slides)](https://docs.google.com/presentation/d/1I1RxMsQRKPsHfHwfJ1_-IZom7LuYuCbMh0vt-CEC0Kk/edit?usp=sharing) [(meetup)](https://www.meetup.com/es-ES/MadRust/events/248884690/)
 
 * 2017-10-02: Short stories on developing and Haskell. [(slides)](https://docs.google.com/presentation/d/1Cjfi_EWhm2wYhiNoV7VsHaTuN1v6K88qE0NgImL5RDM/edit?usp=sharing)
 
