@@ -19,6 +19,13 @@ Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki, jenkins, python, mariad
 
 And... *continues*
 
+- ### 2018-06-06
+- ### ![](images/talk-32.png) Haskell talk on OpenExpo2018
+- [(slides)](https://docs.google.com/presentation/d/1dhlLmtnq7J_TGpG4ptypHLoEhmexVC6uP7cQeqdyZAc/edit?usp=sharing)
+
+[(meetup)](https://www.meetup.com/Haskell-MAD/events/251207893/)
+
+
 - ### 2018-04-05
 - ### ![](images/talk-32.png) Talk in Madrid Rust meetup (mutability, ownership, borrowing)
 - [(video)](https://youtu.be/xokT905_X2Q?t=2733)
