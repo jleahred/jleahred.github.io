@@ -71,10 +71,11 @@ Let me show you some links related to me (blog, cv, programs...)
 
 * A timeline html polymer component developed with **Dart** [(link)](timeline/index.html) [(src)](https://github.com/jleahred/timeline)
 * A slidding puzzle with tree diferent topologies **Dart**  [(link)](apps/puzzle3t/index.html) [(src)](https://github.com/jleahred/puzzle3t)
-* My first **Dart** application [(link)](apps/hello_world/index.html) [(src)](https://github.com/jleahred/dart_hello_world)
 * My first **elm** application [(link)](apps/calculator/calculator.html) [(src)](https://github.com/jleahred/katas/tree/master/langs/elm/calculator)
+* My first **rust** web-application [(link)](apps/calculator_rust/index.html) [(src)](https://github.com/jleahred/katas/tree/master/web/wasm/calculator)
 * Status tree viewer with updates **elm** [(link)](apps/status_tree/index.html) [(src)](https://github.com/jleahred/katas/tree/master/langs/elm/status_tree)
 * Angular2 exercise. A simple table with updates from a service  [(src)](https://github.com/jleahred/katas/tree/master/web/angular2/ws_table_proto)
+* My first **Dart** application [(link)](apps/hello_world/index.html) [(src)](https://github.com/jleahred/dart_hello_world)
 
 
 ### C.V. (not updated):
