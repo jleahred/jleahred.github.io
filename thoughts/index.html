@@ -1,0 +1,379 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Steal borrow - thoughts</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">var path_to_root = "";</script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="steal_borrow.html"><strong aria-hidden="true">1.</strong> Steal borrow</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">thoughts</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="#steal-borrow" id="steal-borrow"><h1>Steal borrow</h1></a>
+<p>To explain myself I'll use a simple, silly <code>struct</code> to calculate an average.</p>
+<p>I defined a method to &quot;add&quot; values and another to &quot;obtain&quot; the average of these values.</p>
+<p>It could be like that.</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+struct Avg {
+    count: u64,
+    sum: u64,
+}
+
+impl Avg {
+    fn add(&amp;mut self, item: u8) {
+        self.count += 1;
+        self.sum += u64::from(item);
+    }
+
+    fn avg(&amp;self) -&gt; f32 {
+        (self.sum as f32) / (self.count as f32)
+    }
+}
+#}</code></pre></pre>
+<p>An example using it</p>
+<pre><pre class="playpen"><code class="language-rust">fn main() {
+    let mut data = Avg { count: 0, sum: 0 };
+    data.add(1);
+    data.add(2);
+    data.add(3);
+
+    println!(&quot;{}&quot;, data.avg());
+}
+</code></pre></pre>
+<p>Inconvenient, abuse of mutability.</p>
+<p>We define a mutable instance, and then we call functions that might or might not mutate it. They could not mutate it today but they could mutate it tomorrow.</p>
+<p>It is not clear that <code>data.avg</code> does not change `data' internally, in fact, today it could not mutate it and tomorrow it could.</p>
+<p>This excess of mutability makes the code less readable.</p>
+<p>I don't go any further in defense of the reduction of mutability and I will continue with the idea I want to propose.</p>
+<p>Mutability is usually viral (in most languages), but in Rust, we have a way to avoid it.</p>
+<blockquote>
+<p>By viral mutability, I mean that using mutability at a point, it forces us to extend that mutability in the code to callers.</p>
+</blockquote>
+<p>In Rust we have <code>borrow</code>, <code>mutable borrow</code> and <code>ownership</code>.</p>
+<ul>
+<li>You can borrow something with the condition you will not modify it (see but not touch).</li>
+<li>You can borrow something with permission to be modified.</li>
+<li>Or you can &quot;give it away,&quot; so the receiver can decide whether or not to change it (it's all yours).</li>
+</ul>
+<p>Thanks to the last point, we can control and prevent mutability from spreading virally.</p>
+<p>The code would look like this:</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+struct Avg {
+    count: u64,
+    sum: u64,
+}
+
+impl Avg {
+    fn add(mut self, item: u8) -&gt; Self {
+        self.count += 1;
+        self.sum += u64::from(item);
+        self
+    }
+
+    fn avg(&amp;self) -&gt; f32 {
+        (self.sum as f32) / (self.count as f32)
+    }
+}
+#}</code></pre></pre>
+<p>Now we can use the <code>Avg</code> class as follows:</p>
+<pre><pre class="playpen"><code class="language-rust">fn main() {
+    let data = Avg { count: 0, sum: 0 };
+    let data = data.add(1);
+    let data = data.add(2);
+    let data = data.add(3);
+
+    println!(&quot;{}&quot;, data.avg());
+}
+</code></pre></pre>
+<p>Or even fluent API style...</p>
+<pre><pre class="playpen"><code class="language-rust">fn main() {
+    let data = Avg { count: 0, sum: 0 }.add(1).add(2).add(3);
+
+    println!(&quot;{}&quot;, data.avg());
+}
+</code></pre></pre>
+<p>We have the same result, but in our program we use <strong>zero</strong> mutability.</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+    let data = Avg { count: 0, sum: 0 };
+    let data = data.add(1);
+    let data = data.add(2);
+    let data = data.add(3);
+#}</code></pre></pre>
+<p>This reassignment of the variable data is SSA (Static Single Assignment) (cool)</p>
+<p>Here it is clear that <code>add</code> generates a new value (internally with mutation, internal implementation detail for the API user) and <code>avg</code> reads but does not mutate.</p>
+<p>It is not necessary to look at the signature or the source code of the functions used to know that.</p>
+<p>As our vars are not mutable, we know nobody can modify them stealthily.</p>
+<p>The mutability is not viral, the code is more readable.</p>
+<p><strong>BUT...</strong></p>
+<p>There are several difficulties on the horizon to use this model.</p>
+<p>I propose next two.</p>
+<ul>
+<li>We receive a mutable reference from <code>Avg</code> in a function.</li>
+<li><code>Avg</code> is part of a mutable structure.</li>
+</ul>
+<p>In both cases, since they are mutable, it seems reasonable to want and be able to add elements, but it is not easy.</p>
+<p>Case mutable reference in a function:</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+fn mut_avg(avg: &amp;mut Avg) {
+    avg.add(1);
+}
+#}</code></pre></pre>
+<p>This doesn't work (because that's what we wanted to avoid).</p>
+<p><code>Avg</code> case in a structure:</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+fn struct_avg1(savg: &amp;mut StructAvg) {
+    savg.avg.add(1);
+}
+#}</code></pre></pre>
+<p>It's not working.</p>
+<p>This gets ugly, when we receive it in a structure, we can't even use the ownership pattern that I'm proposing.</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+fn struct_avg2(mut savg: StructAvg) -&gt; StructAvg{
+    savg.avg.add(1);
+    savg
+}
+#}</code></pre></pre>
+<p>:_(</p>
+<p>The simplest solution is to do it the other way.</p>
+<p>Just in case, and to avoid problems, we can create an API based on mutable references, and from these, it is very simple to create the API with ownership.</p>
+<p>But that's not good. We will end up not doing the second step and not using the API with ownership with the evident consequence of mutability flood (viral), as in the rest of programming languages that support mutability control.</p>
+<p>To avoid this, I propose to add a new model to those already mentioned. It would look like this.</p>
+<ul>
+<li>Borrow with the condition that you do not touch it</li>
+<li>Borrow allowing to touch</li>
+<li>Gift with all the consequences (ownership)</li>
+<li><strong>Provisional borrow steal</strong></li>
+</ul>
+<p>Let me show this new option in the previous examples</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+fn mut_avg(avg: &amp;mut Avg) {
+    steal_borrow(avg, &amp;|avg| {
+        let avg = avg.add(1);
+        let avg = avg.add(2);
+        let avg = avg.add(3);
+        avg
+    });
+}
+
+fn struct_avg1(savg: &amp;mut StructAvg) {
+    steal_borrow(&amp;mut savg.avg, &amp;|avg| {
+        let avg = avg.add(1);
+        let avg = avg.add(2);
+        let avg = avg.add(3);
+        avg
+    });
+}
+
+fn struct_avg2(mut savg: StructAvg) -&gt; StructAvg {
+    steal_borrow(&amp;mut savg.avg, &amp;|avg| {
+        let avg = avg.add(1);
+        let avg = avg.add(2);
+        let avg = avg.add(3);
+        avg
+    });
+    savg
+}
+#}</code></pre></pre>
+<p>And <code>steal_borrow</code> function could be implemented as...</p>
+<pre><pre class="playpen"><code class="language-rust">
+# #![allow(unused_variables)]
+#fn main() {
+pub fn steal_borrow&lt;T&gt;(target: &amp;mut T, f: &amp;Fn(T) -&gt; T) {
+    let mut fake = unsafe { std::mem::zeroed() };
+    std::mem::swap(&amp;mut fake, target);
+    let mut fake = f(fake);
+    std::mem::swap(&amp;mut fake, target);
+    std::mem::forget(fake);
+}
+#}</code></pre></pre>
+<p>It's not <code>zero cost abstraction</code> but it's not expensive.</p>
+<blockquote>
+<p>Attention!!!, to avoid that <code>zeroed</code> incurs in a cost in big structures, those data should be put in a <code>Box&lt;...&gt;</code></p>
+</blockquote>
+<p>What do you think???</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
