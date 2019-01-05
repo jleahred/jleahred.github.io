@@ -502,6 +502,9 @@ Module.STDWEB_PRIVATE.acquire_tmp = function( dummy ) {
                 "__cargo_web_snippet_08a3b15e1358700ac92bc556f9e9b8af660fc2c7": function($0, $1) {
                 $0 = Module.STDWEB_PRIVATE.to_js($0);$1 = Module.STDWEB_PRIVATE.to_js($1);($0).nodeValue=($1);
             },
+            "__cargo_web_snippet_0a6ddb433f3bd369cfb4cf3832d4ed8b8c02a6bc": function($0) {
+                var o = Module.STDWEB_PRIVATE.acquire_js_reference( $0 );return (o instanceof Date) | 0;
+            },
             "__cargo_web_snippet_0aced9e2351ced72f1ff99645a129132b16c0d3c": function($0) {
                 var value = Module.STDWEB_PRIVATE.get_raw_value( $0 );return Module.STDWEB_PRIVATE.register_raw_value( value );
             },
@@ -519,6 +522,9 @@ Module.STDWEB_PRIVATE.acquire_tmp = function( dummy ) {
             },
             "__cargo_web_snippet_46518012593da937dd5f35c2fc1c5e1dcade260b": function($0, $1, $2, $3) {
                 $1 = Module.STDWEB_PRIVATE.to_js($1);$2 = Module.STDWEB_PRIVATE.to_js($2);$3 = Module.STDWEB_PRIVATE.to_js($3);Module.STDWEB_PRIVATE.from_js($0, (function(){try{return{value:function(){return($1).insertBefore(($2),($3));}(),success:true};}catch(error){return{error:error,success:false};}})());
+            },
+            "__cargo_web_snippet_598895595ca68dba4c070535a98058e64c084e2c": function($0, $1) {
+                $1 = Module.STDWEB_PRIVATE.to_js($1);Module.STDWEB_PRIVATE.from_js($0, (function(){return($1).getMilliseconds();})());
             },
             "__cargo_web_snippet_614a3dd2adb7e9eac4a0ec6e59d37f87e0521c3b": function($0, $1) {
                 $1 = Module.STDWEB_PRIVATE.to_js($1);Module.STDWEB_PRIVATE.from_js($0, (function(){return($1).error;})());
@@ -564,6 +570,9 @@ Module.STDWEB_PRIVATE.acquire_tmp = function( dummy ) {
             },
             "__cargo_web_snippet_99c4eefdc8d4cc724135163b8c8665a1f3de99e4": function($0, $1, $2, $3) {
                 $1 = Module.STDWEB_PRIVATE.to_js($1);$2 = Module.STDWEB_PRIVATE.to_js($2);$3 = Module.STDWEB_PRIVATE.to_js($3);Module.STDWEB_PRIVATE.from_js($0, (function(){var listener=($1);($2).addEventListener(($3),listener);return listener;})());
+            },
+            "__cargo_web_snippet_9a7eca60ef721cc6257c116658f2fcdd49070cd1": function($0) {
+                Module.STDWEB_PRIVATE.from_js($0, (function(){return new Date();})());
             },
             "__cargo_web_snippet_9f22d4ca7bc938409787341b7db181f8dd41e6df": function($0) {
                 Module.STDWEB_PRIVATE.increment_refcount( $0 );
