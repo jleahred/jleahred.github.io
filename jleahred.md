@@ -92,6 +92,7 @@ _If you require an updated version, please contact me by email_
 [(me on github)](https://github.com/jleahred)
 
 
+* Code generator for Finite State Machines (fsm) [(src)](https://github.com/jleahred/fsm_gen)
 * Dynamic parser LL(n) with PEG grammar [(src)](https://github.com/jleahred/dynparser)[(doc)](https://docs.rs/dynparser/)
 * Small toolkit for C++ (using C++11 and C++14)[(src)](https://github.com/jleahred/jle_cpp_tk)
 [(adoc)](jle_cpp_tk.doc/jle_cpp_tk.html)
