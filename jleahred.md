@@ -2,11 +2,18 @@
 
 
 
-Hi, I'm José Luis.
+Hi, I'm José Luis,
 
-Here you have a "sort" timeline [(link)](timeline/index.html)
+I'm a functional and concurrent programming lover and evangelist (Elixir/Erlang, Haskell...)
+
+The design of distributed systems on services, micro-services and nano-services, is in my DNA 
+
+Here I show a bit of my relationship with technologies.
+
+In next link you have a "sort" timeline [(link)](timeline/index.html)
 
 [(me on github)](https://github.com/jleahred)
+
 
 I've been working on software development for several years.
 
@@ -16,9 +23,9 @@ I've been working in algorithms and backend software with many technologies.
 
 You can see more details in my C.V. below
 
-I love technologies and learning new things. Check my blog, link in next section (spanish)
+I love technologies and learning new things.
 
-Let me show you some links related to me (blog, cv, programs...)
+Let me show you more links related to me (blog, cv, programs...)
 
 
 
