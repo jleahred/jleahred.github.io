@@ -34,6 +34,8 @@ Let me show you more links related to me (blog, cv, programs...)
 
 ### talks
 
+* 2019-09-14: Designed by humans, executed by machines. [(slides)](https://docs.google.com/presentation/d/1tfDCtsWi8jRTSYI7vxHxrBoWon74sZblCm4lcAzjfdE/edit?usp=sharing) [(event web)](https://techparty.online/)
+
 * 2018-06-06: Haskell talk on OpenExpo 2018. [(slides)](https://docs.google.com/presentation/d/1dhlLmtnq7J_TGpG4ptypHLoEhmexVC6uP7cQeqdyZAc/edit?usp=sharing) [(meetup)](https://www.meetup.com/Haskell-MAD/events/251207893/)
 
 * 2018-04-05: The selfish side of Rust. [(video)](https://youtu.be/xokT905_X2Q?t=2733)  [(slides)](https://docs.google.com/presentation/d/1NzVkuqu8Mah48L1J2NJxD0JQ2qbsjL_VJCs4u9Fv5lw/edit?usp=sharing) [(meetup)](https://www.meetup.com/es-ES/MadRust/events/248884690/)
