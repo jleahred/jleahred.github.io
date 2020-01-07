@@ -34,7 +34,7 @@ Let me show you more links related to me (blog, cv, programs...)
 
 ### talks
 
-* 2019-09-14: Designed by humans, executed by machines. [(slides)](https://docs.google.com/presentation/d/1tfDCtsWi8jRTSYI7vxHxrBoWon74sZblCm4lcAzjfdE/edit?usp=sharing) [(event web)](https://techparty.online/)
+* 2019-09-14: Designed by humans, executed by machines. [(slides)](https://docs.google.com/presentation/d/1tfDCtsWi8jRTSYI7vxHxrBoWon74sZblCm4lcAzjfdE/edit?usp=sharing) [(event web)](http://www.lanavemadrid.com/event/tech-party-2019/) [(event web)](https://techparty.online/) [(meetup)](https://www.meetup.com/es-ES/HackMadrid-27/events/264141485/)
 
 * 2018-06-06: Haskell talk on OpenExpo 2018. [(slides)](https://docs.google.com/presentation/d/1dhlLmtnq7J_TGpG4ptypHLoEhmexVC6uP7cQeqdyZAc/edit?usp=sharing) [(meetup)](https://www.meetup.com/Haskell-MAD/events/251207893/)
 
