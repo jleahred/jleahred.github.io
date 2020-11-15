@@ -19,6 +19,12 @@ Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki, jenkins, python, mariad
 
 And... *continues*
 
+- ### 2020-02-27
+- ### ![](images/talk-32.png) News on technology and Rust
+- [(slides)](https://docs.google.com/presentation/d/1pGpbLb8LvKY0Us7Q35iTDNn_4VJObprBzXxgmGk4bRs/edit?usp=sharing)
+
+[(meetup)](https://www.meetup.com/MadRust/events/268809325/)
+
 - ### 2019-09-14
 - ### ![](images/talk-32.png) Designed by humans, executed by machines
 - [(slides)](https://docs.google.com/presentation/d/1tfDCtsWi8jRTSYI7vxHxrBoWon74sZblCm4lcAzjfdE/edit?usp=sharing)
