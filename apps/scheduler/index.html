@@ -61,8 +61,8 @@
 <body>
     <section id="app"></section>
     <script type="module">
-        import init from '/package.js';
-        init('/pkg/package_bg.wasm').then(() => {
+        import init from './package.js';
+        init('./package_bg.wasm').then(() => {
             var editor = ace.edit("editor");
             editor.session.setMode("ace/mode/yaml");
             editor.setShowPrintMargin(false);
