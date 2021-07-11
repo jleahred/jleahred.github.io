@@ -19,6 +19,20 @@ Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki, jenkins, python, mariad
 
 And... *continues*
 
+
+- ### 2021-06-30
+- ### ![](images/talk-32.png) Elixir as hacking tool
+- [(meetup)](https://www.meetup.com/HackMadrid-27/events/278077525/)
+
+[(slides)](https://docs.google.com/presentation/d/1HO_KxGNiV5xwxisXubYQvZKarwmKSnNc87IOXp-oUYU/edit?usp=sharing)
+
+- ### 2021-05-26
+- ### ![](images/talk-32.png) Round table about programming languages
+- [(meetup)](https://www.meetup.com/HackMadrid-27/events/277999877)
+
+[(video)](https://www.youtube.com/watch?v=cuowTZnYwf4)
+
+
 - ### 2020-02-27
 - ### ![](images/talk-32.png) News on technology and Rust
 - [(slides)](https://docs.google.com/presentation/d/1pGpbLb8LvKY0Us7Q35iTDNn_4VJObprBzXxgmGk4bRs/edit?usp=sharing)
