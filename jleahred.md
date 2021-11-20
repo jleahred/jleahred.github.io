@@ -34,6 +34,16 @@ Let me show you more links related to me (blog, cv, programs...)
 
 ### talks
 
+* 2021-10-11 Be functional. [(video)](https://youtu.be/NPaBtQC7OVM?t=3991)  [(event)](https://worldparty.hackmadrid.org/agenda.html#agenda) [(slides)](https://docs.google.com/presentation/d/1MK-VAUylNwCudg4F0uMbE5IOCA0LzF4hBPq9er2kvtM/edit?usp=sharing)
+
+
+* 2021-06-30: Elixir as hacking tool. [(slides)](https://docs.google.com/presentation/d/1HO_KxGNiV5xwxisXubYQvZKarwmKSnNc87IOXp-oUYU/edit?usp=sharing) [(meetup)](https://www.meetup.com/HackMadrid-27/events/278077525/)
+
+* 2021-05-26: Round table about programming languages. [(meetup)](https://www.meetup.com/HackMadrid-27/events/277999877)
+
+* 2020-02-27: News on technology and Rust. [(slides)](https://docs.google.com/presentation/d/1pGpbLb8LvKY0Us7Q35iTDNn_4VJObprBzXxgmGk4bRs/edit?usp=sharing) [(meetup)](https://www.meetup.com/MadRust/events/268809325/)
+
+
 * 2019-09-14: Designed by humans, executed by machines. [(slides)](https://docs.google.com/presentation/d/1tfDCtsWi8jRTSYI7vxHxrBoWon74sZblCm4lcAzjfdE/edit?usp=sharing) [(event web)](http://www.lanavemadrid.com/event/tech-party-2019/) [(event web)](https://techparty.online/) [(meetup)](https://www.meetup.com/es-ES/HackMadrid-27/events/264141485/)
 
 * 2018-06-06: Haskell talk on OpenExpo 2018. [(slides)](https://docs.google.com/presentation/d/1dhlLmtnq7J_TGpG4ptypHLoEhmexVC6uP7cQeqdyZAc/edit?usp=sharing) [(meetup)](https://www.meetup.com/Haskell-MAD/events/251207893/)

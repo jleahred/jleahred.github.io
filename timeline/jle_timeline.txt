@@ -19,6 +19,13 @@ Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki, jenkins, python, mariad
 
 And... *continues*
 
+- ### 2021-10-11
+- ### ![](images/talk-32.png) Be functional
+- [(video)](https://youtu.be/NPaBtQC7OVM?t=3991)  
+
+[(event)](https://worldparty.hackmadrid.org/agenda.html#agenda) [(slides)](https://docs.google.com/presentation/d/1MK-VAUylNwCudg4F0uMbE5IOCA0LzF4hBPq9er2kvtM/edit?usp=sharing)
+
+We will reveal some of the secrets of programming kung-fu, reviewing the current situation, some of the problems and how functional programming helps us. Suitable for all audiences. No programming knowledge is required, although any previous experience will allow you to assimilate some reflections in more depth.
 
 - ### 2021-06-30
 - ### ![](images/talk-32.png) Elixir as hacking tool
