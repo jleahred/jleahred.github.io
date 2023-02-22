@@ -19,6 +19,17 @@ Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki, jenkins, python, mariad
 
 And... *continues*
 
+- ### 2023-02-23
+- ### ![](images/talk-32.png) Elixir blazzing fast
+- [(meetup)](https://www.meetup.com/es-ES/madrid-elixir/events/291381008/)
+
+[(slides)](https://docs.google.com/presentation/d/1hNIEUnaYjtefDypLsyYh2SX7crvAaHuQ2rXdFSGvxf8/edit?usp=sharing)
+
+What blazzing fast means?
+How to be blazzing fast with elixir?
+How Rust can help us working with elixir?
+
+
 - ### 2021-10-11
 - ### ![](images/talk-32.png) Be functional
 - [(video)](https://youtu.be/NPaBtQC7OVM?t=3991)  

@@ -34,6 +34,8 @@ Let me show you more links related to me (blog, cv, programs...)
 
 ### talks
 
+* 2023-02-23 Elixir blazzing fast [(event)](https://www.meetup.com/es-ES/madrid-elixir/events/291381008/) [(slides)](https://docs.google.com/presentation/d/1hNIEUnaYjtefDypLsyYh2SX7crvAaHuQ2rXdFSGvxf8/edit?usp=sharing)
+
 * 2021-10-11 Be functional. [(video)](https://youtu.be/NPaBtQC7OVM?t=3991)  [(event)](https://worldparty.hackmadrid.org/agenda.html#agenda) [(slides)](https://docs.google.com/presentation/d/1MK-VAUylNwCudg4F0uMbE5IOCA0LzF4hBPq9er2kvtM/edit?usp=sharing)
 
 
