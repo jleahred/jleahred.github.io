@@ -19,6 +19,15 @@ Techs: C++, gcc, Qpid, Firebird, MySQL, Qt, git, pmwiki, jenkins, python, mariad
 
 And... *continues*
 
+- ### 2023-05-25
+- ### ![](images/talk-32.png) FP, truths, lies and recipies
+- [(video)](https://www.youtube.com/watch?v=kqVjk6T9Bug) [(meetup)](https://www.meetup.com/madrid-elixir/events/292978684) [(slides)](https://docs.google.com/presentation/d/1Pb6Tig5aSJnyzHHeg7pOYi5couhoMkeEa-abp0C29Oo/edit#slide=id.g22e6ceaaf8f_0_0)
+
+Checking common afirmations about Functional programming, what's true, what's incorrect
+
+And finishing with some recepies
+
+
 - ### 2023-02-23
 - ### ![](images/talk-32.png) Elixir blazzing fast
 - [(meetup)](https://www.meetup.com/es-ES/madrid-elixir/events/291381008/)
